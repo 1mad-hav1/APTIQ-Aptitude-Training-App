@@ -1,0 +1,28 @@
+{% include 'admin/adminheader.html' %}
+
+
+<h1>View Educational Content</h1>
+<table style="text-align: center;">
+    <tr>
+        <th>Sl No</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Link</th>
+        <th>Type</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.description}}</td>
+        <td><a href="{{i.file_path}}">{{i.file_path}}</a></td>
+        <td>{{i.file_type}}</td>
+        <td><a href="../updateeducontent/{{i.id}}">Update</a></td>
+        <td><a href="../deleteeducontent/{{i.id}}">Delete</a></td>
+    </tr>
+    {% endfor %}
+    <tr>
+        <td colspan="7"><a href="addeducontent">Add Content</a></td>
+    </tr>
+    </table>
+{% include "public/footer.html" %}

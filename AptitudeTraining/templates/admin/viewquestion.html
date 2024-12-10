@@ -1,0 +1,39 @@
+{% include 'admin/adminheader.html' %}
+
+
+<h1>View Questions</h1>
+<table border="1" style="text-align: center;">
+    <tr>
+        <th rowspan="2">Sl No</th>
+        <th rowspan="2">Question</th>
+        <th colspan="4">Options</th>
+        <th rowspan="2">Answer</th>
+        <th rowspan="2">Description</th>
+        <th rowspan="2">Type</th>
+        <th rowspan="2">Difficulty</th>
+    </tr>
+    <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+    </tr>
+        {% for i in data %}
+        <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.question}}</td>
+        <td>{{i.option1}}</td>
+        <td>{{i.option2}}</td>
+        <td>{{i.option3}}</td>
+        <td>{{i.option4}}</td>
+        <td>{{i.answer}}</td>
+        <td>{{i.answer_description}}</td>
+        <td>{{i.question_type}}</td>
+        <td>{{i.question_level}}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="10">Add Question</td>
+        </tr>
+        </table>
+{% include "public/footer.html" %}

@@ -1,0 +1,37 @@
+{% include 'admin/adminheader.html' %}
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td colspan="2" align="center"><h1>Add Content</h1></td>
+            </tr>
+            <tr>
+                <td>Title</td>
+                <td><input type="text" name="title" id="title"></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td><textarea name="description" id="description" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td>Link</td>
+                <td><input type="text" name="content" id="content"></td>
+            </tr>
+            <tr>
+                <td>Type</td>
+                <td><input type="radio" name="type" id="verbal" value="verbal">
+                <label>Verbal Ability</label>
+                <input type="radio" name="type" id="quantitative" value="quantitative">
+                <label>Quantitative Ability</label>
+                <input type="radio" name="type" id="logical" value="logical">
+                <label>Logical Ability</label></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" id="submit">
+                    <input type="reset" name="reset" id="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+{% include "public/footer.html" %}
