@@ -3,7 +3,7 @@
     <form action="" method="post">
         <table>
             <tr>
-                <td colspan="2" align="center"><h1>Add Content</h1></td>
+                <td colspan="2" align="center"><h1>Update Content</h1></td>
             </tr>
             <tr>
                 <td>Title</td>
@@ -11,7 +11,7 @@
             </tr>
             <tr>
                 <td>Description</td>
-                <td><textarea name="description" id="description" rows="3">{{data.description}}"></textarea></td>
+                <td><textarea name="description" id="description" rows="3">{{data.description}}</textarea></td>
             </tr>
             <tr>
                 <td>Link</td>
@@ -34,6 +34,6 @@
             </tr>
         </table>
     </form>
- {% endif %}   
-
+   
+{% endif %}
 {% include "public/footer.html" %}

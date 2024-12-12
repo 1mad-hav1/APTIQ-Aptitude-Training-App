@@ -22,16 +22,30 @@ def login(request):
             return HttpResponse(f"<script>alert('invalid username or password');window.location='login'</script>")
     return render(request,'public/login.html')
 
-
-
-    return render(request,"public/login.html")
+def changepassword(request,id):
+    data=Login.objects.get(id=id)
+    if 'submit' in request.POST: 
+        current_password = request.POST['current']
+        new_password = request.POST['new']
+        confirm_new_password = request.POST['cnew']
+        if data.password==current_password :
+            if new_password==current_password:
+                data.password=new_password
+                data.save()
+                return HttpResponse(f"<script>alert('Password changed successfully');window.location='/adminhome'</script>")
+            else:
+                return HttpResponse(f"<script>alert('Confirm password does not matches');window.location='/confirmpassword'</script>")
+        else:
+            return HttpResponse(f"<script>alert('Current password is incorrect');window.location='/confirmpassword'</script>")
+    return render(request,'admin/confirmpassword.html',{'data':data})
 
 def signup(request):
     return render(request,"public/signup.html")
 
-def adminchangepassword(request):
-    return render(request,"admin/changepassword.html")
+def adminhome(request):
+    return render(request,"admin/adminhome.html")
 
+#Manage Education Contents
 def addeducontent(request):
     if 'submit' in request.POST:
         title=request.POST['title']
@@ -66,8 +80,9 @@ def updateeducontent(request,id):
 def deleteeducontent(request,id):
     data=Education_Content.objects.get(id=id)
     data.delete()
-    return HttpResponse(f"<script>alert('Content updated successfully');window.location='/vieweducontent'</script>")
+    return HttpResponse(f"<script>alert('Content deleted successfully');window.location='/vieweducontent'</script>")
     
+#Manage Questions
 def addquestion(request):
     if 'submit' in request.POST:
         question=request.POST['question']
@@ -77,21 +92,51 @@ def addquestion(request):
         optiond=request.POST['optiond']
         typeqn=request.POST['typeqn']
         answer=request.POST['answer']
+        description=request.POST['description']
         difficulty=request.POST['difficulty']
-        q=Questions(question=question,optiona=optiona,optionb=optionb,optionc=optionc,optiond=optiond,question_type=typeqn,answer_description=difficulty,answer=answer)
+        q=Questions(question=question,optiona=optiona,optionb=optionb,optionc=optionc,optiond=optiond,question_type=typeqn,answer_description=description,question_level=difficulty,answer=answer)
         q.save()
-        return HttpResponse(f"<script>alert('Content added successfully');window.location='/vieweducontent'</script>")
+        return HttpResponse(f"<script>alert('Content added successfully');window.location='/viewquestions'</script>")
     return render(request,"admin/addquestion.html")
 
-def viewquestion(request):
+def viewquestions(request):
     data=Questions.objects.all()
-    return render(request,"admin/viewquestion.html",{'data':data})
+    return render(request,"admin/viewquestions.html",{'data':data})
 
-def adminhome(request):
-    return render(request,"admin/adminhome.html")
+def updatequestion(request,id):
+    data=Questions.objects.get(id=id)
+    if 'submit' in request.POST:
+        question=request.POST['question']
+        optiona=request.POST['optiona']
+        optionb=request.POST['optionb']
+        optionc=request.POST['optionc']
+        optiond=request.POST['optiond']
+        typeqn=request.POST['typeqn']
+        answer=request.POST['answer']
+        description=request.POST['description']
+        difficulty=request.POST['difficulty']
 
-def userchangepassword(request):
-    return render(request,"user/changepassword.html")
+        data.question=question
+        data.optiona=optiona
+        data.optionb=optionb
+        data.optionc=optionc
+        data.optiond=optiond
+        data.question_type=typeqn
+        data.answer=answer
+        data.answer_description=description
+        data.question_level=difficulty
+        data.save()
+        return HttpResponse(f"<script>alert('Content updated successfully');window.location='/viewquestions'</script>")
+    return render(request,"admin/updatequestion.html",{'data':data})
 
-def feedback(request):
-    return render(request,"user/feedback.html")
+def deletequestion(request,id):
+    data=Questions.objects.get(id=id)
+    data.delete()
+    return HttpResponse(f"<script>alert('Content deleted successfully');window.location='/viewquestions'</script>")
+
+
+# def userchangepassword(request):
+#     return render(request,"user/changepassword.html")
+
+# def feedback(request):
+#     return render(request,"user/feedback.html")

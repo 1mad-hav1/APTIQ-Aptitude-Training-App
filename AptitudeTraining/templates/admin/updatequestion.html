@@ -1,25 +1,26 @@
 {% include "admin/adminheader.html" %}
+{% if data %}
     <form action="" method="post">
         <table>
             <tr>
-                <td colspan="2" align="center"> <h1>Add Question</h1></td>
+                <td colspan="2" align="center"> <h1>Update Question</h1></td>
             </tr>
             <tr>
                 <td>Question</td>
-                <td><textarea name="question" id="question" rows="3"></textarea></td>
+                <td><textarea name="question" id="question" rows="3">{{ data.question }}</textarea></td>
             </tr>
             <tr>
                 <td rowspan="4">Options</td>
-                <td>A <input type="text" name="optiona" id="optiona"></td>
+                <td>A <input type="text" name="optiona" id="optiona" value="{{data.optiona}}""></td>
             </tr>
             <tr>
-                <td>B <input type="text" name="optionb" id="optionb"></td>
+                <td>B <input type="text" name="optionb" id="optionb" value="{{data.optionb}}"></td>
             </tr>
             <tr>
-                <td>C <input type="text" name="optionc" id="optionc"></td>
+                <td>C <input type="text" name="optionc" id="optionc" value="{{data.optionc}}"></td>
             </tr>
             <tr>
-                <td>D <input type="text" name="optiond" id="optiond"></td>
+                <td>D <input type="text" name="optiond" id="optiond" value="{{data.optiond}}"></td>
             </tr>
             <tr>
                 <td>Correct Option</td>
@@ -27,8 +28,12 @@
                     <input type="radio" name="answer" value="c">C&nbsp;<input type="radio" name="answer" value="d">D&nbsp;</td>
             </tr>
             <tr>
+                <td>Answer Description</td>
+                <td><textarea name="description" id="description" name="description">{{data.answer_description}}</textarea></td>
+            </tr>
+            <tr>
                 <td>Type</td>
-                <td><input type="text" name="typeqn" id="typeqn"></td>
+                <td><input type="text" name="typeqn" id="typeqn" value="{{data.question_type}}"></td>
             </tr>
             <tr>
                 <td>Difficulty Level</td>
@@ -42,4 +47,6 @@
             </tr>
         </table>
     </form>
+
+{% endif %}
 {% include "public/footer.html" %}

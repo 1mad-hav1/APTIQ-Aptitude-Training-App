@@ -17,25 +17,25 @@ class User(models.Model):
 
 class Education_Content(models.Model):
     title=models.CharField(max_length=50)
-    description=models.CharField(max_length=50)
+    description=models.CharField(max_length=500)
     file_type=models.CharField(max_length=50)
     file_path=models.CharField(max_length=50)
 
 class Questions(models.Model):
     question=models.CharField(max_length=50)
-    option1=models.CharField(max_length=50)
-    option2=models.CharField(max_length=50)
-    option3=models.CharField(max_length=50)
-    option4=models.CharField(max_length=50)
+    optiona=models.CharField(max_length=50)
+    optionb=models.CharField(max_length=50)
+    optionc=models.CharField(max_length=50)
+    optiond=models.CharField(max_length=50)
     answer=models.CharField(max_length=50)
     question_type=models.CharField(max_length=50)
     question_level=models.CharField(max_length=50)
-    answer_description=models.CharField(max_length=50)
+    answer_description=models.CharField(max_length=500)
     
 class Test(models.Model):
     test_name=models.CharField(max_length=50)
     test_date=models.CharField(max_length=50)
-    test_description=models.CharField(max_length=50)
+    test_description=models.CharField(max_length=500)
     test_status=models.CharField(max_length=50)
     
 class Test_Question(models.Model):
@@ -45,20 +45,21 @@ class Test_Question(models.Model):
 class Result(models.Model):
     TESTQUESTION=models.ForeignKey(Test_Question,on_delete=models.CASCADE)
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
-    answer=models.CharField(max_length=50)
+    passmark=models.CharField(max_length=50,null=True)
     mark=models.CharField(max_length=50)
+    pass_fail=models.CharField(max_length=50)
     result_date=models.CharField(max_length=50)
 
 class Complaint(models.Model):
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
-    complaint_description=models.CharField(max_length=50)
+    complaint_description=models.CharField(max_length=500)
     complaint_date=models.CharField(max_length=50)
-    complaint_reply=models.CharField(max_length=50)
+    complaint_reply=models.CharField(max_length=500)
     complaint_status=models.CharField(max_length=50)
 
 class Feedback(models.Model):
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
-    feedback_description=models.CharField(max_length=50)
+    feedback_description=models.CharField(max_length=500)
     feedback_date=models.CharField(max_length=50)
 
 class Prediction_Result(models.Model):
@@ -66,6 +67,6 @@ class Prediction_Result(models.Model):
     logical_aptitude_score=models.CharField(max_length=50)
     verbal_aptitude_score=models.CharField(max_length=50)
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
-    prediction_result=models.CharField(max_length=50)
+    prediction_result=models.CharField(max_length=500)
 
 

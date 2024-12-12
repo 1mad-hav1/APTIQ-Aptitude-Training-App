@@ -18,7 +18,7 @@
         <td><a href="{{i.file_path}}">{{i.file_path}}</a></td>
         <td>{{i.file_type}}</td>
         <td><a href="../updateeducontent/{{i.id}}">Update</a></td>
-        <td><a href="../deleteeducontent/{{i.id}}">Delete</a></td>
+        <td><a href="../deleteeducontent/{{i.id}}" onclick="return confirm('Are you sure you want to delete this content?');">Delete</a></td>
     </tr>
     {% endfor %}
     <tr>
