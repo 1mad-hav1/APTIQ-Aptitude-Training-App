@@ -1,0 +1,26 @@
+{% include 'admin/adminheader.html' %}
+{% if data %}
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td colspan="2" align="center"><h1>Sent Reply</h1></td>
+            </tr>
+            <tr>
+                <td>Complaint</td>
+                <td>{{data.complaint_description}}</td>
+            </tr>
+            <tr>
+                <td>Reply</td>
+                <td><textarea name="reply" id="reply" rows="3" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="submit" id="submit" value="Sent Reply">
+                    <input type="reset" name="reset" id="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+   
+{% endif %}
+{% include "public/footer.html" %}

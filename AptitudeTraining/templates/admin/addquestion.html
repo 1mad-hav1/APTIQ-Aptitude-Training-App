@@ -6,37 +6,42 @@
             </tr>
             <tr>
                 <td>Question</td>
-                <td><textarea name="question" id="question" rows="3"></textarea></td>
+                <td><textarea name="question" id="question" rows="3" required></textarea></td>
             </tr>
             <tr>
                 <td rowspan="4">Options</td>
-                <td>A <input type="text" name="optiona" id="optiona"></td>
+                <td>A <input type="text" name="optiona" id="optiona" required></td>
             </tr>
             <tr>
-                <td>B <input type="text" name="optionb" id="optionb"></td>
+                <td>B <input type="text" name="optionb" id="optionb" required></td>
             </tr>
             <tr>
-                <td>C <input type="text" name="optionc" id="optionc"></td>
+                <td>C <input type="text" name="optionc" id="optionc" required></td>
             </tr>
             <tr>
-                <td>D <input type="text" name="optiond" id="optiond"></td>
+                <td>D <input type="text" name="optiond" id="optiond" required></td>
             </tr>
             <tr>
                 <td>Correct Option</td>
-                <td><input type="radio" name="answer" value="a">A&nbsp;<input type="radio" name="answer" value="b">B
-                    <input type="radio" name="answer" value="c">C&nbsp;<input type="radio" name="answer" value="d">D&nbsp;</td>
+                <td><input type="radio" name="answer" value="a" required>A&nbsp;<input type="radio" name="answer" value="b" required>B
+                    <input type="radio" name="answer" value="c" required>C&nbsp;<input type="radio" name="answer" value="d" required>D&nbsp;</td>
             </tr>
             <tr>
                 <td>Answer Description</td>
-                <td><textarea name="description" id="description" name="description"></textarea></td>
+                <td><textarea name="description" id="description" name="description" required></textarea></td>
             </tr>
             <tr>
                 <td>Type</td>
-                <td><input type="text" name="typeqn" id="typeqn"></td>
+                <td><input type="radio" name="type" id="verbal" value="verbal" required>
+                <label>Verbal Ability</label>
+                <input type="radio" name="type" id="quantitative" value="quantitative" required>
+                <label>Quantitative Ability</label>
+                <input type="radio" name="type" id="logical" value="logical" required>
+                <label>Logical Ability</label></td>
             </tr>
             <tr>
                 <td>Difficulty Level</td>
-                <td><input type="radio" name="difficulty" value="easy">Easy&nbsp;<input type="radio" name="difficulty" value="medium">Medium&nbsp;<input type="radio" name="difficulty" value="hard">Hard&nbsp;</td>
+                <td><input type="radio" name="difficulty" value="easy" required>Easy&nbsp;<input type="radio" name="difficulty" value="medium" required>Medium&nbsp;<input type="radio" name="difficulty" value="hard" required>Hard&nbsp;</td>
             </tr>
             <tr>
                 <td colspan="2" align="center">

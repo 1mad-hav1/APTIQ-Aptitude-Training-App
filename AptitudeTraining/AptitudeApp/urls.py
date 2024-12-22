@@ -31,5 +31,8 @@ urlpatterns = [
     path('viewquestions',views.viewquestions),
     path('updatequestion/<id>',views.updatequestion),
     path('deletequestion/<id>',views.deletequestion),
+    path('viewfeedbacks',views.viewfeedbacks),
+    path('viewcomplaints',views.viewcomplaints),
+    path('sentreply/<id>',views.sentreply),
     path('adminhome',views.adminhome),
 ]

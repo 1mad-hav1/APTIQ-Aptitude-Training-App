@@ -1,0 +1,23 @@
+{% include 'admin/adminheader.html' %}
+
+<h1>View Feedbacks</h1>
+<table style="text-align: center;">
+    <tr>
+        <th>Sl No</th>
+        <th>Feedback</th>
+        <th>Date</th>
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.feedback_description}}</td>
+        <td>{{i.feedback_date}}</td>
+        {% comment %} <td><a href="../updateeducontent/{{i.id}}">Update</a></td>
+        <td><a href="../deleteeducontent/{{i.id}}" onclick="return confirm('Are you sure you want to delete this content?');">Delete</a></td> {% endcomment %}
+    </tr>
+    {% endfor %}
+    {% comment %} <tr>
+        <td colspan="7"><a href="addeducontent">Add Content</a></td>
+    </tr> {% endcomment %}
+    </table>
+{% include "public/footer.html" %}

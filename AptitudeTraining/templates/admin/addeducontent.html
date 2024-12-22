@@ -6,23 +6,23 @@
             </tr>
             <tr>
                 <td>Title</td>
-                <td><input type="text" name="title" id="title"></td>
+                <td><input type="text" name="title" id="title" required></td>
             </tr>
             <tr>
                 <td>Description</td>
-                <td><textarea name="description" id="description" rows="3"></textarea></td>
+                <td><textarea name="description" id="description" rows="3" required></textarea></td>
             </tr>
             <tr>
                 <td>Link</td>
-                <td><input type="text" name="content" id="content"></td>
+                <td><input type="text" name="content" id="content" required></td>
             </tr>
             <tr>
                 <td>Type</td>
-                <td><input type="radio" name="type" id="verbal" value="verbal">
+                <td><input type="radio" name="type" id="verbal" value="verbal" required>
                 <label>Verbal Ability</label>
-                <input type="radio" name="type" id="quantitative" value="quantitative">
+                <input type="radio" name="type" id="quantitative" value="quantitative" required>
                 <label>Quantitative Ability</label>
-                <input type="radio" name="type" id="logical" value="logical">
+                <input type="radio" name="type" id="logical" value="logical" required>
                 <label>Logical Ability</label></td>
             </tr>
             <tr>
@@ -33,5 +33,4 @@
             </tr>
         </table>
     </form>
-
 {% include "public/footer.html" %}

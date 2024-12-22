@@ -54,7 +54,7 @@ class Complaint(models.Model):
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
     complaint_description=models.CharField(max_length=500)
     complaint_date=models.CharField(max_length=50)
-    complaint_reply=models.CharField(max_length=500)
+    complaint_reply=models.CharField(max_length=500,null=True)
     complaint_status=models.CharField(max_length=50)
 
 class Feedback(models.Model):

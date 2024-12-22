@@ -7,38 +7,63 @@
             </tr>
             <tr>
                 <td>Question</td>
-                <td><textarea name="question" id="question" rows="3">{{ data.question }}</textarea></td>
+                <td><textarea name="question" id="question" rows="3" required>{{ data.question }}</textarea></td>
             </tr>
             <tr>
                 <td rowspan="4">Options</td>
-                <td>A <input type="text" name="optiona" id="optiona" value="{{data.optiona}}""></td>
+                <td>A <input type="text" name="optiona" id="optiona" value="{{data.optiona}}"" required></td>
             </tr>
             <tr>
-                <td>B <input type="text" name="optionb" id="optionb" value="{{data.optionb}}"></td>
+                <td>B <input type="text" name="optionb" id="optionb" value="{{data.optionb}}" required></td>
             </tr>
             <tr>
-                <td>C <input type="text" name="optionc" id="optionc" value="{{data.optionc}}"></td>
+                <td>C <input type="text" name="optionc" id="optionc" value="{{data.optionc}}" required></td>
             </tr>
             <tr>
-                <td>D <input type="text" name="optiond" id="optiond" value="{{data.optiond}}"></td>
+                <td>D <input type="text" name="optiond" id="optiond" value="{{data.optiond}}" required></td>
             </tr>
             <tr>
                 <td>Correct Option</td>
-                <td><input type="radio" name="answer" value="a">A&nbsp;<input type="radio" name="answer" value="b">B
-                    <input type="radio" name="answer" value="c">C&nbsp;<input type="radio" name="answer" value="d">D&nbsp;</td>
+                <td><input type="radio" name="answer" value="a" 
+        {% if data.answer == 'a' %} checked {% endif %} required>A&nbsp;
+    <input type="radio" name="answer" value="b" 
+        {% if data.answer == 'b' %} checked {% endif %} required>B&nbsp;
+    <input type="radio" name="answer" value="c" 
+        {% if data.answer == 'c' %} checked {% endif %} required>C&nbsp;
+    <input type="radio" name="answer" value="d" 
+        {% if data.answer == 'd' %} checked {% endif %} required>D&nbsp; </td>
             </tr>
             <tr>
                 <td>Answer Description</td>
-                <td><textarea name="description" id="description" name="description">{{data.answer_description}}</textarea></td>
+                <td><textarea name="description" id="description" name="description" required>{{data.answer_description}}</textarea></td>
             </tr>
             <tr>
                 <td>Type</td>
-                <td><input type="text" name="typeqn" id="typeqn" value="{{data.question_type}}"></td>
+                <td>
+    <input type="radio" name="type" id="verbal" value="verbal" 
+        {% if data.question_type == 'verbal' %} checked {% endif %} required>
+    <label for="verbal">Verbal Ability</label>
+
+    <input type="radio" name="type" id="quantitative" value="quantitative" 
+        {% if data.question_type == 'quantitative' %} checked {% endif %} required>
+    <label for="quantitative">Quantitative Ability</label>
+
+    <input type="radio" name="type" id="logical" value="logical" 
+        {% if data.question_type == 'logical' %} checked {% endif %} required>
+    <label for="logical">Logical Ability</label>
+</td>
             </tr>
             <tr>
                 <td>Difficulty Level</td>
-                <td><input type="radio" name="difficulty" value="easy">Easy&nbsp;<input type="radio" name="difficulty" value="medium">Medium&nbsp;<input type="radio" name="difficulty" value="hard">Hard&nbsp;</td>
-            </tr>
+               <td>
+    <input type="radio" name="difficulty" value="easy" 
+        {% if data.question_level == 'easy' %} checked {% endif %} required>Easy&nbsp;
+    <input type="radio" name="difficulty" value="medium" 
+        {% if data.question_level == 'medium' %} checked {% endif %} required>Medium&nbsp;
+    <input type="radio" name="difficulty" value="hard" 
+        {% if data.question_level == 'hard' %} checked {% endif %} required>Hard&nbsp;
+</td>
+</tr>
             <tr>
                 <td colspan="2" align="center">
                     <input type="submit" name="submit" id="submit">
