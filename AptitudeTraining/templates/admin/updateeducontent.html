@@ -21,16 +21,11 @@
         </tr>
         <tr>
             <td>Type</td>
-            <td><input type="radio" name="type" id="verbal" value="verbal" {% if data.file_type=='verbal' %} checked {%
-                    endif %} required>
+            <td><input type="radio" name="type" id="verbal" value="verbal" {% if data.file_type == 'verbal' %} checked {% endif %} required>
                 <label for="verbal">Verbal Ability</label>
-
-                <input type="radio" name="type" id="quantitative" value="quantitative" {% if
-                    data.file_type=='quantitative' %} checked {% endif %} required>
+                <input type="radio" name="type" id="quantitative" value="quantitative" {% if data.file_type == 'quantitative' %} checked {% endif %} required>
                 <label for="quantitative">Quantitative Ability</label>
-
-                <input type="radio" name="type" id="logical" value="logical" {% if data.file_type=='logical' %} checked
-                    {% endif %} required>
+                <input type="radio" name="type" id="logical" value="logical" {% if data.file_type == 'logical' %} checked {% endif %} required>
                 <label>Logical Ability</label>
             </td>
         </tr>

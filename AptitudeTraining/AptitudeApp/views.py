@@ -90,11 +90,11 @@ def addquestion(request):
         optionb=request.POST['optionb']
         optionc=request.POST['optionc']
         optiond=request.POST['optiond']
-        typeqn=request.POST['typeqn']
+        type=request.POST['type']
         answer=request.POST['answer']
         description=request.POST['description']
         difficulty=request.POST['difficulty']
-        q=Questions(question=question,optiona=optiona,optionb=optionb,optionc=optionc,optiond=optiond,question_type=typeqn,answer_description=description,question_level=difficulty,answer=answer)
+        q=Questions(question=question,optiona=optiona,optionb=optionb,optionc=optionc,optiond=optiond,question_type=type,answer_description=description,question_level=difficulty,answer=answer)
         q.save()
         return HttpResponse(f"<script>alert('Content added successfully');window.location='/viewquestions'</script>")
     return render(request,"admin/addquestion.html")
