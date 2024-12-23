@@ -19,7 +19,7 @@ def login(request):
                 request.session['log']="in"
                 return HttpResponse(f"<script>alert('welcome Admin');window.location='adminhome'</script>")
         else:
-            return HttpResponse(f"<script>alert('invalid username or password');window.location='login'</script>")
+            return HttpResponse(f"<script>alert('invalid username or password');window.location=''</script>")
     return render(request,'public/login.html')
 
 def changepassword(request):
@@ -154,6 +154,8 @@ def sentreply(request,id):
         return HttpResponse(f"<script>alert('Reply Sent Successfully');window.location='/viewcomplaints'</script>")
     return render(request,"admin/sentreply.html",{'data':data})
 
+def index1(request):
+    return render(request,"index1.html")
 # def userchangepassword(request):
 #     return render(request,"user/changepassword.html")
 

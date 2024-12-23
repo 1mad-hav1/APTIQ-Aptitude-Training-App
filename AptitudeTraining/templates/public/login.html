@@ -1,35 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include 'public/header.html' %}
+<style>
+    .login {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
+.login h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-<body>
-    <form method="post">
-        <table align="center">
-            <tr>
-                <td colspan="2" align="center">
-                    <h1>Login</h1>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="username">Username:</label></td>
-                <td><input type="text" name="username" id="username"></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password:</label></td>
-                <td><input type="password" name="password" id="password"></td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center"><input type="submit" name="submit" id="submit">
-                    <input type="reset" name="reset" id="reset">
-                </td>
-            </tr>
-        </table>
-    </form>
-</body>
+.login table {
+    width: 100%;
+}
 
-</html>
+.login label {
+    font-weight: bold;
+    color: #555;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input[type="submit"],
+.login input[type="reset"] {
+    padding: 8px 16px;
+    margin: 10px 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 14px;
+}
+
+.login input[type="submit"]:hover,
+.login input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.login input[type="reset"] {
+    background-color: #6c757d;
+}
+
+.login input[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+</style>
+<div class="m-5" style="min-height: 80vh; display: flex; justify-content: center; align-items: center;">
+    <div class="login">
+        <form method="post">
+            <table align="center">
+                <tr>
+                    <td colspan="2" align="center">
+                        <h1>Login</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" name="submit" id="submit">
+                        <input type="reset" name="reset" id="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+{% include "public/footer.html" %}
