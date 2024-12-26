@@ -1,7 +1,8 @@
 {% include 'admin/adminheader.html' %}
 
-<h1>View Complaints</h1>
-<table style="text-align: center;">
+<div class="container" style="min-height: 80vh;">
+<h2 style="text-align: center;">View Complaints</h2><br>
+<table style="text-align: center;" class="table">
     <tr>
         <th>Sl No</th>
         <th>Complaint Description</th>
@@ -18,7 +19,7 @@
         {% if i.complaint_status == "YES" %}
         <td>{{i.complaint_reply}}</td>
         {% else %}
-        <td><a href="/sentreply/{{i.id}}">Sent Reply</a></td>
+        <td><a href="/sentreply/{{i.id}}" class="btn btn-success">Sent Reply</a></td>
         {% endif %}
     </tr>
     {% endfor %}

@@ -1,9 +1,59 @@
 {% include "admin/adminheader.html" %}
-    <form action="" method="post">
-        <table>
-            <tr>
-                <td colspan="2" align="center"> <h1>Add Question</h1></td>
-            </tr>
+<style>
+    
+
+    input[type="text"],
+    textarea {
+       width: 100%;
+       padding: 8px;
+       font-size: 14px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+   }
+
+    textarea {
+       resize: none;
+   }
+
+    input[type="radio"] {
+       margin-right: 5px;
+   }
+
+    input[type="submit"] {
+       background-color: #4CAF50;
+       color: white;
+       border: none;
+       padding: 10px 20px;
+       font-size: 14px;
+       border-radius: 4px;
+       cursor: pointer;
+   }
+
+    input[type="submit"]:hover{
+       background-color: #45a049;
+   }
+
+   input[type="reset"] {
+   background-color: #f44336; /* Bright red */
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   font-size: 14px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type="reset"]:hover {
+   background-color: #e53935; /* Slightly darker red */
+}
+
+</style>
+
+<div class="container" style="min-height: 80vh;">
+   <form action="" method="post">
+       <h2 align="center">Add Question</h2><br>
+       <table class="table"  style="width: 65%;" align="center">
             <tr>
                 <td>Question</td>
                 <td><textarea name="question" id="question" rows="3" required></textarea></td>
@@ -23,8 +73,24 @@
             </tr>
             <tr>
                 <td>Correct Option</td>
-                <td><input type="radio" name="answer" value="a" required>A&nbsp;<input type="radio" name="answer" value="b" required>B
-                    <input type="radio" name="answer" value="c" required>C&nbsp;<input type="radio" name="answer" value="d" required>D&nbsp;</td>
+                <td style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="answer" value="a" id="a" required>
+                        <label for="a">A</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="answer" value="b" id="b" required>
+                        <label for="b">B</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="answer" value="c" id="c" required>
+                        <label for="c">C</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="answer" value="d" id="d" required>
+                        <label for="d">D</label>
+                    </div>
+                </td>                
             </tr>
             <tr>
                 <td>Answer Description</td>
@@ -32,17 +98,38 @@
             </tr>
             <tr>
                 <td>Type</td>
-                <td><input type="radio" name="type" id="verbal" value="verbal" required>
-                <label>Verbal Ability</label>
-                <input type="radio" name="type" id="quantitative" value="quantitative" required>
-                <label>Quantitative Ability</label>
-                <input type="radio" name="type" id="logical" value="logical" required>
-                <label>Logical Ability</label></td>
+                <td style="display: flex; justify-content: space-between; width: 100%;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="type" id="verbal" value="verbal" required>
+                        <label for="verbal">Verbal Ability</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="type" id="quantitative" value="quantitative" required>
+                        <label for="quantitative">Quantitative Ability</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="type" id="logical" value="logical" required>
+                        <label for="logical">Logical Ability</label>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>Difficulty Level</td>
-                <td><input type="radio" name="difficulty" value="easy" required>Easy&nbsp;<input type="radio" name="difficulty" value="medium" required>Medium&nbsp;<input type="radio" name="difficulty" value="hard" required>Hard&nbsp;</td>
-            </tr>
+                <td style="display: flex; justify-content: space-between; width: 100%;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="difficulty" value="easy" required>
+                        <label>Easy</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="difficulty" value="medium" required>
+                        <label>Medium</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="difficulty" value="hard" required>
+                        <label>Hard</label>
+                    </div>
+                </td>
+            </tr>            
             <tr>
                 <td colspan="2" align="center">
                     <input type="submit" name="submit" id="submit">

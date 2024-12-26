@@ -22,6 +22,10 @@ def login(request):
             return HttpResponse(f"<script>alert('invalid username or password');window.location=''</script>")
     return render(request,'public/login.html')
 
+def logout(request):
+    request.session['log']="out"
+    return HttpResponse(f"<script>alert('Logged Out');window.location='/'</script>")
+
 def changepassword(request):
     if 'submit' in request.POST: 
         current_password = request.POST['current']

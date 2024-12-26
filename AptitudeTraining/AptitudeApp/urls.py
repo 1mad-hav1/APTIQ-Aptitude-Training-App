@@ -21,6 +21,7 @@ from .import views
 urlpatterns = [
     path('', views.login),
     path('signup',views.signup),
+    path('adminhome',views.adminhome),
     path('changepassword',views.changepassword),
     path('addeducontent',views.addeducontent),
     path('vieweducontent',views.vieweducontent),
@@ -33,6 +34,6 @@ urlpatterns = [
     path('viewfeedbacks',views.viewfeedbacks),
     path('viewcomplaints',views.viewcomplaints),
     path('sentreply/<id>',views.sentreply),
-    path('adminhome',views.adminhome),
+    path('logout',views.logout, name='logout'),
     path('index1',views.index1),
 ]

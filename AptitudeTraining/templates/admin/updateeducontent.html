@@ -1,12 +1,60 @@
 {% include 'admin/adminheader.html' %}
 {% if data %}
-<form action="" method="post">
-    <table>
-        <tr>
-            <td colspan="2" align="center">
-                <h1>Update Content</h1>
-            </td>
-        </tr>
+<style>
+   
+
+     input[type="text"],
+     textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+     textarea {
+        resize: none;
+    }
+
+     input[type="radio"] {
+        margin-right: 5px;
+    }
+
+     input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+     input[type="submit"]:hover{
+        background-color: #45a049;
+    }
+
+    input[type="reset"] {
+    background-color: #f44336; /* Bright red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover {
+    background-color: #e53935; /* Slightly darker red */
+}
+
+</style>
+
+<div class="container" style="min-height: 80vh;">
+    <form action="" method="post">
+        <h2 align="center">Update Educational Content</h2><br>
+        <table class="table"  style="width: 65%;" align="center">
         <tr>
             <td>Title</td>
             <td><input type="text" name="title" id="title" value="{{data.title}}" required></td>
@@ -21,13 +69,21 @@
         </tr>
         <tr>
             <td>Type</td>
-            <td><input type="radio" name="type" id="verbal" value="verbal" {% if data.file_type == 'verbal' %} checked {% endif %} required>
-                <label for="verbal">Verbal Ability</label>
-                <input type="radio" name="type" id="quantitative" value="quantitative" {% if data.file_type == 'quantitative' %} checked {% endif %} required>
-                <label for="quantitative">Quantitative Ability</label>
-                <input type="radio" name="type" id="logical" value="logical" {% if data.file_type == 'logical' %} checked {% endif %} required>
-                <label>Logical Ability</label>
-            </td>
+            <td style="display: flex; justify-content: space-between; width: 100%;">
+    <div style="display: flex; align-items: center;">
+        <input type="radio" name="type" id="verbal" value="verbal" {% if data.file_type == 'verbal' %} checked {% endif %} required>
+        <label for="verbal">Verbal Ability</label>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <input type="radio" name="type" id="quantitative" value="quantitative" {% if data.file_type == 'quantitative' %} checked {% endif %} required>
+        <label for="quantitative">Quantitative Ability</label>
+    </div>
+    <div style="display: flex; align-items: center;">
+        <input type="radio" name="type" id="logical" value="logical" {% if data.file_type == 'logical' %} checked {% endif %} required>
+        <label for="logical">Logical Ability</label>
+    </div>
+</td>
+
         </tr>
         <tr>
             <td colspan="2" align="center">

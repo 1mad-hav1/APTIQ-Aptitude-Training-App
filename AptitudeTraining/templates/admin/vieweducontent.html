@@ -1,14 +1,16 @@
 {% include 'admin/adminheader.html' %}
 
-
-<h1>View Educational Content</h1>
-<table style="text-align: center;">
+<div class="container" style="min-height: 80vh;">
+<h2 style="text-align: center;">View Educational Content</h2><br>
+<table style="text-align: center;" class="table">
     <tr>
         <th>Sl No</th>
         <th>Name</th>
         <th>Description</th>
         <th>Link</th>
         <th>Type</th>
+        <th></th>
+        <th></th>
     </tr>
     {% for i in data %}
     <tr>
@@ -17,12 +19,13 @@
         <td>{{i.description}}</td>
         <td><a href="{{i.file_path}}">{{i.file_path}}</a></td>
         <td>{{i.file_type}}</td>
-        <td><a href="../updateeducontent/{{i.id}}">Update</a></td>
-        <td><a href="../deleteeducontent/{{i.id}}" onclick="return confirm('Are you sure you want to delete this content?');">Delete</a></td>
+        <td><a href="../updateeducontent/{{i.id}}" class="btn btn-info">Update</a></td>
+        <td><a href="../deleteeducontent/{{i.id}}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this content?');">Delete</a></td>
     </tr>
     {% endfor %}
     <tr>
-        <td colspan="7"><a href="addeducontent">Add Content</a></td>
+        <td colspan="7"><a href="addeducontent" class="btn btn-success">Add Content</a></td>
     </tr>
     </table>
+</div>
 {% include "public/footer.html" %}
