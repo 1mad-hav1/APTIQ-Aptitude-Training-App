@@ -1,10 +1,8 @@
 {% include 'admin/adminheader.html' %}
 {% if data %}
 <style>
-   
-
-     input[type="text"],
-     textarea {
+    input[type="text"],
+    textarea {
         width: 100%;
         padding: 8px;
         font-size: 14px;
@@ -13,15 +11,15 @@
         box-sizing: border-box;
     }
 
-     textarea {
+    textarea {
         resize: none;
     }
 
-     input[type="radio"] {
+    input[type="radio"] {
         margin-right: 5px;
     }
 
-     input[type="submit"] {
+    input[type="submit"], input[type="reset"], .add-link-btn {
         background-color: #4CAF50;
         color: white;
         border: none;
@@ -31,24 +29,31 @@
         cursor: pointer;
     }
 
-     input[type="submit"]:hover{
+    input[type="submit"]:hover, input[type="reset"]:hover, .add-link-btn:hover {
         background-color: #45a049;
     }
 
     input[type="reset"] {
-    background-color: #f44336; /* Bright red */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-}
+        background-color: #f44336; /* Bright red */
+    }
 
-input[type="reset"]:hover {
-    background-color: #e53935; /* Slightly darker red */
-}
+    input[type="reset"]:hover {
+        background-color: #e53935; /* Slightly darker red */
+    }
 
+    .remove-link-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .remove-link-btn:hover {
+        background-color: #e53935;
+    }
 </style>
 
 <div class="container" style="min-height: 80vh;">
@@ -63,28 +68,69 @@ input[type="reset"]:hover {
             <td>Description</td>
             <td><textarea name="description" id="description" rows="3" required>{{data.description}}</textarea></td>
         </tr>
-        <tr>
-            <td>Link</td>
-            <td><input type="text" name="content" id="content" value="{{data.file_path}}" required></td>
-        </tr>
+       
         <tr>
             <td>Type</td>
             <td style="display: flex; justify-content: space-between; width: 100%;">
     <div style="display: flex; align-items: center;">
-        <input type="radio" name="type" id="verbal" value="verbal" {% if data.file_type == 'verbal' %} checked {% endif %} required>
+        <input type="radio" name="type" id="verbal" value="Verbal" {% if data.content_type == 'Verbal' %} checked {% endif %} required>
         <label for="verbal">Verbal Ability</label>
     </div>
     <div style="display: flex; align-items: center;">
-        <input type="radio" name="type" id="quantitative" value="quantitative" {% if data.file_type == 'quantitative' %} checked {% endif %} required>
+        <input type="radio" name="type" id="quantitative" value="Quantitative" {% if data.content_type == 'Quantitative' %} checked {% endif %} required>
         <label for="quantitative">Quantitative Ability</label>
     </div>
     <div style="display: flex; align-items: center;">
-        <input type="radio" name="type" id="logical" value="logical" {% if data.file_type == 'logical' %} checked {% endif %} required>
+        <input type="radio" name="type" id="logical" value="Logical" {% if data.content_type == 'Logical' %} checked {% endif %} required>
         <label for="logical">Logical Ability</label>
     </div>
 </td>
 
         </tr>
+        <tr>
+            <td>Difficulty</td>
+            <td style="display: flex; justify-content: space-between; width: 100%;">
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" name="difficulty" id="easy" value="Easy" {% if data.difficulty == 'Easy' %} checked {% endif %} required>
+                    <label for="easy">Easy</label>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" name="difficulty" id="medium" value="Medium" {% if data.difficulty == 'Medium' %} checked {% endif %} required>
+                    <label for="medium">Medium</label>
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <input type="radio" name="difficulty" id="hard" value="Hard" {% if data.difficulty == 'Hard' %} checked {% endif %} required>
+                    <label for="hard">Hard</label>
+                </div>
+            </td>
+        </tr>
+        <tr id="video-link-section">
+            <td>Video Links</td>
+            <td id="video-links-container">
+                {% for video in video_data %}
+                <div id="existing-video-link-{{ video.id }}" style="margin-bottom: 8px;">
+                    <label style="margin-right: 10px;">Video Link {{ forloop.counter }}:</label>
+                    <input type="text" 
+                           name="existing_video_links[{{ video.id }}]" 
+                           value="{{ video.link }}" 
+                           required 
+                           style="width: calc(100% - 100px);">
+                    <button type="button" class="remove-link-btn" style="margin-left: 10px;" 
+                            onclick="markForDeletion('{{ video.id }}', 'existing-video-link-{{ video.id }}')">
+                        Delete
+                    </button>
+                </div>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button type="button" class="add-link-btn" onclick="addVideoLink({{ video_data|length }})">Add New Video Link</button>
+            </td>
+        </tr>
+        <input type="hidden" id="deleted-video-ids" name="deleted_video_ids" value="">
+        
+        
         <tr>
             <td colspan="2" align="center">
                 <input type="submit" name="submit" id="submit" value="Update">
@@ -96,3 +142,88 @@ input[type="reset"]:hover {
 
 {% endif %}
 {% include "public/footer.html" %}
+
+
+<script>
+    let videoLinkCount = 0; // Counter for video links
+
+// Function to add new video link input fields dynamically
+function addVideoLink(existingCount) {
+    const startingCount = existingCount || 0;
+    const newLinkNumber = startingCount + ++videoLinkCount;
+    const container = document.getElementById('video-links-container');
+    
+    const newLinkDiv = document.createElement('div');
+    newLinkDiv.style.marginBottom = '8px';
+    newLinkDiv.id = `new-video-link-${newLinkNumber}`;
+    
+    const newLabel = document.createElement('label');
+    newLabel.textContent = `Video Link ${newLinkNumber}: `;
+    newLabel.style.marginRight = '10px';
+    
+    const newInput = document.createElement('input');
+    newInput.type = 'text';
+    newInput.name = 'new_video_links[]';
+    newInput.placeholder = 'Enter Video Link';
+    newInput.required = true;
+    newInput.style.width = 'calc(100% - 100px)';
+    
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.type = 'button';
+    deleteButton.className = 'remove-link-btn';
+    deleteButton.style.marginLeft = '10px';
+    deleteButton.onclick = function () {
+        removeVideoLink(newLinkDiv.id);
+    };
+    
+    newLinkDiv.appendChild(newLabel);
+    newLinkDiv.appendChild(newInput);
+    newLinkDiv.appendChild(deleteButton);
+    container.appendChild(newLinkDiv);
+}
+
+// Function to remove a new video link input field
+// Function to mark existing video links for deletion
+function markForDeletion(videoId, elementId) {
+    const deletedIdsInput = document.getElementById('deleted-video-ids');
+    const currentDeletedIds = deletedIdsInput.value ? deletedIdsInput.value.split(',') : [];
+
+    if (!currentDeletedIds.includes(videoId)) {
+        currentDeletedIds.push(videoId);
+        deletedIdsInput.value = currentDeletedIds.join(',');
+    }
+
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.remove();
+        renumberVideoLinks(); // Renumber remaining video links after deletion
+    }
+    videoLinkCount--;
+}
+
+// Function to remove a new video link input field
+function removeVideoLink(id) {
+    const element = document.getElementById(id);
+    videoLinkCount--;
+    if (element) {
+        element.remove();
+        renumberVideoLinks(); // Renumber remaining video links after deletion
+    }
+}
+
+// Function to renumber video link labels
+function renumberVideoLinks() {
+    const container = document.getElementById('video-links-container');
+    const videoLinkDivs = container.querySelectorAll('div');
+    
+    videoLinkDivs.forEach((div, index) => {
+        const label = div.querySelector('label');
+        if (label) {
+            label.textContent = `Video Link ${index + 1}: `;
+        }
+    });
+}
+
+
+</script>

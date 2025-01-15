@@ -17,9 +17,13 @@ class User(models.Model):
 
 class Education_Content(models.Model):
     title=models.CharField(max_length=50)
-    description=models.CharField(max_length=500)
-    file_type=models.CharField(max_length=50)
-    file_path=models.CharField(max_length=50)
+    description=models.CharField(max_length=5000)
+    content_type=models.CharField(max_length=50)
+    difficulty=models.CharField(max_length=50)
+
+class Video_Content(models.Model):
+    link=models.CharField(max_length=50)
+    EDUCATION_CONTENT=models.ForeignKey(Education_Content,on_delete=models.CASCADE)
 
 class Questions(models.Model):
     question=models.CharField(max_length=50)

@@ -7,7 +7,6 @@
         <th>Sl No</th>
         <th>Complaint Description</th>
         <th>Date</th>
-        <th>Reply Status(Yes/No)</th>
         <th>Reply</th>
     </tr>
     {% for i in data %}
@@ -15,7 +14,6 @@
         <td>{{forloop.counter}}</td>
         <td>{{i.complaint_description}}</td>
         <td>{{i.complaint_date}}</td>
-        <td>{{i.complaint_status}}</td>
         {% if i.complaint_status == "YES" %}
         <td>{{i.complaint_reply}}</td>
         {% else %}

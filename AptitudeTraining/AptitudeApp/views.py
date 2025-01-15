@@ -1,6 +1,12 @@
+import base64
+import time
 from django.shortcuts import render,HttpResponse
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from .models import *
+
+from datetime import datetime
+from django.core.files.storage import FileSystemStorage
+from django.core.files.base import ContentFile
 
 # Create your views here.
 def home(request):
@@ -51,35 +57,108 @@ def adminhome(request):
 
 #Manage Education Contents
 def addeducontent(request):
-    if 'submit' in request.POST:
-        title=request.POST['title']
-        description=request.POST['description']
-        type=request.POST['type']
-        content=request.POST['content']
-        q=Education_Content(title=title,description=description,file_type=type,file_path=content)
-        q.save()
+    if request.method == "POST" and 'submit' in request.POST:
+        # Save the main educational content
+        title = request.POST['title']
+        description = request.POST['description']
+        description = description.replace('→', '->')
+        content_type = request.POST['type']
+        difficulty = request.POST['difficulty']
+        q = Education_Content.objects.create(
+            title=title, description=description, content_type=content_type, difficulty=difficulty)
+
+        # Save the video links
+        video_links = request.POST.getlist('video_links[]')  # Get all submitted video links
+        for link in video_links:
+            if link.strip():  # Avoid saving empty links
+                Video_Content.objects.create(
+                    EDUCATION_CONTENT_id=q.pk,  # Foreign key to the created content
+                    link=link.strip())
         return HttpResponse(f"<script>alert('Content added successfully');window.location='/vieweducontent'</script>")
     return render(request,"admin/addeducontent.html")
 
 def vieweducontent(request):
-    data=Education_Content.objects.all()
-    return render(request,"admin/vieweducontent.html",{'data':data})
+    # Fetch all the content
+    data = Education_Content.objects.all()
 
-def updateeducontent(request,id):
-    data=Education_Content.objects.get(id=id)
+    # Sort the data first by content_type, then by difficulty
+    sorted_data = {}
+    for content in data:
+        # Group by content_type
+        if content.content_type not in sorted_data:
+            sorted_data[content.content_type] = []
+
+        # Add the content to the corresponding content_type group
+        sorted_data[content.content_type].append(content)
+
+    # Now, sort each content_type group by difficulty ("easy" < "medium" < "hard")
+    difficulty_order = ["Easy", "Medium", "Hard"]
+
+    for content_type, contents in sorted_data.items():
+        sorted_data[content_type] = sorted(contents, key=lambda x: difficulty_order.index(x.difficulty))
+
+    return render(request, "admin/vieweducontent.html", {'sorted_data': sorted_data})
+
+def get_video_links(request, id):
+    video_data = Video_Content.objects.filter(EDUCATION_CONTENT_id=id)
+    if video_data.exists():
+        links = [{"id": video.id, "link": video.link} for video in video_data]
+    else:
+        links = []  # No video links available
+
+    return JsonResponse({"video_links": links})
+
+def updateeducontent(request, id):
+    data = Education_Content.objects.get(id=id)
+    video_data = Video_Content.objects.filter(EDUCATION_CONTENT_id=id)
+
     if 'submit' in request.POST:
-        title=request.POST['title']
-        description=request.POST['description']
-        type=request.POST['type']
-        content=request.POST['content']
+        # Update basic fields
+        title = request.POST['title']
+        description = request.POST['description']
+        content_type = request.POST['type']
+        difficulty = request.POST['difficulty']
 
-        data.title=title
-        data.description=description
-        data.file_path=content
-        data.file_type=type
+        data.title = title
+        data.description = description
+        data.content_type = content_type
+        data.difficulty = difficulty
         data.save()
-        return HttpResponse(f"<script>alert('Content updated successfully');window.location='/vieweducontent'</script>")
-    return render(request,"admin/updateeducontent.html",{'data':data})
+
+        # Update existing video links
+        existing_video_links = request.POST.dict()  # Convert POST to dictionary for key-value access
+        for video in video_data:
+            video_link_key = f'existing_video_links[{video.id}]'  # Construct the key dynamically
+            if video_link_key in existing_video_links:
+                video.link = existing_video_links[video_link_key]
+                video.save()
+
+        # Delete removed video links
+        existing_video_ids = set(video_data.values_list('id', flat=True))
+        posted_video_ids = set(
+            int(key.split('[')[1].split(']')[0])  # Extract video ID from key
+            for key in existing_video_links.keys()
+            if key.startswith('existing_video_links[')
+        )
+        deleted_video_ids = existing_video_ids - posted_video_ids
+        Video_Content.objects.filter(id__in=deleted_video_ids).delete()
+
+        # Add new video links
+        new_links = request.POST.getlist('new_video_links[]')
+        for new_link in new_links:
+            if new_link.strip():  # Avoid empty links
+                Video_Content.objects.create(
+                    EDUCATION_CONTENT_id=data.pk,
+                    link=new_link
+                )
+
+        return HttpResponse(
+            "<script>alert('Content updated successfully');"
+            "window.location='/vieweducontent'</script>"
+        )
+
+    return render(request, "admin/updateeducontent.html", {'data': data, 'video_data': video_data})
+
 
 def deleteeducontent(request,id):
     data=Education_Content.objects.get(id=id)
@@ -160,8 +239,155 @@ def sentreply(request,id):
 
 def index1(request):
     return render(request,"index1.html")
-# def userchangepassword(request):
-#     return render(request,"user/changepassword.html")
 
-# def feedback(request):
-#     return render(request,"user/feedback.html")
+#Android
+#User App
+
+def and_user_registration(request):
+    name=request.POST['name']
+    email=request.POST['email']
+    username=request.POST['username']
+    password=request.POST['password']
+    place=request.POST['place']
+    phone=request.POST['phone']
+    gender=request.POST['gender']
+    dob=request.POST['dob']
+    photo=request.POST['photo']
+    profile=base64.b64decode(photo)
+    timestr = datetime.now().strftime("%Y%m%d%H%M%S") 
+    print(timestr)
+    file_name = f"{name}_{timestr}.jpg"
+    fs = FileSystemStorage(location='media/')
+    fa = fs.save(file_name, ContentFile(profile))
+    q=Login(username=username,password=password,user_type='user')
+    q.save()
+    q1=User(name=name,email=email,phone=phone,gender=gender,dob=dob,photo=f"media/{fa}",place=place,LOGIN_id=q.pk)
+    q1.save()
+    return JsonResponse({'status':'ok'})
+
+def and_login(request):
+    username=request.POST['username']
+    password=request.POST['password']
+    if Login.objects.filter(username=username,password=password).exists():
+        qa=Login.objects.get(username=username,password=password)
+        lid=qa.pk
+        if qa.user_type=='user':
+            try:
+                qd=User.objects.get(LOGIN_id=lid)
+                uid=qd.pk
+                return JsonResponse({'status':'ok','lid':lid,'uid':uid,'user_type':'user'})
+            except User.DoesNotExist:
+                print('Login Failed.')
+                return JsonResponse({'status':'no'})
+        else:
+            print('Login Failed.')
+            return JsonResponse({'status':'no'})
+    else:
+        print('Login Failed.')
+        return JsonResponse({'status':'no'})
+
+def and_sent_feedback(request):
+    feedback=request.POST['feedback']
+    uid=request.POST['uid']
+    print(uid)
+    if uid != 'None':
+        timestr = time.strftime("%d-%m-%Y")
+        print(timestr)
+        q=Feedback(feedback_description=feedback,feedback_date=timestr,USER_id=uid)
+        q.save()
+        return JsonResponse({'status':'ok'})
+    return JsonResponse({'status':'no'})
+
+# def and_user_complaint(request):
+#     user_id=request.POST['uid']
+#     complaint=request.POST['complaint']
+#     date=datetime.now().strftime("%d-%m-%Y")
+#     status=request.POST['status']
+#     user=User.objects.get(id=user_id)
+#     data=Complaint(user=user,complaint=complaint,status=status,date=date,reply='pending')
+#     data.save()
+#     return JsonResponse({'status':'ok'})
+
+def and_view_feedbacks(request):
+    user_id=request.POST['uid']
+    feedbacks=Feedback.objects.filter(USER_id=user_id)
+    data=[]
+    for i in feedbacks:
+        data.append({'feedback':i.feedback_description})
+    return JsonResponse({'status':'ok','data':data})
+
+def and_user_profile(request):
+    user_id=request.POST['uid']
+    user=User.objects.get(id=user_id)
+    password=(Login.objects.get(id=user.LOGIN_id)).password
+    username=(Login.objects.get(id=user.LOGIN_id)).username
+    data=[]
+    data.append({'name':user.name,'email':user.email,'username':username,'phone':user.phone,'dob':user.dob,'password':password,'gender':user.gender,'photo':user.photo,'place':user.place})
+    return JsonResponse({'status':'ok','data':data})
+
+def and_user_change_password(request):
+    current=request.POST['current']
+    newpass=request.POST['newpass']
+    confirmpass=request.POST['confirmpass']
+    lid=request.POST['lid']
+    data=Login.objects.get(id=lid)
+    if data.password==current :
+        if newpass==confirmpass:
+            data.password=newpass
+            data.save()
+            return JsonResponse({'status':'ok'})
+    return JsonResponse({'status':'no'})
+
+def and_user_update_profile(request):
+    uid=request.POST['uid']
+    lid=request.POST['lid']
+    userdata=User.objects.get(id=uid)
+    logindata=Login.objects.get(id=lid)
+    name=request.POST['name']
+    userdata.name=name
+    userdata.email=request.POST['email']
+    logindata.username=request.POST['username']
+    userdata.place=request.POST['place']
+    userdata.phone=request.POST['phone']
+    userdata.gender=request.POST['gender']
+    userdata.dob=request.POST['dob']
+    if 'photo' in request.POST:
+        photo=request.POST['photo']
+        profile=base64.b64decode(photo)
+        timestr = datetime.now().strftime("%Y%m%d%H%M%S") 
+        print(timestr)
+        file_name = f"{name}_{timestr}.jpg"
+        fs = FileSystemStorage(location='media/')
+        fa = fs.save(file_name, ContentFile(profile))
+        userdata.photo=f"media/{fa}"
+    userdata.save()
+    logindata.save()
+    return JsonResponse({'status':'ok'})
+    
+def and_get_study_material(request):
+    content_type = request.POST['content_type']
+    # Define custom sorting order
+    difficulty_order = {'Easy': 1, 'Medium': 2, 'Hard': 3}
+    # Filter contents based on content_type
+    contents = Education_Content.objects.filter(content_type=content_type)
+    # Sort contents using the custom order
+    sorted_contents = sorted(
+        contents, 
+        key=lambda x: difficulty_order.get(x.difficulty, float('inf'))
+    )
+    data = []
+    for i in sorted_contents:
+        data.append({'title': i.title, 'id': i.pk, 'difficulty': i.difficulty})
+    return JsonResponse({'status': 'ok', 'data': data})
+
+def and_get_detailed_content(request):
+    id=request.POST['cid']
+    content=Education_Content.objects.get(id=id)
+    video_data = Video_Content.objects.filter(EDUCATION_CONTENT_id=id)
+    if video_data.exists():
+        links = [{"id": video.id, "link": video.link} for video in video_data]
+    else:
+        links = []
+    data = {"id": content.id,"title": content.title,"description": content.description,
+                "difficulty": content.difficulty,"content_type": content.content_type}
+    return JsonResponse({'status':'ok',"content": data, "video_links": links})

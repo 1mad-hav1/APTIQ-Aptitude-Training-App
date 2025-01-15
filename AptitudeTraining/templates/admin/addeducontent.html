@@ -1,89 +1,117 @@
 {% include 'admin/adminheader.html' %}
 <style>
-    
-
     input[type="text"],
     textarea {
-       width: 100%;
-       padding: 8px;
-       font-size: 14px;
-       border: 1px solid #ccc;
-       border-radius: 4px;
-       box-sizing: border-box;
-   }
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
     textarea {
-       resize: none;
-   }
+        resize: none;
+    }
 
     input[type="radio"] {
-       margin-right: 5px;
-   }
+        margin-right: 5px;
+    }
 
-    input[type="submit"] {
-       background-color: #4CAF50;
-       color: white;
-       border: none;
-       padding: 10px 20px;
-       font-size: 14px;
-       border-radius: 4px;
-       cursor: pointer;
-   }
+    input[type="submit"], input[type="reset"], .add-link-btn {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
-    input[type="submit"]:hover{
-       background-color: #45a049;
-   }
+    input[type="submit"]:hover, input[type="reset"]:hover, .add-link-btn:hover {
+        background-color: #45a049;
+    }
 
-   input[type="reset"] {
-   background-color: #f44336; /* Bright red */
-   color: white;
-   border: none;
-   padding: 10px 20px;
-   font-size: 14px;
-   border-radius: 4px;
-   cursor: pointer;
-}
+    input[type="reset"] {
+        background-color: #f44336; /* Bright red */
+    }
 
-input[type="reset"]:hover {
-   background-color: #e53935; /* Slightly darker red */
-}
+    input[type="reset"]:hover {
+        background-color: #e53935; /* Slightly darker red */
+    }
 
+    .remove-link-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .remove-link-btn:hover {
+        background-color: #e53935;
+    }
 </style>
 
 <div class="container" style="min-height: 80vh;">
    <form action="" method="post">
        <h2 align="center">Add Educational Content</h2><br>
-       <table class="table"  style="width: 65%;" align="center">
+       <table class="table" style="width: 65%;" align="center">
             <tr>
                 <td>Title</td>
-                <td><input type="text" name="title" id="title" required></td>
+                <td><input type="text" placeholder="Enter Content Title" name="title" id="title" required></td>
             </tr>
             <tr>
                 <td>Description</td>
-                <td><textarea name="description" id="description" rows="3" required></textarea></td>
+                <td><textarea name="description" placeholder="Enter Content Description" id="description" rows="3" required></textarea></td>
             </tr>
             <tr>
-                <td>Link</td>
-                <td><input type="text" name="content" id="content" required></td>
+                <td>Type</td>
+                <td style="display: flex; justify-content: space-between; width: 100%;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="type" id="verbal" value="Verbal" required>
+                        <label for="verbal">Verbal Ability</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="type" id="quantitative" value="Quantitative" required>
+                        <label for="quantitative">Quantitative Ability</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="type" id="logical" value="Logical" required>
+                        <label for="logical">Logical Ability</label>
+                    </div>
+                </td>
             </tr>
             <tr>
-    <td>Type</td>
-    <td style="display: flex; justify-content: space-between; width: 100%;">
-        <div style="display: flex; align-items: center;">
-            <input type="radio" name="type" id="verbal" value="verbal" required>
-            <label for="verbal">Verbal Ability</label>
-        </div>
-        <div style="display: flex; align-items: center;">
-            <input type="radio" name="type" id="quantitative" value="quantitative" required>
-            <label for="quantitative">Quantitative Ability</label>
-        </div>
-        <div style="display: flex; align-items: center;">
-            <input type="radio" name="type" id="logical" value="logical" required>
-            <label for="logical">Logical Ability</label>
-        </div>
-    </td>
-</tr>
-
+                <td>Difficulty</td>
+                <td style="display: flex; justify-content: space-between; width: 100%;">
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="difficulty" id="easy" value="Easy" required>
+                        <label for="easy">Easy</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="difficulty" id="medium" value="Medium" required>
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <input type="radio" name="difficulty" id="hard" value="Hard" required>
+                        <label for="hard">Hard</label>
+                    </div>
+                </td>
+            </tr>
+            <tr id="video-link-section">
+                <td>Video Links</td>
+                <td id="video-links-container">
+                    <!-- Dynamic video links will be added here -->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="button" class="add-link-btn" onclick="addVideoLink()">Add Video Link</button>
+                </td>
+            </tr>
             <tr>
                 <td colspan="2" align="center">
                     <input type="submit" name="submit" id="submit">
@@ -91,7 +119,74 @@ input[type="reset"]:hover {
                 </td>
             </tr>
         </table>
-        
     </form>
 </div>
 {% include "public/footer.html" %}
+
+<script>
+    let videoLinkCount = 0; // Counter for video links
+
+    function addVideoLink() {
+        videoLinkCount++; // Increment the counter
+
+        // Get the container to append new input fields
+        const container = document.getElementById('video-links-container');
+
+        // Create a new div for the video link input
+        const newLinkDiv = document.createElement('div');
+        newLinkDiv.style.marginBottom = '8px';
+        newLinkDiv.id = `video-link-${videoLinkCount}`; // Unique ID for each link
+
+        // Create a new label
+        const newLabel = document.createElement('label');
+        newLabel.textContent = `Video Link ${videoLinkCount}: `;
+        newLabel.style.marginRight = '10px';
+
+        // Create a new input element
+        const newInput = document.createElement('input');
+        newInput.type = 'text';
+        newInput.name = 'video_links[]'; // Use an array to capture multiple links
+        newInput.placeholder = 'Enter Video Link';
+        newInput.required = true; // Make it a required field
+        newInput.style.width = 'calc(80% - 80px)'; // Adjust width to fit inline with button
+
+        // Create a delete button
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.type = 'button';
+        deleteButton.className = 'remove-link-btn';
+        deleteButton.style.marginLeft = '10px';
+        deleteButton.onclick = function () {
+            removeVideoLink(newLinkDiv.id); // Call the remove function with the div ID
+        };
+
+        // Append label, input, and delete button to the div
+        newLinkDiv.appendChild(newLabel);
+        newLinkDiv.appendChild(newInput);
+        newLinkDiv.appendChild(deleteButton);
+
+        // Append the new div to the container
+        container.appendChild(newLinkDiv);
+    }
+    function removeVideoLink(id) {
+        const element = document.getElementById(id);
+        videoLinkCount--;
+        if (element) {
+            element.remove();
+            renumberVideoLinks(); // Renumber remaining video links after deletion
+        }
+    }
+    
+    // Function to renumber video link labels
+    function renumberVideoLinks() {
+        const container = document.getElementById('video-links-container');
+        const videoLinkDivs = container.querySelectorAll('div');
+        
+        videoLinkDivs.forEach((div, index) => {
+            const label = div.querySelector('label');
+            if (label) {
+                label.textContent = `Video Link ${index + 1}: `;
+            }
+        });
+    }
+</script>
