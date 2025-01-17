@@ -1,8 +1,19 @@
 {% include "admin/adminheader.html" %}
-
-
-<div class="container" style="min-height: 80vh;">
-<h2 style="text-align: center;">Home</h2><br>
-</div>
+{% load static %}
+<style>
+    .box {
+        background-image: url('{% static "assets/img/aptiqbg1.jpg" %}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 1px solid green;
+        height: 80vh;
+    }
+</style>
+<body>
+<div class="box">
+    <h2 style="text-align: center; color: rgb(3, 3, 3);">Home</h2><br>
+</div>  
 
 {% include "public/footer.html" %}
+</body>
