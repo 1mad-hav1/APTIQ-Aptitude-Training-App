@@ -1,5 +1,7 @@
 import base64
 import time
+import random
+
 from django.shortcuts import render,HttpResponse
 from django.http import HttpResponse, JsonResponse
 from .models import *
@@ -298,16 +300,6 @@ def and_sent_feedback(request):
         return JsonResponse({'status':'ok'})
     return JsonResponse({'status':'no'})
 
-# def and_user_complaint(request):
-#     user_id=request.POST['uid']
-#     complaint=request.POST['complaint']
-#     date=datetime.now().strftime("%d-%m-%Y")
-#     status=request.POST['status']
-#     user=User.objects.get(id=user_id)
-#     data=Complaint(user=user,complaint=complaint,status=status,date=date,reply='pending')
-#     data.save()
-#     return JsonResponse({'status':'ok'})
-
 def and_view_feedbacks(request):
     user_id=request.POST['uid']
     feedbacks=Feedback.objects.filter(USER_id=user_id)
@@ -391,3 +383,78 @@ def and_get_detailed_content(request):
     data = {"id": content.id,"title": content.title,"description": content.description,
                 "difficulty": content.difficulty,"content_type": content.content_type}
     return JsonResponse({'status':'ok',"content": data, "video_links": links})
+
+def and_get_test_questions(request):
+    difficulty = request.POST.get('difficulty')
+    num_qns = int(request.POST.get('num_qns'))
+    verbal = request.POST.get('verbal')
+    logical = request.POST.get('logical')
+    quant = request.POST.get('quant')
+
+    all_questions = list(Questions.objects.all())
+    
+    # Separate questions by type
+    verbal_questions = [q for q in all_questions if q.question_type == 'Verbal']
+    logical_questions = [q for q in all_questions if q.question_type == 'Logical']
+    quant_questions = [q for q in all_questions if q.question_type == 'Quantitative']
+
+    # Separate questions by difficulty
+    easy_questions = [q for q in all_questions if q.difficulty == 'Easy']
+    medium_questions = [q for q in all_questions if q.difficulty == 'Medium']
+    hard_questions = [q for q in all_questions if q.difficulty == 'Hard']
+
+    selected_questions = []
+    
+    # Filter by difficulty
+    if difficulty == 'Easy':
+        selected_questions.extend(random.sample(easy_questions, min(num_qns, len(easy_questions))))
+    elif difficulty == 'Medium':
+        num_easy = num_qns // 5  # 20% Easy questions
+        num_medium = num_qns - num_easy
+        selected_questions.extend(random.sample(easy_questions, min(num_easy, len(easy_questions))))
+        selected_questions.extend(random.sample(medium_questions, min(num_medium, len(medium_questions))))
+    elif difficulty == 'Hard':
+        num_easy = num_qns // 10  # 10% Easy questions
+        num_medium = num_qns // 5  # 20% Medium questions
+        num_hard = num_qns - num_easy - num_medium
+        selected_questions.extend(random.sample(easy_questions, min(num_easy, len(easy_questions))))
+        selected_questions.extend(random.sample(medium_questions, min(num_medium, len(medium_questions))))
+        selected_questions.extend(random.sample(hard_questions, min(num_hard, len(hard_questions))))
+
+    # Apply additional filtering by type
+    types_selected = []
+    if verbal == '1':
+        types_selected.append(verbal_questions)
+    if logical == '1':
+        types_selected.append(logical_questions)
+    if quant == '1':
+        types_selected.append(quant_questions)
+
+    if len(types_selected) == 1:
+        selected_questions = random.sample(types_selected[0], min(num_qns, len(types_selected[0])))
+    elif len(types_selected) == 2:
+        type1_count = num_qns // 2
+        type2_count = num_qns - type1_count
+        selected_questions = random.sample(types_selected[0], min(type1_count, len(types_selected[0]))) + \
+                             random.sample(types_selected[1], min(type2_count, len(types_selected[1])))
+    elif len(types_selected) == 3:
+        type_count = num_qns // 3
+        remaining = num_qns - 2 * type_count
+        selected_questions = random.sample(types_selected[0], min(type_count, len(types_selected[0]))) + \
+                             random.sample(types_selected[1], min(type_count, len(types_selected[1]))) + \
+                             random.sample(types_selected[2], min(remaining, len(types_selected[2])))
+
+    # Prepare final data
+    questions_data = [
+        {
+            'question': q.question,
+            'option1': q.optiona,
+            'option2': q.optionb,
+            'option3': q.optionc,
+            'option4': q.optiond,
+            'correctAnswer': q.answer
+        }
+        for q in selected_questions
+    ]
+
+    return JsonResponse({'status': 'ok', 'data': questions_data})

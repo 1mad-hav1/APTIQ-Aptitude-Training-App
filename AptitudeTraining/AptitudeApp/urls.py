@@ -46,4 +46,5 @@ urlpatterns = [
     path('and_user_update_profile',views.and_user_update_profile),
     path('and_get_study_material',views.and_get_study_material),
     path('and_get_detailed_content',views.and_get_detailed_content),
+    path('and_get_test_questions',views.and_get_test_questions),
 ]

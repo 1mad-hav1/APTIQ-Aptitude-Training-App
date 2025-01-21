@@ -26,15 +26,15 @@ class Video_Content(models.Model):
     EDUCATION_CONTENT=models.ForeignKey(Education_Content,on_delete=models.CASCADE)
 
 class Questions(models.Model):
-    question=models.CharField(max_length=50)
-    optiona=models.CharField(max_length=50)
-    optionb=models.CharField(max_length=50)
-    optionc=models.CharField(max_length=50)
-    optiond=models.CharField(max_length=50)
-    answer=models.CharField(max_length=50)
+    question=models.CharField(max_length=5000)
+    optiona=models.CharField(max_length=500)
+    optionb=models.CharField(max_length=500)
+    optionc=models.CharField(max_length=500)
+    optiond=models.CharField(max_length=500)
+    answer=models.CharField(max_length=500)
     question_type=models.CharField(max_length=50)
-    question_level=models.CharField(max_length=50)
-    answer_description=models.CharField(max_length=500)
+    difficulty=models.CharField(max_length=50)
+    answer_description=models.CharField(max_length=5000)
     
 class Test(models.Model):
     test_name=models.CharField(max_length=50)
