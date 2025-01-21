@@ -1,0 +1,119 @@
+{% include "admin/adminheader.html" %}
+{% load static %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        background-image: url('{% static "assets/img/learn-more-bg.jpg" %}');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 30px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.8;
+    }
+
+    .content h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .feature {
+        flex: 1 1 calc(33% - 20px);
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .feature h3 {
+        margin-bottom: 10px;
+    }
+
+    .feature p {
+        font-size: 0.95em;
+        color: #555;
+    }
+
+    .cta {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .cta a {
+        text-decoration: none;
+        color: white;
+        background: green;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Discover More About Our App</h1>
+            <p>Your journey to mastering aptitude skills starts here.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Why Choose Our App?</h2>
+        <p>
+            Our AI-Powered Aptitude Training App is designed to help you gain the skills needed to excel in recruitment activities.
+            With personalized learning plans, dynamic question generation, and AI-driven progress tracking, you get the ultimate 
+            preparation tool tailored to your needs. Whether you're a beginner or a pro, our app adapts to your learning level.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Interactive Video Lectures</h3>
+                <p>Learn from engaging and easy-to-understand video tutorials created by experts.</p>
+            </div>
+            <div class="feature">
+                <h3>AI Progress Analysis</h3>
+                <p>Track your learning journey with real-time insights and personalized feedback.</p>
+            </div>
+            <div class="feature">
+                <h3>Dynamic Question Generation</h3>
+                <p>Practice with a variety of questions dynamically generated for endless challenges.</p>
+            </div>
+        </div>
+    </div>
+
+    {% include "public/footer.html" %}
+</body>

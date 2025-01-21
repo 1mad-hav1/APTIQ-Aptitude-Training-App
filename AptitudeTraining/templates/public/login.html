@@ -1,90 +1,122 @@
 {% include 'public/header.html' %}
 <style>
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f7fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .login-container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #7a6efa, #eaf7ff);
+    }
+
     .login {
-    width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-}
+        width: 100%;
+        max-width: 400px;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
 
-.login h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
+    .login h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #333;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 
-.login table {
-    width: 100%;
-}
+    .login label {
+        font-weight: bold;
+        color: #555;
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+    }
 
-.login label {
-    font-weight: bold;
-    color: #555;
-}
+    .login input[type="text"],
+    .login input[type="password"] {
+        width: 100%;
+        padding: 12px 15px;
+        margin: 10px 0 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease-in-out;
+    }
 
-.login input[type="text"],
-.login input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    .login input[type="text"]:focus,
+    .login input[type="password"]:focus {
+        border-color: #2575fc;
+        outline: none;
+    }
 
-.login input[type="submit"],
-.login input[type="reset"] {
-    padding: 8px 16px;
-    margin: 10px 5px 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: #fff;
-    font-size: 14px;
-}
+    .login input[type="submit"],
+    .login input[type="reset"] {
+        width: 48%;
+        padding: 12px 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        color: white;
+        background-color: #2575fc;
+        transition: background-color 0.3s ease-in-out;
+    }
 
-.login input[type="submit"]:hover,
-.login input[type="reset"]:hover {
-    background-color: #0056b3;
-}
+    .login input[type="submit"]:hover {
+        background-color: #1a64d4;
+    }
 
-.login input[type="reset"] {
-    background-color: #6c757d;
-}
+    .login input[type="reset"] {
+        background-color: #f44336;
+    }
 
-.login input[type="reset"]:hover {
-    background-color: #5a6268;
-}
+    .login input[type="reset"]:hover {
+        background-color: #e53935;
+    }
+
+    .login .link {
+        font-size: 14px;
+        color: #2575fc;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .login .link:hover {
+        text-decoration: underline;
+    }
 
 </style>
-<div class="m-5" style="min-height: 80vh; display: flex; justify-content: center; align-items: center;">
+
+<div class="login-container">
     <div class="login">
         <form method="post">
-            <table align="center">
-                <tr>
-                    <td colspan="2" align="center">
-                        <h1>Login</h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="username">Username:</label></td>
-                    <td><input type="text" name="username" id="username"></td>
-                </tr>
-                <tr>
-                    <td><label for="password">Password:</label></td>
-                    <td><input type="password" name="password" id="password"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center"><input type="submit" name="submit" id="submit">
-                        <input type="reset" name="reset" id="reset">
-                    </td>
-                </tr>
-            </table>
+            <h1>Login</h1>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+            <input type="submit" name="submit" id="submit" value="Login">
+            <input type="reset" name="reset" id="reset" value="Reset">
+
+            <div>
+                <a href="#" class="link">Forgot Password?</a>
+            </div>
         </form>
     </div>
 </div>
+
 {% include "public/footer.html" %}
