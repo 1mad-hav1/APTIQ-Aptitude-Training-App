@@ -495,9 +495,10 @@ def and_get_test_questions(request):
             'option2': q.optionb,
             'option3': q.optionc,
             'option4': q.optiond,
+            'question_type': q.question_type,
             'correctAnswer': q.answer
         }
         for q in selected_questions
-    ]
+    ]   
 
     return JsonResponse({'status': 'ok', 'data': questions_data, 'test_id':test.pk})

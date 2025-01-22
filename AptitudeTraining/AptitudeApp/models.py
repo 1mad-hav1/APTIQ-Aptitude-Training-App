@@ -53,10 +53,9 @@ class Test_Question(models.Model):
 class Result(models.Model):
     TESTQUESTION=models.ForeignKey(Test_Question,on_delete=models.CASCADE)
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
-    passmark=models.CharField(max_length=50,null=True)
-    mark=models.CharField(max_length=50)
+    correct_answers=models.CharField(max_length=50)
+    wrong_answers=models.CharField(max_length=50)
     pass_fail=models.CharField(max_length=50)
-    result_date=models.CharField(max_length=50)
 
 class Complaint(models.Model):
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
