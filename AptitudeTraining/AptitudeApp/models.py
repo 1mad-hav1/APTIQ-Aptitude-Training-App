@@ -39,9 +39,13 @@ class Questions(models.Model):
 class Test(models.Model):
     test_name=models.CharField(max_length=50)
     test_date=models.CharField(max_length=50)
-    test_description=models.CharField(max_length=500)
-    test_status=models.CharField(max_length=50)
-    
+    test_difficulty=models.CharField(max_length=50)
+    test_num_of_qns=models.CharField(max_length=50)
+    test_time=models.CharField(max_length=50)
+    test_topics=models.CharField(max_length=50)
+    test_passmark=models.CharField(max_length=50)
+    USER=models.ForeignKey(User,on_delete=models.CASCADE)
+
 class Test_Question(models.Model):
     TEST=models.ForeignKey(Test,on_delete=models.CASCADE)
     QUESTIONS=models.ForeignKey(Questions,on_delete=models.CASCADE)

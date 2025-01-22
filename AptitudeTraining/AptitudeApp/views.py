@@ -14,6 +14,9 @@ from django.core.files.base import ContentFile
 def home(request):
     return render(request,"public/index.html")
 
+def admin_learn_more(request):
+    return render(request, './admin/adminlearnmore.html')
+
 def login(request):
     if 'submit' in request.POST:
         username = request.POST['username']
@@ -179,14 +182,29 @@ def addquestion(request):
         answer=request.POST['answer']
         description=request.POST['description']
         difficulty=request.POST['difficulty']
-        q=Questions(question=question,optiona=optiona,optionb=optionb,optionc=optionc,optiond=optiond,question_type=type,answer_description=description,question_level=difficulty,answer=answer)
+        q=Questions(question=question,optiona=optiona,optionb=optionb,optionc=optionc,optiond=optiond,question_type=type,answer_description=description,difficulty=difficulty,answer=answer)
         q.save()
         return HttpResponse(f"<script>alert('Content added successfully');window.location='/viewquestions'</script>")
     return render(request,"admin/addquestion.html")
 
 def viewquestions(request):
     data=Questions.objects.all()
-    return render(request,"admin/viewquestions.html",{'data':data})
+    # Sort the data first by content_type, then by difficulty
+    sorted_data = {}
+    for content in data:
+        # Group by content_type
+        if content.question_type not in sorted_data:
+            sorted_data[content.question_type] = []
+
+        # Add the content to the corresponding content_type group
+        sorted_data[content.question_type].append(content)
+
+    # Now, sort each content_type group by difficulty ("easy" < "medium" < "hard")
+    difficulty_order = ["Easy", "Medium", "Hard"]
+
+    for content_type, contents in sorted_data.items():
+        sorted_data[content_type] = sorted(contents, key=lambda x: difficulty_order.index(x.difficulty))
+    return render(request,"admin/viewquestions.html",{'sorted_data': sorted_data})
 
 def updatequestion(request,id):
     data=Questions.objects.get(id=id)
@@ -209,7 +227,7 @@ def updatequestion(request,id):
         data.question_type=typeqn
         data.answer=answer
         data.answer_description=description
-        data.question_level=difficulty
+        data.difficulty=difficulty
         data.save()
         return HttpResponse(f"<script>alert('Content updated successfully');window.location='/viewquestions'</script>")
     return render(request,"admin/updatequestion.html",{'data':data})
@@ -384,6 +402,9 @@ def and_get_detailed_content(request):
                 "difficulty": content.difficulty,"content_type": content.content_type}
     return JsonResponse({'status':'ok',"content": data, "video_links": links})
 
+from django.utils.timezone import now
+import random
+
 def and_get_test_questions(request):
     difficulty = request.POST.get('difficulty')
     num_qns = int(request.POST.get('num_qns'))
@@ -392,7 +413,10 @@ def and_get_test_questions(request):
     quant = request.POST.get('quant')
 
     all_questions = list(Questions.objects.all())
-    
+    name = request.POST.get('test_name') 
+    uid = request.POST.get('uid')
+    time = request.POST.get('time')  
+    print("hi")
     # Separate questions by type
     verbal_questions = [q for q in all_questions if q.question_type == 'Verbal']
     logical_questions = [q for q in all_questions if q.question_type == 'Logical']
@@ -404,7 +428,7 @@ def and_get_test_questions(request):
     hard_questions = [q for q in all_questions if q.difficulty == 'Hard']
 
     selected_questions = []
-    
+
     # Filter by difficulty
     if difficulty == 'Easy':
         selected_questions.extend(random.sample(easy_questions, min(num_qns, len(easy_questions))))
@@ -444,6 +468,25 @@ def and_get_test_questions(request):
                              random.sample(types_selected[1], min(type_count, len(types_selected[1]))) + \
                              random.sample(types_selected[2], min(remaining, len(types_selected[2])))
 
+    # Calculate test pass mark (40% of total questions)
+    pass_mark = int(num_qns * 0.4)
+
+    # Create a new Test instance
+    test = Test.objects.create(
+        test_name=name,
+        test_date=now().strftime('%Y-%m-%d %H:%M:%S'),
+        test_difficulty=difficulty,
+        test_num_of_qns=num_qns,
+        test_time=time,
+        test_topics=','.join(topic for topic, flag in [('Logical', logical), ('Quantitative', quant), ('Verbal', verbal)] if flag == '1'),
+        test_passmark=pass_mark,
+        USER_id=uid  
+    )
+
+    # Map selected questions to the Test_Question table
+    for question in selected_questions:
+        Test_Question.objects.create(TEST=test, QUESTIONS=question)
+
     # Prepare final data
     questions_data = [
         {
@@ -457,4 +500,4 @@ def and_get_test_questions(request):
         for q in selected_questions
     ]
 
-    return JsonResponse({'status': 'ok', 'data': questions_data})
+    return JsonResponse({'status': 'ok', 'data': questions_data, 'test_id':test.pk})

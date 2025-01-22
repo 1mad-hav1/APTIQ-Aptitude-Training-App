@@ -22,6 +22,7 @@ urlpatterns = [
     path('', views.login),
     path('signup',views.signup),
     path('adminhome',views.adminhome),
+    path('admin-learn-more/', views.admin_learn_more, name='admin_learn_more'),
     path('changepassword',views.changepassword),
     path('addeducontent',views.addeducontent),
     path('vieweducontent',views.vieweducontent),
