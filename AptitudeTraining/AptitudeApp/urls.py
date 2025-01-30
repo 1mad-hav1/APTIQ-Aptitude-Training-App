@@ -22,7 +22,7 @@ urlpatterns = [
     path('', views.login),
     path('signup',views.signup),
     path('adminhome',views.adminhome),
-    path('admin-learn-more/', views.admin_learn_more, name='admin_learn_more'),
+    path('adminlearnmore/', views.admin_learn_more, name='admin_learn_more'),
     path('changepassword',views.changepassword),
     path('addeducontent',views.addeducontent),
     path('vieweducontent',views.vieweducontent),
@@ -48,4 +48,9 @@ urlpatterns = [
     path('and_get_study_material',views.and_get_study_material),
     path('and_get_detailed_content',views.and_get_detailed_content),
     path('and_get_test_questions',views.and_get_test_questions),
+    path('and_post_test_results',views.and_post_test_results),
+    path('and_get_test_result',views.and_get_test_result),
+    path('and_get_results',views.and_get_results),
+    path('and_get_section_test_questions',views.and_get_section_test_questions),
+    path('and_post_section_test_results',views.and_post_section_test_results),
 ]

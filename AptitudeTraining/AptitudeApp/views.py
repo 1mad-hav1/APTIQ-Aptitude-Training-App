@@ -9,6 +9,7 @@ from .models import *
 from datetime import datetime
 from django.core.files.storage import FileSystemStorage
 from django.core.files.base import ContentFile
+from django.utils.timezone import now
 
 # Create your views here.
 def home(request):
@@ -295,7 +296,8 @@ def and_login(request):
             try:
                 qd=User.objects.get(LOGIN_id=lid)
                 uid=qd.pk
-                return JsonResponse({'status':'ok','lid':lid,'uid':uid,'user_type':'user'})
+                user_name=qd.name
+                return JsonResponse({'status':'ok','lid':lid,'uid':uid,'user_name':user_name,'user_type':'user'})
             except User.DoesNotExist:
                 print('Login Failed.')
                 return JsonResponse({'status':'no'})
@@ -376,6 +378,7 @@ def and_user_update_profile(request):
     
 def and_get_study_material(request):
     content_type = request.POST['content_type']
+    uid = request.POST['uid']
     # Define custom sorting order
     difficulty_order = {'Easy': 1, 'Medium': 2, 'Hard': 3}
     # Filter contents based on content_type
@@ -387,23 +390,26 @@ def and_get_study_material(request):
     )
     data = []
     for i in sorted_contents:
-        data.append({'title': i.title, 'id': i.pk, 'difficulty': i.difficulty})
+        entry = User_Educontent_Complete.objects.filter(USER_id=uid, EDUCATION_CONTENT_id=i.pk).exists()
+        completed = "Yes" if entry else "No"
+        data.append({'title': i.title, 'id': i.pk, 'difficulty': i.difficulty, "completed":completed})
     return JsonResponse({'status': 'ok', 'data': data})
 
 def and_get_detailed_content(request):
     id=request.POST['cid']
-    content=Education_Content.objects.get(id=id)
-    video_data = Video_Content.objects.filter(EDUCATION_CONTENT_id=id)
-    if video_data.exists():
-        links = [{"id": video.id, "link": video.link} for video in video_data]
-    else:
-        links = []
-    data = {"id": content.id,"title": content.title,"description": content.description,
-                "difficulty": content.difficulty,"content_type": content.content_type}
-    return JsonResponse({'status':'ok',"content": data, "video_links": links})
+    try:
+        content=Education_Content.objects.get(id=id)
+        video_data = Video_Content.objects.filter(EDUCATION_CONTENT_id=id)
+        if video_data.exists():
+            links = [{"id": video.id, "link": video.link} for video in video_data]
+        else:
+            links = []
+        data = {"id": content.id,"title": content.title,"description": content.description,
+                    "difficulty": content.difficulty,"content_type": content.content_type}
+        return JsonResponse({'status':'ok',"content": data, "video_links": links})
+    except Exception as e:
+        return JsonResponse({"status": "error", "message": str(e)})
 
-from django.utils.timezone import now
-import random
 
 def and_get_test_questions(request):
     difficulty = request.POST.get('difficulty')
@@ -416,7 +422,6 @@ def and_get_test_questions(request):
     name = request.POST.get('test_name') 
     uid = request.POST.get('uid')
     time = request.POST.get('time')  
-    print("hi")
     # Separate questions by type
     verbal_questions = [q for q in all_questions if q.question_type == 'Verbal']
     logical_questions = [q for q in all_questions if q.question_type == 'Logical']
@@ -446,27 +451,57 @@ def and_get_test_questions(request):
         selected_questions.extend(random.sample(hard_questions, min(num_hard, len(hard_questions))))
 
     # Apply additional filtering by type
+    # Apply additional filtering by type
     types_selected = []
+    logical_count = 0
+    verbal_count = 0
+    quant_count = 0
+
     if verbal == '1':
         types_selected.append(verbal_questions)
+        verbal_count = num_qns // 3  # Default division
     if logical == '1':
         types_selected.append(logical_questions)
+        logical_count = num_qns // 3  # Default division
     if quant == '1':
         types_selected.append(quant_questions)
+        quant_count = num_qns // 3  # Default division
 
+    # Adjust counts for remaining questions based on the selected types
     if len(types_selected) == 1:
+        if verbal == '1':
+            verbal_count = num_qns
+        elif logical == '1':
+            logical_count = num_qns
+        elif quant == '1':
+            quant_count = num_qns
         selected_questions = random.sample(types_selected[0], min(num_qns, len(types_selected[0])))
+
     elif len(types_selected) == 2:
         type1_count = num_qns // 2
         type2_count = num_qns - type1_count
         selected_questions = random.sample(types_selected[0], min(type1_count, len(types_selected[0]))) + \
                              random.sample(types_selected[1], min(type2_count, len(types_selected[1])))
+        # Adjust counts based on the type selected
+        if verbal == '1' and logical == '1':
+            verbal_count = type1_count
+            logical_count = type2_count
+        elif verbal == '1' and quant == '1':
+            verbal_count = type1_count
+            quant_count = type2_count
+        elif logical == '1' and quant == '1':
+            logical_count = type1_count
+            quant_count = type2_count
+
     elif len(types_selected) == 3:
         type_count = num_qns // 3
         remaining = num_qns - 2 * type_count
         selected_questions = random.sample(types_selected[0], min(type_count, len(types_selected[0]))) + \
                              random.sample(types_selected[1], min(type_count, len(types_selected[1]))) + \
                              random.sample(types_selected[2], min(remaining, len(types_selected[2])))
+        verbal_count = type_count
+        logical_count = type_count
+        quant_count = remaining
 
     # Calculate test pass mark (40% of total questions)
     pass_mark = int(num_qns * 0.4)
@@ -477,11 +512,15 @@ def and_get_test_questions(request):
         test_date=now().strftime('%Y-%m-%d %H:%M:%S'),
         test_difficulty=difficulty,
         test_num_of_qns=num_qns,
+        test_num_of_qns_logical=logical_count,
+        test_num_of_qns_verbal=verbal_count,
+        test_num_of_qns_quantitative=quant_count,
         test_time=time,
         test_topics=','.join(topic for topic, flag in [('Logical', logical), ('Quantitative', quant), ('Verbal', verbal)] if flag == '1'),
         test_passmark=pass_mark,
         USER_id=uid  
     )
+
 
     # Map selected questions to the Test_Question table
     for question in selected_questions:
@@ -502,3 +541,119 @@ def and_get_test_questions(request):
     ]   
 
     return JsonResponse({'status': 'ok', 'data': questions_data, 'test_id':test.pk})
+
+def and_post_test_results(req):
+    uid = req.POST["uid"]
+    test_id = req.POST["test_id"]
+    mark_scored = req.POST["mark_scored"]
+    logical_score = req.POST["logical_score"]
+    verbal_score = req.POST["verbal_score"]
+    quant_score = req.POST["quant_score"]
+    pass_fail = req.POST["pass_fail"]
+
+    result = Result.objects.create(
+        TEST_id=test_id,
+        USER_id = uid,
+        mark_scored=mark_scored,
+        logical_score = logical_score,
+        verbal_score = verbal_score,
+        quant_score = quant_score,
+        pass_fail = pass_fail
+    )
+    
+    return JsonResponse({'status':'ok', 'result_id': result.pk})
+
+def and_get_test_result(request):
+    result_id = request.POST['result_id']
+    
+    try:
+        result = Result.objects.get(id=result_id)
+        test = Test.objects.get(id=result.TEST_id)
+    
+        test_questions = Test_Question.objects.filter(TEST=test)
+        question_details = []
+        for tq in test_questions:
+            question = tq.QUESTIONS
+            question_details.append({
+                "question": question.question,
+                "correctAnswer": question.answer,
+                "answerDescription": question.answer_description
+            })
+        
+        data = {
+            "testName": test.test_name,
+            "testDate": test.test_date,
+            "testDifficulty": test.test_difficulty,
+            "totalQuestions": test.test_num_of_qns,
+            "topics": test.test_topics,
+            "time": test.test_time,
+            "overallScore": result.mark_scored,
+            "passmark": test.test_passmark,
+            "isPassed": result.pass_fail.lower() == "pass",
+            "topicScores": {
+                "logicalScore": result.logical_score,
+                "logicalTotal": test.test_num_of_qns_logical,
+                "verbalScore": result.verbal_score,
+                "verbalTotal": test.test_num_of_qns_verbal,
+                "quantScore": result.quant_score,
+                "quantTotal": test.test_num_of_qns_quantitative,
+            },
+            "questions_details": question_details
+        }
+        
+        return JsonResponse({'status': 'ok', 'data': data})
+    except Exception as e:
+        print(str(e))
+        return JsonResponse({'status': 'error', 'message': str(e)})
+    
+def and_get_results(request):
+    try:
+        uid = request.POST.get('uid')
+        results = Result.objects.filter(USER_id=uid)
+        if not results.exists():
+            return JsonResponse({'status': 'no'})
+        response_data = []
+        for result in results:
+            test = result.TEST
+            response_data.append({
+                'result_id': result.id,
+                'test_name': test.test_name,
+                'test_date': test.test_date,
+                'mark_scored': result.mark_scored,
+                'pass_fail': result.pass_fail,
+            })
+        response_data = sorted(response_data, key=lambda x: x['test_date'], reverse=True)
+        return JsonResponse({'status': 'ok', 'results': response_data})
+    except Exception as e:
+        return JsonResponse({'status': 'error', 'message': str(e)})
+    
+def and_get_section_test_questions(request):
+    try:
+        section_id = request.POST.get('section_id')
+        section = Education_Content.objects.get(id=section_id)
+        section_tests = Section_Test.objects.filter(EDUCATION_CONTENT=section)
+        questions_details = []
+        for test in section_tests:
+            questions_details.append({
+                "question": test.question,
+                "option1": test.optiona,
+                "option2": test.optionb,
+                "option3": test.optionc,
+                "option4": test.optiond,
+                "correct_answer": test.answer
+            })
+        response = {
+            "status": "ok",
+            "section_name": section.title,
+            "data": questions_details,
+        }
+        return JsonResponse(response)
+    except Exception as e:
+        return JsonResponse({"status": "error", "message": str(e)})
+    
+def and_post_section_test_results(request):
+    section_id=request.POST['section_id']
+    uid=request.POST['uid']
+    q=User_Educontent_Complete(EDUCATION_CONTENT_id=section_id, USER_id=uid, completed="Yes")
+    q.save()
+    return JsonResponse({'status':'ok'})

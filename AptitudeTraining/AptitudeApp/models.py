@@ -21,6 +21,20 @@ class Education_Content(models.Model):
     content_type=models.CharField(max_length=50)
     difficulty=models.CharField(max_length=50)
 
+class Section_Test(models.Model):
+    EDUCATION_CONTENT=models.ForeignKey(Education_Content,on_delete=models.CASCADE)
+    question=models.CharField(max_length=5000)
+    optiona=models.CharField(max_length=500)
+    optionb=models.CharField(max_length=500)
+    optionc=models.CharField(max_length=500)
+    optiond=models.CharField(max_length=500)
+    answer=models.CharField(max_length=500)
+    
+class User_Educontent_Complete(models.Model):
+    USER=models.ForeignKey(User,on_delete=models.CASCADE)
+    EDUCATION_CONTENT=models.ForeignKey(Education_Content,on_delete=models.CASCADE)
+    completed=models.CharField(max_length=500,default="No")
+    
 class Video_Content(models.Model):
     link=models.CharField(max_length=50)
     EDUCATION_CONTENT=models.ForeignKey(Education_Content,on_delete=models.CASCADE)
@@ -41,6 +55,9 @@ class Test(models.Model):
     test_date=models.CharField(max_length=50)
     test_difficulty=models.CharField(max_length=50)
     test_num_of_qns=models.CharField(max_length=50)
+    test_num_of_qns_logical=models.CharField(max_length=50)
+    test_num_of_qns_quantitative=models.CharField(max_length=50)
+    test_num_of_qns_verbal=models.CharField(max_length=50)
     test_time=models.CharField(max_length=50)
     test_topics=models.CharField(max_length=50)
     test_passmark=models.CharField(max_length=50)
@@ -51,10 +68,12 @@ class Test_Question(models.Model):
     QUESTIONS=models.ForeignKey(Questions,on_delete=models.CASCADE)
 
 class Result(models.Model):
-    TESTQUESTION=models.ForeignKey(Test_Question,on_delete=models.CASCADE)
+    TEST=models.ForeignKey(Test,on_delete=models.CASCADE)
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
-    correct_answers=models.CharField(max_length=50)
-    wrong_answers=models.CharField(max_length=50)
+    mark_scored=models.CharField(max_length=50)
+    logical_score = models.CharField(max_length=50)
+    verbal_score = models.CharField(max_length=50)
+    quant_score = models.CharField(max_length=50)
     pass_fail=models.CharField(max_length=50)
 
 class Complaint(models.Model):
@@ -75,5 +94,3 @@ class Prediction_Result(models.Model):
     verbal_aptitude_score=models.CharField(max_length=50)
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
     prediction_result=models.CharField(max_length=500)
-
-
