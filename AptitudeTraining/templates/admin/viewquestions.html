@@ -38,12 +38,36 @@
         <td><a href="/deletequestion/{{i.id}}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this content?');">Delete</a></td>
         </tr>
         {% endfor %}
-        </table>
-        <br>
-    {% endfor %}
+        
+</table>
+<br>
+</table>
+<br>
+{% endfor %}
+<div class="sticky-footer">
     <table style="text-align: center;" class="table">
         <tr>
-            <td colspan="12"><a href="addquestion"  class="btn btn-success">Add Question</a></td>
+            <td colspan="12">
+                <a href="addquestion" class="btn btn-success">Add Question</a>
+                <a href="add_ai_q" class="btn btn-success">Generate Questions</a>
+                <a href="viewcompanyquestions" class="btn btn-success">View Company Based Questions</a>
+            </td>
         </tr>
     </table>
+</div>
+
 {% include "public/footer.html" %}
+
+<style>
+    .sticky-footer {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000; /* Ensures it's above other content */
+    }
+</style>

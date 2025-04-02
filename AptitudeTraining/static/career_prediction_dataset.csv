@@ -1,0 +1,841 @@
+logical,verbal,quantitative,prediction
+95.712,85.097,91.023,AI/ML/Robotics Engineer
+93.289,88.374,93.348,AI/ML/Robotics Engineer
+95.858,85.395,89.177,AI/ML/Robotics Engineer
+96.057,83.617,85.553,AI/ML/Robotics Engineer
+89.572,83.401,90.313,AI/ML/Robotics Engineer
+95.664,84.026,90.284,AI/ML/Robotics Engineer
+94.452,83.001,89.893,AI/ML/Robotics Engineer
+96.626,83.092,88.093,AI/ML/Robotics Engineer
+92.861,81.127,89.04,AI/ML/Robotics Engineer
+96.428,85.348,89.661,AI/ML/Robotics Engineer
+95.258,84.022,86.104,AI/ML/Robotics Engineer
+96.567,87.142,88.544,AI/ML/Robotics Engineer
+94.698,84.526,90.703,AI/ML/Robotics Engineer
+98.38,87.32,89.246,AI/ML/Robotics Engineer
+96.085,87.509,90.817,AI/ML/Robotics Engineer
+94.991,85.892,88.593,AI/ML/Robotics Engineer
+93.885,82.872,90.614,AI/ML/Robotics Engineer
+94.737,83.354,89.672,AI/ML/Robotics Engineer
+95.94,88.829,92.024,AI/ML/Robotics Engineer
+90.432,85.479,92.859,AI/ML/Robotics Engineer
+92.324,86.103,89.527,AI/ML/Robotics Engineer
+97.301,85.809,88.232,AI/ML/Robotics Engineer
+94.598,84.717,89.754,AI/ML/Robotics Engineer
+97.239,83.315,92.006,AI/ML/Robotics Engineer
+94.396,85.447,90.145,AI/ML/Robotics Engineer
+94.956,84.973,92.915,AI/ML/Robotics Engineer
+96.685,84.275,93.166,AI/ML/Robotics Engineer
+95.549,85.715,88.325,AI/ML/Robotics Engineer
+94.005,83.623,90.172,AI/ML/Robotics Engineer
+96.278,85.734,93.176,AI/ML/Robotics Engineer
+92.224,82.23,86.434,Software Engineer
+92.156,84.529,88.074,Software Engineer
+92.393,77.74,87.373,Software Engineer
+93.589,79.285,88.474,Software Engineer
+96.541,80.585,87.113,Software Engineer
+91.752,79.716,90.071,Software Engineer
+94.097,83.914,93.04,Software Engineer
+90.339,82.76,86.763,Software Engineer
+95.578,81.456,89.055,Software Engineer
+91.434,81.147,89.179,Software Engineer
+96.712,80.411,87.899,Software Engineer
+95.889,80.281,91.285,Software Engineer
+93.982,82.606,89.735,Software Engineer
+92.768,82.78,87.455,Software Engineer
+92.996,83.117,89.587,Software Engineer
+93.85,79.483,86.982,Software Engineer
+94.553,83.464,86.781,Software Engineer
+92.32,82.268,89.226,Software Engineer
+90.752,82.323,87.803,Software Engineer
+97.282,82.498,89.843,Software Engineer
+94.895,79.572,92.888,Software Engineer
+90.754,83.591,90.237,Software Engineer
+93.046,83.333,88.365,Software Engineer
+92.649,82.939,86.987,Software Engineer
+93.551,80.812,88.328,Software Engineer
+94.865,80.811,88.615,Software Engineer
+92.994,84.888,89.685,Software Engineer
+94.44,83.367,87.812,Software Engineer
+95.719,82.692,85.878,Software Engineer
+91.144,80.855,86.358,Software Engineer
+91.523,85.973,85.805,Business Analyst
+94.823,87.901,85.394,Business Analyst
+92.776,86.607,87.687,Business Analyst
+92.99,88.078,86.309,Business Analyst
+96.083,89.885,90.399,Business Analyst
+93.064,85.057,85.476,Business Analyst
+88.6,89.057,87.491,Business Analyst
+90.228,86.689,86.298,Business Analyst
+89.604,85.454,88.477,Business Analyst
+92.229,86.884,82.616,Business Analyst
+93.705,86.631,89.721,Business Analyst
+93.719,86.384,84.569,Business Analyst
+95.444,87.831,84.973,Business Analyst
+92.055,86.964,86.482,Business Analyst
+91.848,89.751,85.223,Business Analyst
+90.23,87.302,85.29,Business Analyst
+91.845,89.269,87.16,Business Analyst
+94.399,86.377,86.777,Business Analyst
+93.455,86.652,85.585,Business Analyst
+88.5,89.814,85.569,Business Analyst
+93.613,88.412,85.63,Business Analyst
+88.814,85.17,80.814,Business Analyst
+90.875,92.556,83.424,Business Analyst
+86.737,89.925,90.727,Business Analyst
+92.596,88.577,85.38,Business Analyst
+88.411,85.099,85.366,Business Analyst
+90.983,87.77,87.659,Business Analyst
+90.836,89.699,84.849,Business Analyst
+94.076,88.173,85.128,Business Analyst
+92.139,87.413,86.226,Business Analyst
+94.516,86.826,84.261,Management Consultant
+90.753,88.158,85.697,Management Consultant
+90.636,88.671,82.604,Management Consultant
+95.058,88.376,85.839,Management Consultant
+92.246,88.152,87.153,Management Consultant
+94.185,85.659,85.535,Management Consultant
+95.264,91.398,84.59,Management Consultant
+94.716,89.269,83.375,Management Consultant
+96.564,84.87,86.618,Management Consultant
+93.611,87.111,90.094,Management Consultant
+92.397,86.365,87.663,Management Consultant
+94.524,89.564,85.234,Management Consultant
+93.634,90.802,83.328,Management Consultant
+92.794,88.597,84.608,Management Consultant
+91.86,88.237,87.672,Management Consultant
+92.718,86.663,83.705,Management Consultant
+92.408,89.167,85.162,Management Consultant
+91.39,87.525,87.102,Management Consultant
+91.876,84.343,89.382,Management Consultant
+90.243,86.282,85.464,Management Consultant
+92.455,86.85,86.154,Management Consultant
+88.217,84.466,85.089,Management Consultant
+92.192,87.259,85.455,Management Consultant
+88.768,89.547,84.003,Management Consultant
+91.269,87.417,85.214,Management Consultant
+95.393,87.544,87.316,Management Consultant
+91.124,87.284,82.771,Management Consultant
+93.195,86.771,84.685,Management Consultant
+92.703,88.473,81.785,Management Consultant
+91.2,86.919,82.643,Management Consultant
+92.092,89.898,67.192,Product Manager
+89.094,84.752,67.559,Product Manager
+92.029,90.312,70.404,Product Manager
+90.444,89.963,70.794,Product Manager
+89.464,90.247,71.313,Product Manager
+91.018,92.124,69.065,Product Manager
+90.28,91.114,74.067,Product Manager
+92.171,91.27,68.983,Product Manager
+89.517,90.333,70.649,Product Manager
+91.284,91.262,68.692,Product Manager
+90.196,92.121,72.131,Product Manager
+90.731,93.438,69.426,Product Manager
+92.17,89.831,71.048,Product Manager
+92.543,90.516,67.961,Product Manager
+88.623,92.284,68.909,Product Manager
+91.902,90.654,73.258,Product Manager
+92.323,89.21,68.953,Product Manager
+91.925,88.181,70.058,Product Manager
+91.896,93.283,69.833,Product Manager
+88.151,95.347,71.914,Product Manager
+96.165,87.685,69.556,Product Manager
+93.349,91.073,70.614,Product Manager
+87.601,86.575,73.035,Product Manager
+95.391,89.787,72.781,Product Manager
+89.954,88.411,67.795,Product Manager
+90.3,91.445,68.275,Product Manager
+96.479,90.92,72.169,Product Manager
+92.98,92.429,68.264,Product Manager
+94.894,90.282,72.419,Product Manager
+89.121,90.361,70.29,Product Manager
+86.762,91.626,75.079,Marketing Manager
+86.608,92.924,69.745,Marketing Manager
+92.219,92.569,75.45,Marketing Manager
+89.344,91.781,73.586,Marketing Manager
+87.727,87.764,72.895,Marketing Manager
+86.489,88.797,73.273,Marketing Manager
+87.442,93.055,70.422,Marketing Manager
+87.058,93.301,72.56,Marketing Manager
+85.045,91.516,74.962,Marketing Manager
+87.043,92.196,70.301,Marketing Manager
+87.726,93.18,72.438,Marketing Manager
+90.579,91.851,76.437,Marketing Manager
+84.87,90.566,69.831,Marketing Manager
+85.968,88.986,72.335,Marketing Manager
+88.453,91.855,69.754,Marketing Manager
+87.352,89.071,73.872,Marketing Manager
+86.259,90.573,73.121,Marketing Manager
+86.769,92.388,75.192,Marketing Manager
+88.379,92.803,67.853,Marketing Manager
+87.142,91.37,69.894,Marketing Manager
+88.415,93.12,68.241,Marketing Manager
+85.622,91.37,72.921,Marketing Manager
+89.476,91.222,72.923,Marketing Manager
+89.807,90.171,70.783,Marketing Manager
+87.663,91.399,70.683,Marketing Manager
+87.212,91.795,72.316,Marketing Manager
+87.629,87.518,71.993,Marketing Manager
+86.06,92.966,71.383,Marketing Manager
+86.008,90.877,74.541,Marketing Manager
+89.262,91.44,69.348,Marketing Manager
+88.243,87.757,69.868,HR Specialist
+84.349,90.675,70.614,HR Specialist
+86.296,90.512,67.803,HR Specialist
+84.132,89.277,67.32,HR Specialist
+89.934,87.015,70.004,HR Specialist
+86.034,89.46,70.96,HR Specialist
+85.597,87.73,68.583,HR Specialist
+84.634,90.007,69.626,HR Specialist
+83.282,91.391,67.49,HR Specialist
+85.887,90.234,68.735,HR Specialist
+84.782,88.023,67.462,HR Specialist
+88.13,87.268,66.562,HR Specialist
+83.474,89.272,64.951,HR Specialist
+82.293,88.478,65.424,HR Specialist
+82.587,86.439,66.307,HR Specialist
+86.462,90.911,71.838,HR Specialist
+88.765,90.573,70.055,HR Specialist
+85.262,90.04,71.887,HR Specialist
+85.742,91.306,66.131,HR Specialist
+83.668,89.624,68.3,HR Specialist
+83.76,93.815,68.345,HR Specialist
+84.115,89.303,68.051,HR Specialist
+85.376,85.813,70.584,HR Specialist
+87.698,91.941,68.651,HR Specialist
+86.325,87.268,69.666,HR Specialist
+85.504,88.079,69.729,HR Specialist
+86.807,89.121,68.877,HR Specialist
+82.937,91.486,66.202,HR Specialist
+83.589,89.125,70.229,HR Specialist
+87.228,88.99,69.546,HR Specialist
+80.622,90.561,67.602,Psychologist
+86.504,93.309,69.369,Psychologist
+84.563,95.137,68.66,Psychologist
+81.372,94.174,69.364,Psychologist
+85.907,91.91,67.323,Psychologist
+84.806,92.02,69.37,Psychologist
+87.233,89.803,69.572,Psychologist
+82.362,86.819,68.902,Psychologist
+84.062,93.247,68.565,Psychologist
+81.022,90.355,71.634,Psychologist
+82.327,95.166,71.1,Psychologist
+83.364,90.542,71.096,Psychologist
+83.518,88.909,70.125,Psychologist
+84.835,94.275,69.699,Psychologist
+82.902,94.539,71.734,Psychologist
+84.466,92.121,66.353,Psychologist
+82.785,93.522,67.885,Psychologist
+81.086,98.992,66.073,Psychologist
+88.514,91.385,68.831,Psychologist
+82.655,93.566,66.12,Psychologist
+80.319,95.22,67.392,Psychologist
+85.492,89.829,70.417,Psychologist
+87.367,90.946,65.133,Psychologist
+87.378,93.852,68.053,Psychologist
+83.564,89.779,71.841,Psychologist
+82.931,89.163,69.427,Psychologist
+82.28,89.94,68.14,Psychologist
+84.173,89.238,71.77,Psychologist
+85.354,91.269,67.193,Psychologist
+83.822,93.799,70.489,Psychologist
+85.117,94.039,65.15,Journalist
+85.496,94.666,72.332,Journalist
+86.338,99.869,69.7,Journalist
+83.268,97.734,69.311,Journalist
+81.836,93.824,70.944,Journalist
+82.56,93.812,69.068,Journalist
+84.624,97.676,73.965,Journalist
+82.038,96.707,71.473,Journalist
+81.859,96.468,69.767,Journalist
+82.248,92.247,70.072,Journalist
+83.508,98.138,70.293,Journalist
+80.924,97.995,69.991,Journalist
+79.503,95.266,70.35,Journalist
+87.601,95.951,70.707,Journalist
+81.151,95.66,73.913,Journalist
+83.624,93.305,72.078,Journalist
+82.903,95.897,70.29,Journalist
+82.243,94.164,72.884,Journalist
+82.264,94.081,69.116,Journalist
+83.908,95.623,70.102,Journalist
+81.581,98.752,67.239,Journalist
+83.986,97.583,64.226,Journalist
+84.588,94.559,71.512,Journalist
+82.354,97.151,71.726,Journalist
+83.263,93.202,74.765,Journalist
+83.02,99.58,74.855,Journalist
+79.443,93.69,68.926,Journalist
+82.904,95.374,71.46,Journalist
+85.108,97.987,72.935,Journalist
+81.878,93.436,71.006,Journalist
+90.852,69.634,92.309,Financial Analyst
+91.364,69.215,94.155,Financial Analyst
+89.891,69.52,94.267,Financial Analyst
+87.44,69.776,96.406,Financial Analyst
+90.529,71.896,93.543,Financial Analyst
+87.444,69.508,93.772,Financial Analyst
+88.979,70.423,93.994,Financial Analyst
+87.5,68.882,95.68,Financial Analyst
+91.343,71.323,95.849,Financial Analyst
+89.664,70.81,94.915,Financial Analyst
+90.226,68.121,95.088,Financial Analyst
+90.757,70.682,92.425,Financial Analyst
+90.193,67.112,95.347,Financial Analyst
+88.597,73.411,95.238,Financial Analyst
+91.602,74.222,93.365,Financial Analyst
+90.871,67.628,95.69,Financial Analyst
+93.531,68.744,93.228,Financial Analyst
+89.818,74.092,96.542,Financial Analyst
+88.19,72.91,91.69,Financial Analyst
+94.273,71.713,98.527,Financial Analyst
+86.704,70.339,94.732,Financial Analyst
+87.986,67.408,96.014,Financial Analyst
+91.195,72.6,93.993,Financial Analyst
+89.717,67.235,98.082,Financial Analyst
+90.139,71.445,96.516,Financial Analyst
+92.918,68.337,96.395,Financial Analyst
+89.95,74.211,93.331,Financial Analyst
+92.343,70.701,95.596,Financial Analyst
+90.108,72.693,95.528,Financial Analyst
+86.951,72.439,97.072,Financial Analyst
+94.174,69.743,96.054,Investment Banker
+89.245,72.921,95.301,Investment Banker
+89.562,74.55,99.536,Investment Banker
+92.334,71.732,93.185,Investment Banker
+94.833,70.615,98.661,Investment Banker
+88.023,73.955,96.494,Investment Banker
+90.248,71.321,96.807,Investment Banker
+95.149,71.159,100.0,Investment Banker
+93.66,73.789,97.996,Investment Banker
+95.544,69.693,98.227,Investment Banker
+92.207,74.793,100.0,Investment Banker
+93.001,69.417,98.854,Investment Banker
+89.671,75.252,97.054,Investment Banker
+92.939,70.638,96.196,Investment Banker
+94.475,71.683,98.085,Investment Banker
+90.992,73.712,99.916,Investment Banker
+92.582,74.536,97.792,Investment Banker
+94.56,68.754,98.707,Investment Banker
+92.457,72.311,98.221,Investment Banker
+93.251,73.231,96.87,Investment Banker
+94.138,74.465,95.18,Investment Banker
+91.439,70.523,95.816,Investment Banker
+92.051,74.066,100.0,Investment Banker
+93.212,71.352,99.606,Investment Banker
+88.272,69.89,93.357,Investment Banker
+90.869,70.466,100.0,Investment Banker
+87.478,71.167,99.239,Investment Banker
+93.821,74.923,98.322,Investment Banker
+93.749,68.323,96.023,Investment Banker
+89.435,73.145,98.697,Investment Banker
+91.627,63.237,95.054,Statistician
+91.419,63.661,94.959,Statistician
+89.983,63.679,95.267,Statistician
+88.548,65.897,100.0,Statistician
+90.922,65.445,98.073,Statistician
+91.733,63.306,100.0,Statistician
+89.485,66.296,98.06,Statistician
+87.083,64.282,97.113,Statistician
+91.266,65.603,98.515,Statistician
+90.985,65.709,96.91,Statistician
+88.965,65.065,98.498,Statistician
+93.218,66.075,99.669,Statistician
+91.838,66.728,98.875,Statistician
+90.553,66.452,95.119,Statistician
+91.7,66.154,99.102,Statistician
+92.642,67.128,96.801,Statistician
+90.309,64.45,97.533,Statistician
+87.383,67.664,97.088,Statistician
+90.17,59.941,96.926,Statistician
+90.603,63.206,95.654,Statistician
+90.947,63.824,98.144,Statistician
+89.502,65.309,99.36,Statistician
+90.927,65.712,97.585,Statistician
+91.016,64.866,95.857,Statistician
+91.302,64.433,100.0,Statistician
+92.622,62.094,94.206,Statistician
+90.739,64.209,96.634,Statistician
+92.302,65.631,97.611,Statistician
+93.892,62.222,97.208,Statistician
+89.842,67.871,92.581,Statistician
+84.669,68.609,98.253,Risk Analyst
+90.547,66.398,99.013,Risk Analyst
+86.537,70.615,93.802,Risk Analyst
+88.296,69.279,93.068,Risk Analyst
+91.938,67.284,96.275,Risk Analyst
+91.324,66.414,98.122,Risk Analyst
+92.281,66.689,98.739,Risk Analyst
+85.479,68.779,93.543,Risk Analyst
+90.885,69.721,100.0,Risk Analyst
+91.843,67.668,93.837,Risk Analyst
+90.131,67.879,99.102,Risk Analyst
+84.667,72.376,97.064,Risk Analyst
+87.374,69.468,98.595,Risk Analyst
+89.229,64.47,95.412,Risk Analyst
+91.079,68.993,95.687,Risk Analyst
+91.617,69.479,97.633,Risk Analyst
+88.179,66.985,92.6,Risk Analyst
+88.481,69.871,95.592,Risk Analyst
+89.891,70.222,96.746,Risk Analyst
+89.941,65.284,95.355,Risk Analyst
+92.453,68.208,99.793,Risk Analyst
+87.554,68.468,95.235,Risk Analyst
+90.184,69.79,97.205,Risk Analyst
+91.084,67.974,95.619,Risk Analyst
+85.484,69.277,96.344,Risk Analyst
+88.864,67.618,95.926,Risk Analyst
+88.528,66.944,96.479,Risk Analyst
+89.968,66.459,95.199,Risk Analyst
+88.591,68.01,95.744,Risk Analyst
+90.319,64.695,93.05,Risk Analyst
+88.387,64.795,95.768,Civil Engineer
+90.34,66.467,91.856,Civil Engineer
+90.109,66.398,91.026,Civil Engineer
+85.203,69.034,96.702,Civil Engineer
+82.966,63.284,96.282,Civil Engineer
+87.963,67.404,93.876,Civil Engineer
+89.309,66.012,93.125,Civil Engineer
+90.117,66.404,95.305,Civil Engineer
+88.315,65.027,97.217,Civil Engineer
+88.71,65.29,96.557,Civil Engineer
+85.358,70.473,93.642,Civil Engineer
+85.464,69.812,93.074,Civil Engineer
+88.486,67.435,96.368,Civil Engineer
+88.6,64.705,94.438,Civil Engineer
+87.161,66.498,97.256,Civil Engineer
+89.512,66.413,95.477,Civil Engineer
+89.62,63.844,94.083,Civil Engineer
+93.125,68.426,92.993,Civil Engineer
+86.794,64.727,95.733,Civil Engineer
+91.215,67.164,94.314,Civil Engineer
+87.112,66.659,92.36,Civil Engineer
+84.128,69.274,91.988,Civil Engineer
+87.35,67.313,96.869,Civil Engineer
+88.514,63.613,93.397,Civil Engineer
+86.643,65.924,96.464,Civil Engineer
+82.925,65.177,93.032,Civil Engineer
+85.486,67.171,91.17,Civil Engineer
+85.4,67.702,97.001,Civil Engineer
+87.848,63.565,92.589,Civil Engineer
+90.016,66.233,93.798,Civil Engineer
+85.626,69.925,78.091,Mechanical Engineer
+83.502,68.272,72.233,Mechanical Engineer
+83.92,67.816,75.436,Mechanical Engineer
+85.042,67.842,76.178,Mechanical Engineer
+88.034,70.716,69.913,Mechanical Engineer
+88.974,71.494,78.913,Mechanical Engineer
+87.181,72.581,75.411,Mechanical Engineer
+84.475,70.747,73.582,Mechanical Engineer
+85.868,64.746,75.086,Mechanical Engineer
+87.689,70.189,78.455,Mechanical Engineer
+84.473,72.005,73.243,Mechanical Engineer
+86.924,70.465,74.56,Mechanical Engineer
+79.852,69.491,75.427,Mechanical Engineer
+86.657,73.122,79.07,Mechanical Engineer
+87.493,68.876,74.39,Mechanical Engineer
+86.478,71.039,78.257,Mechanical Engineer
+89.959,74.534,77.988,Mechanical Engineer
+86.056,72.699,78.323,Mechanical Engineer
+84.705,68.935,73.465,Mechanical Engineer
+83.247,67.236,75.5,Mechanical Engineer
+83.0,68.433,76.403,Mechanical Engineer
+85.363,70.859,77.73,Mechanical Engineer
+86.729,73.038,75.16,Mechanical Engineer
+88.224,70.719,75.337,Mechanical Engineer
+87.923,68.256,79.047,Mechanical Engineer
+84.436,67.564,76.307,Mechanical Engineer
+84.245,74.052,74.134,Mechanical Engineer
+85.629,67.149,76.626,Mechanical Engineer
+83.445,71.387,74.143,Mechanical Engineer
+80.906,70.262,75.173,Mechanical Engineer
+87.762,68.112,75.825,Network Administrator
+87.728,65.557,69.145,Network Administrator
+86.404,65.43,71.603,Network Administrator
+87.266,67.244,70.363,Network Administrator
+84.332,64.721,70.77,Network Administrator
+82.717,63.007,69.535,Network Administrator
+88.417,68.406,69.809,Network Administrator
+87.092,66.747,69.015,Network Administrator
+86.322,70.067,73.354,Network Administrator
+85.509,63.88,67.955,Network Administrator
+86.941,68.896,70.373,Network Administrator
+82.129,63.672,73.763,Network Administrator
+85.143,63.359,72.038,Network Administrator
+86.459,62.223,71.565,Network Administrator
+85.005,63.718,69.966,Network Administrator
+87.883,63.711,68.01,Network Administrator
+86.529,66.45,70.408,Network Administrator
+84.881,63.702,71.307,Network Administrator
+88.214,64.772,73.679,Network Administrator
+84.062,64.233,73.908,Network Administrator
+84.389,67.024,70.743,Network Administrator
+85.357,68.34,71.128,Network Administrator
+86.291,66.233,72.453,Network Administrator
+86.51,64.887,69.396,Network Administrator
+86.697,63.535,73.552,Network Administrator
+88.744,61.389,74.748,Network Administrator
+85.178,64.738,70.175,Network Administrator
+86.377,65.134,74.154,Network Administrator
+84.517,68.322,73.329,Network Administrator
+86.182,64.638,71.387,Network Administrator
+87.517,67.337,72.582,Research Scientist
+86.719,67.349,71.327,Research Scientist
+88.645,66.554,74.393,Research Scientist
+89.978,68.977,73.636,Research Scientist
+88.87,66.354,74.355,Research Scientist
+89.581,63.865,73.757,Research Scientist
+90.736,66.287,71.851,Research Scientist
+87.16,63.99,73.252,Research Scientist
+88.06,67.394,73.832,Research Scientist
+86.404,67.546,73.886,Research Scientist
+87.023,67.84,73.161,Research Scientist
+86.738,67.566,72.419,Research Scientist
+89.394,66.522,70.42,Research Scientist
+88.534,67.459,70.838,Research Scientist
+89.501,68.396,71.26,Research Scientist
+86.681,66.716,71.482,Research Scientist
+89.281,67.298,70.813,Research Scientist
+86.355,69.375,76.071,Research Scientist
+89.077,66.577,72.12,Research Scientist
+89.099,67.152,69.78,Research Scientist
+90.064,69.692,74.475,Research Scientist
+85.817,65.726,69.285,Research Scientist
+91.192,66.287,77.667,Research Scientist
+91.91,65.193,71.583,Research Scientist
+88.932,63.491,72.123,Research Scientist
+86.924,70.702,73.322,Research Scientist
+87.43,65.737,74.788,Research Scientist
+87.007,66.899,71.722,Research Scientist
+84.965,65.008,71.996,Research Scientist
+87.473,66.561,72.822,Research Scientist
+86.023,65.698,75.896,Cybersecurity Analyst
+86.73,63.509,73.256,Cybersecurity Analyst
+81.313,63.041,74.611,Cybersecurity Analyst
+83.775,63.999,73.439,Cybersecurity Analyst
+87.676,62.499,76.502,Cybersecurity Analyst
+87.452,65.005,76.169,Cybersecurity Analyst
+84.761,61.522,74.903,Cybersecurity Analyst
+86.269,62.523,76.573,Cybersecurity Analyst
+86.379,61.062,72.332,Cybersecurity Analyst
+91.365,62.644,71.272,Cybersecurity Analyst
+83.461,61.751,73.607,Cybersecurity Analyst
+88.898,64.705,73.987,Cybersecurity Analyst
+86.092,63.679,70.503,Cybersecurity Analyst
+90.962,64.308,75.734,Cybersecurity Analyst
+84.852,65.565,73.08,Cybersecurity Analyst
+85.095,62.922,73.875,Cybersecurity Analyst
+84.843,61.21,72.054,Cybersecurity Analyst
+85.073,62.224,71.222,Cybersecurity Analyst
+85.617,65.09,75.647,Cybersecurity Analyst
+84.9,64.916,70.067,Cybersecurity Analyst
+91.858,65.601,72.881,Cybersecurity Analyst
+87.765,60.198,74.121,Cybersecurity Analyst
+86.633,61.33,73.063,Cybersecurity Analyst
+85.866,60.737,72.284,Cybersecurity Analyst
+84.116,64.715,72.136,Cybersecurity Analyst
+84.556,64.683,74.739,Cybersecurity Analyst
+88.609,64.832,77.875,Cybersecurity Analyst
+86.688,60.085,74.542,Cybersecurity Analyst
+85.662,61.085,74.2,Cybersecurity Analyst
+88.732,61.328,76.549,Cybersecurity Analyst
+82.021,59.512,71.773,Quality Assurance Engineer
+83.224,56.448,72.855,Quality Assurance Engineer
+82.753,61.49,68.472,Quality Assurance Engineer
+81.813,61.725,71.681,Quality Assurance Engineer
+83.123,60.71,69.092,Quality Assurance Engineer
+84.221,60.257,70.252,Quality Assurance Engineer
+82.329,60.14,70.89,Quality Assurance Engineer
+83.068,57.932,71.025,Quality Assurance Engineer
+83.073,57.931,71.087,Quality Assurance Engineer
+87.217,59.266,73.996,Quality Assurance Engineer
+88.229,58.093,71.018,Quality Assurance Engineer
+88.207,59.758,71.074,Quality Assurance Engineer
+80.66,58.937,72.111,Quality Assurance Engineer
+88.859,59.608,67.675,Quality Assurance Engineer
+81.19,59.928,73.354,Quality Assurance Engineer
+85.275,60.921,73.618,Quality Assurance Engineer
+82.56,60.038,69.959,Quality Assurance Engineer
+83.457,57.987,70.312,Quality Assurance Engineer
+83.945,59.257,70.678,Quality Assurance Engineer
+84.81,62.477,73.622,Quality Assurance Engineer
+85.523,57.48,70.279,Quality Assurance Engineer
+83.451,58.686,71.685,Quality Assurance Engineer
+80.811,63.387,73.39,Quality Assurance Engineer
+84.956,59.876,73.458,Quality Assurance Engineer
+85.379,62.213,70.882,Quality Assurance Engineer
+87.579,62.334,72.019,Quality Assurance Engineer
+86.512,59.162,68.665,Quality Assurance Engineer
+84.643,59.886,70.605,Quality Assurance Engineer
+86.433,60.334,71.527,Quality Assurance Engineer
+83.346,61.762,72.404,Quality Assurance Engineer
+96.747,49.005,94.608,Software Developer
+98.678,51.684,90.381,Software Developer
+93.396,49.249,90.871,Software Developer
+94.858,51.265,92.58,Software Developer
+95.405,49.518,91.852,Software Developer
+96.593,45.976,91.977,Software Developer
+95.576,51.567,89.98,Software Developer
+92.874,51.168,88.191,Software Developer
+97.664,50.453,95.117,Software Developer
+92.826,49.127,87.184,Software Developer
+93.409,49.632,88.075,Software Developer
+94.211,46.025,91.485,Software Developer
+97.294,49.93,95.316,Software Developer
+96.573,52.696,90.47,Software Developer
+93.422,50.691,88.845,Software Developer
+95.942,49.352,94.66,Software Developer
+96.359,52.193,90.492,Software Developer
+97.096,52.889,91.923,Software Developer
+93.521,48.556,94.478,Software Developer
+100.0,48.037,89.883,Software Developer
+96.843,48.492,94.037,Software Developer
+95.931,49.952,92.883,Software Developer
+95.76,49.641,88.487,Software Developer
+95.357,53.146,88.782,Software Developer
+93.068,50.854,92.077,Software Developer
+95.822,48.601,94.325,Software Developer
+95.094,51.394,92.641,Software Developer
+95.351,51.254,92.373,Software Developer
+92.62,52.175,93.636,Software Developer
+90.786,48.692,94.085,Software Developer
+90.346,49.887,92.718,Backend Engineer
+96.681,47.998,91.556,Backend Engineer
+94.616,47.939,91.378,Backend Engineer
+98.437,46.058,88.514,Backend Engineer
+97.163,46.833,92.406,Backend Engineer
+93.284,46.861,91.468,Backend Engineer
+92.006,48.13,92.196,Backend Engineer
+95.461,48.965,91.145,Backend Engineer
+94.217,47.164,91.017,Backend Engineer
+95.379,47.757,92.185,Backend Engineer
+92.289,45.944,96.978,Backend Engineer
+94.668,45.818,93.576,Backend Engineer
+96.124,48.335,95.748,Backend Engineer
+90.914,44.017,93.521,Backend Engineer
+94.553,41.321,91.753,Backend Engineer
+91.983,45.216,90.978,Backend Engineer
+95.192,45.965,91.034,Backend Engineer
+90.762,50.538,93.869,Backend Engineer
+89.015,46.036,94.057,Backend Engineer
+96.563,49.682,92.289,Backend Engineer
+90.137,49.74,92.406,Backend Engineer
+94.138,47.645,90.289,Backend Engineer
+94.729,48.453,92.148,Backend Engineer
+94.942,45.252,92.462,Backend Engineer
+94.052,44.53,92.886,Backend Engineer
+95.467,47.394,92.932,Backend Engineer
+95.125,47.224,92.404,Backend Engineer
+91.647,47.97,92.33,Backend Engineer
+94.998,49.127,94.582,Backend Engineer
+92.983,43.647,94.483,Backend Engineer
+98.862,47.729,98.11,Mathematician
+95.103,51.06,96.333,Mathematician
+96.342,47.757,96.537,Mathematician
+97.976,49.097,96.141,Mathematician
+98.4,49.017,95.705,Mathematician
+96.404,50.217,98.049,Mathematician
+98.114,50.848,93.077,Mathematician
+96.871,46.687,100.0,Mathematician
+99.426,48.842,98.57,Mathematician
+100.0,51.211,98.843,Mathematician
+97.475,47.997,95.076,Mathematician
+99.005,48.682,96.163,Mathematician
+97.059,51.9,98.905,Mathematician
+100.0,50.058,97.114,Mathematician
+97.949,46.959,94.477,Mathematician
+99.015,47.131,97.423,Mathematician
+100.0,47.669,100.0,Mathematician
+96.019,50.98,97.85,Mathematician
+100.0,46.768,100.0,Mathematician
+97.642,50.353,99.889,Mathematician
+96.791,50.651,95.457,Mathematician
+100.0,47.48,97.077,Mathematician
+98.612,50.569,100.0,Mathematician
+97.096,51.277,100.0,Mathematician
+98.331,47.9,93.54,Mathematician
+100.0,48.511,94.997,Mathematician
+95.283,46.994,98.839,Mathematician
+100.0,50.304,97.265,Mathematician
+95.509,47.54,94.787,Mathematician
+99.146,46.873,95.572,Mathematician
+96.633,42.66,96.094,Cryptographer
+96.786,48.368,94.36,Cryptographer
+94.402,45.252,93.804,Cryptographer
+97.078,42.28,94.789,Cryptographer
+95.143,47.136,94.379,Cryptographer
+93.528,45.596,96.64,Cryptographer
+96.458,44.777,94.657,Cryptographer
+97.226,44.221,95.343,Cryptographer
+98.501,43.397,95.913,Cryptographer
+93.422,46.456,94.042,Cryptographer
+99.039,43.046,96.884,Cryptographer
+99.442,43.939,94.276,Cryptographer
+95.112,45.028,97.035,Cryptographer
+95.865,43.758,91.962,Cryptographer
+100.0,49.361,97.12,Cryptographer
+95.379,47.495,97.897,Cryptographer
+96.492,46.083,98.464,Cryptographer
+93.719,47.997,95.382,Cryptographer
+94.775,43.939,94.271,Cryptographer
+94.58,49.543,96.982,Cryptographer
+99.129,47.125,96.122,Cryptographer
+97.15,45.205,95.368,Cryptographer
+94.184,48.164,92.374,Cryptographer
+94.883,50.024,96.272,Cryptographer
+97.355,47.275,92.919,Cryptographer
+94.212,45.11,94.193,Cryptographer
+96.85,46.971,98.778,Cryptographer
+98.622,44.011,95.25,Cryptographer
+95.706,43.967,93.512,Cryptographer
+100.0,46.021,95.552,Cryptographer
+70.969,96.067,94.238,Financial Consultant
+68.513,95.805,90.178,Financial Consultant
+69.62,95.113,92.309,Financial Consultant
+70.221,96.604,90.806,Financial Consultant
+70.363,93.482,97.842,Financial Consultant
+68.174,93.599,93.765,Financial Consultant
+69.141,96.766,92.306,Financial Consultant
+69.194,93.494,90.422,Financial Consultant
+69.215,94.651,90.336,Financial Consultant
+69.782,92.812,93.512,Financial Consultant
+71.895,93.591,90.48,Financial Consultant
+70.356,97.531,94.973,Financial Consultant
+67.195,97.013,91.877,Financial Consultant
+69.916,96.009,91.038,Financial Consultant
+72.193,97.848,94.923,Financial Consultant
+66.312,94.541,88.13,Financial Consultant
+68.469,90.205,92.901,Financial Consultant
+70.439,94.135,90.418,Financial Consultant
+70.628,92.977,89.841,Financial Consultant
+67.595,94.592,90.835,Financial Consultant
+69.232,96.044,93.927,Financial Consultant
+72.901,95.12,92.695,Financial Consultant
+70.378,91.652,91.261,Financial Consultant
+69.27,93.978,91.918,Financial Consultant
+69.561,93.027,91.698,Financial Consultant
+68.722,89.762,89.206,Financial Consultant
+70.178,97.184,87.146,Financial Consultant
+68.259,95.863,93.756,Financial Consultant
+69.16,93.634,94.439,Financial Consultant
+71.592,96.717,91.064,Financial Consultant
+74.227,88.11,93.262,Business Development Executive
+71.867,92.258,89.109,Business Development Executive
+68.372,92.215,92.103,Business Development Executive
+73.405,93.19,91.736,Business Development Executive
+70.152,93.535,88.929,Business Development Executive
+74.214,91.832,90.899,Business Development Executive
+73.732,94.003,92.541,Business Development Executive
+70.359,93.525,89.37,Business Development Executive
+73.576,89.15,90.813,Business Development Executive
+70.358,93.74,93.23,Business Development Executive
+72.398,92.332,92.408,Business Development Executive
+74.242,92.075,90.001,Business Development Executive
+73.295,88.283,92.819,Business Development Executive
+70.58,91.52,92.832,Business Development Executive
+71.169,93.295,93.278,Business Development Executive
+72.22,92.623,90.761,Business Development Executive
+72.231,89.767,90.413,Business Development Executive
+69.424,90.202,86.994,Business Development Executive
+72.528,95.383,90.088,Business Development Executive
+73.93,94.251,88.602,Business Development Executive
+70.032,93.982,90.815,Business Development Executive
+69.418,90.726,91.839,Business Development Executive
+70.412,86.451,90.356,Business Development Executive
+71.518,92.018,93.518,Business Development Executive
+72.107,92.486,93.111,Business Development Executive
+72.021,96.273,88.473,Business Development Executive
+70.132,93.228,93.509,Business Development Executive
+71.598,89.979,94.522,Business Development Executive
+70.415,92.678,93.628,Business Development Executive
+71.117,90.756,89.893,Business Development Executive
+69.803,96.12,72.067,Teacher
+71.766,94.064,74.585,Teacher
+67.136,98.668,75.14,Teacher
+67.744,96.869,74.768,Teacher
+71.106,89.036,73.439,Teacher
+69.085,94.942,72.437,Teacher
+68.496,96.566,73.079,Teacher
+68.434,96.279,72.836,Teacher
+69.027,97.734,71.131,Teacher
+64.969,94.145,72.429,Teacher
+69.443,94.215,73.51,Teacher
+73.009,95.603,73.955,Teacher
+67.741,91.229,67.404,Teacher
+66.963,88.839,73.027,Teacher
+67.234,91.373,72.262,Teacher
+66.523,94.902,73.415,Teacher
+66.596,93.525,72.43,Teacher
+65.186,94.43,69.138,Teacher
+69.131,93.13,69.127,Teacher
+66.84,92.925,74.137,Teacher
+68.347,92.087,75.298,Teacher
+69.253,93.327,68.892,Teacher
+67.151,93.559,72.738,Teacher
+69.215,95.613,68.777,Teacher
+68.417,93.681,77.356,Teacher
+68.129,92.755,72.221,Teacher
+67.983,90.022,72.817,Teacher
+67.379,93.947,70.253,Teacher
+65.812,95.758,74.217,Teacher
+68.836,90.378,72.966,Teacher
+65.408,90.678,72.731,HR Manager
+70.315,92.914,73.626,HR Manager
+70.12,87.962,70.261,HR Manager
+68.917,91.683,69.766,HR Manager
+66.94,96.801,70.223,HR Manager
+73.703,89.717,72.314,HR Manager
+69.459,90.156,70.065,HR Manager
+68.97,90.312,70.488,HR Manager
+64.27,93.423,73.454,HR Manager
+69.909,96.529,72.364,HR Manager
+71.286,94.477,65.498,HR Manager
+69.847,89.234,68.638,HR Manager
+66.986,91.375,72.301,HR Manager
+69.868,91.975,72.445,HR Manager
+70.567,92.885,67.551,HR Manager
+67.521,92.053,72.467,HR Manager
+66.343,91.977,67.869,HR Manager
+71.052,92.485,68.308,HR Manager
+66.295,92.775,73.75,HR Manager
+66.806,93.573,69.916,HR Manager
+70.646,93.366,71.311,HR Manager
+65.331,93.362,72.004,HR Manager
+69.821,92.391,69.242,HR Manager
+71.166,93.796,68.849,HR Manager
+71.629,92.263,71.258,HR Manager
+68.647,91.844,73.742,HR Manager
+71.066,94.024,71.369,HR Manager
+70.778,90.331,72.167,HR Manager
+68.693,87.88,67.828,HR Manager
+67.674,92.83,69.676,HR Manager
+64.818,91.527,71.89,Customer Support Executive
+68.662,92.33,73.044,Customer Support Executive
+67.507,91.234,72.509,Customer Support Executive
+67.723,92.018,71.095,Customer Support Executive
+66.307,90.285,74.699,Customer Support Executive
+65.112,88.804,73.338,Customer Support Executive
+68.363,87.601,70.95,Customer Support Executive
+64.959,89.315,69.469,Customer Support Executive
+68.996,89.739,72.44,Customer Support Executive
+69.245,91.436,71.929,Customer Support Executive
+66.329,89.917,75.897,Customer Support Executive
+65.665,87.116,69.246,Customer Support Executive
+68.95,88.423,74.34,Customer Support Executive
+66.144,89.167,72.48,Customer Support Executive
+69.167,87.104,72.227,Customer Support Executive
+67.813,87.434,75.635,Customer Support Executive
+67.784,90.544,71.994,Customer Support Executive
+63.177,91.414,78.497,Customer Support Executive
+66.292,86.348,73.915,Customer Support Executive
+67.721,88.164,71.709,Customer Support Executive
+64.505,88.937,72.656,Customer Support Executive
+64.278,87.528,73.349,Customer Support Executive
+65.635,89.128,73.166,Customer Support Executive
+62.96,90.526,72.169,Customer Support Executive
+66.479,90.799,75.262,Customer Support Executive
+66.206,92.133,72.356,Customer Support Executive
+65.452,89.818,74.548,Customer Support Executive
+67.262,90.27,70.545,Customer Support Executive
+67.226,88.277,71.168,Customer Support Executive
+63.723,89.834,75.423,Customer Support Executive

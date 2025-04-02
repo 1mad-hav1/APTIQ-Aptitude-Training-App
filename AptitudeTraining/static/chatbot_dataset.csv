@@ -1,0 +1,572 @@
+question,answer,description,type
+All cats are animals. Some animals are wild. Some cats are wild. All animals are cats.,Neither follows,The given statements do not imply that some cats are wild. Also  not all animals are cats.,Logical
+A man introduces a woman as the daughter of the only son of his father. How is the woman related to the man?,Daughter,The 'only son of his father' refers to the man himself. His daughter would be the woman mentioned.,Logical
+If MANGO is coded as ONAGM  how is BREAD written in that code?,DAERB,The word is reversed in order. Following this pattern  'BREAD' when reversed becomes 'DAERB'.,Logical
+Find the missing number: 3  6  11  18  ?,27,The pattern follows (n² - 2): 2² - 2 = 3  3² - 2 = 6  4² - 2 = 11  5² - 2 = 18  6² - 2 = 27.,Logical
+A man walks 5m west  then 10m south  then 5m east. How far is he from the starting point?,10m,The man moves 5m west and then 5m east  canceling out the horizontal movement. He is left with a vertical movement of 10m south.,Logical
+Some birds are parrots. All parrots are intelligent. Some birds are intelligent. All intelligent beings are parrots.,Only conclusion 1 follows,Some birds being parrots and all parrots being intelligent means that some birds are intelligent.,Logical
+Find the odd one out: Circle  Triangle  Square  Sphere,Sphere,All other shapes are 2D  while a sphere is 3D.,Logical
+Find the next term: A  C  F  J  ?,O,The pattern follows increasing letter gaps: A → C (skip 1)  C → F (skip 2)  F → J (skip 3)  J → O (skip 4).,Logical
+A clock is set right at 6 AM. It loses 10 minutes every hour. What will be the actual time when the clock shows 3 PM?,5:00 PM,Every hour  the clock loses 10 minutes  so in 9 hours  it loses 90 minutes (1.5 hours).,Logical
+P  Q  R  S  and T are sitting in a row. Q is to the left of R but right of P. S is to the right of R. Who is sitting in the middle?,R,The correct order is P - Q - R - S - T  where R is in the middle.,Logical
+Statement: 'If you work hard  you will succeed.' Assumptions: 1. Hard work leads to success. 2. Success is guaranteed.,Only assumption 1 follows,The statement suggests that hard work contributes to success but does not guarantee it.,Logical
+A girl says  'The father of my mother is the only son of my grandfather.' How is the girl's father related to her grandfather?,Son,'Only son of my grandfather' refers to the girl's father.,Logical
+If DOG is coded as EPI  how is CAT coded?,DBU,Each letter is shifted one step forward in the alphabet.,Logical
+Find the missing number: 4  9  16  25  ?,36,The pattern follows n²: 2² = 4  3² = 9  4² = 16  5² = 25  6² = 36.,Logical
+A man walks 8m east  then 6m north. How far is he from his starting point?,10m,Using the Pythagorean theorem: sqrt(8² + 6²) = sqrt(100) = 10.,Logical
+All dogs are animals. Some animals are wild. Some dogs are wild. All animals are dogs.,Neither follows,The statements do not establish that some dogs are wild or that all animals are dogs.,Logical
+Find the odd one out: Lion  Tiger  Bear  Elephant,Elephant,All other animals are carnivores  while an elephant is a herbivore.,Logical
+Find the next letter: B  D  G  K  ?,P,Increasing letter gaps: B → D (skip 1)  D → G (skip 2)  G → K (skip 3)  K → P (skip 4).,Logical
+If today is Monday  what day will it be after 61 days?,Saturday,61 days = 8 weeks + 5 extra days. Starting from Monday  adding 5 days gives Saturday.,Logical
+A  B  C  D  and E are seated in a row. B is to the left of C but right of A. D is to the right of C. Who is in the middle?,R,The correct order is P - Q - R - S - T  where R is in the middle.,Logical
+All birds can fly. Penguins are birds. Penguins can fly.,Does not follow,The statement generalizes birds  but penguins are an exception as they cannot fly.,Logical
+Some fruits are apples. Some apples are red. Some fruits are red.,Does not follow,The statement does not confirm that the red apples belong to the 'some fruits' category.,Logical
+All engineers are graduates. Some graduates are teachers. Some engineers are teachers.,Does not follow,The given statement does not establish any direct relationship between engineers and teachers.,Logical
+Some laptops are Dell. All Dell devices are expensive. Some laptops are expensive.,Follows,Since some laptops are Dell and all Dell devices are expensive  it follows that some laptops are expensive.,Logical
+No fish can walk. All animals can walk. Fish are not animals.,Does not follow,The statement does not exclude fish from the animal category; it only states that fish cannot walk.,Logical
+A boy introduces a girl as the daughter of his father’s sister. How is the girl related to the boy?,Cousin,The boy’s father’s sister is his aunt  and her daughter is his cousin.,Logical
+A woman says  'The only brother of my mother is the father of your son.' How is the woman related to the listener?,Sister,The woman's mother's brother is her uncle  who is also the father of the listener's son  meaning the listener is her brother.,Logical
+Pointing at a man  a woman says  'His mother is the only daughter of my mother.' How is the man related to the woman?,Grandson,'The only daughter of my mother' refers to the woman herself. Her daughter's son is her grandson.,Logical
+A says to B  'Your mother’s husband’s sister is my aunt.' How is B related to A?,Brother,Your mother’s husband' is B’s father  and his sister is A’s aunt  meaning A and B are siblings.,Logical
+A man says  'The son of my grandfather’s only son is my...',Himself,Grandfather’s only son' refers to the man’s father  and his son is himself.,Logical
+If NEED is coded as MDDC  how is HELP coded?,GDOK,Each letter is shifted one place backward in alphabetical order.,Logical
+If SMART is coded as TRBQS  how is CLOUD coded?,DKNVC,Each letter is replaced by the next letter in alphabetical order  except for vowels  which move two places ahead.,Logical
+If TABLE is coded as GZOYV  how is CHAIR coded?,XKZSV,The letters are replaced by their opposite positions in the alphabet.,Logical
+If WATER is written as YCVGT  how is MUSIC written?,OWUKE,Each letter moves two steps forward in the alphabet.,Logical
+If CAT is coded as DBU  how is DOG coded?,DBU,Each letter moves one step forward in the alphabet.,Logical
+Find the missing number: 2  5  10  17  ?,26,The pattern follows n² + 1.,Logical
+Find the missing number: 1  3  7  13  ?,21,The pattern follows consecutive odd numbers added to the previous term.,Logical
+Find the missing number: 4  12  36  108  ?,324,Each term is multiplied by 3.,Logical
+Find the missing number: 8  27  64  125  ?,216,The pattern follows n³.,Logical
+Find the missing number: 5  11  23  47  ?,95,The pattern follows previous term × 2 + 1.,Logical
+A man walks 10m south  turns right  walks 5m  then turns right and walks 10m. Where is he now?,5m east,He moves in a rectangular pattern and ends up shifted eastward.,Logical
+A person walks 8m north  turns left  walks 6m  turns left and walks 8m. Where is he now?,6m west,He moves in a rectangular path  ending 6m west of where he started.,Logical
+A clock shows 6:30. What is the angle between the hour and minute hands?,15 degrees,Each hour represents 30 degrees; the hour hand moves half that in 30 minutes.,Logical
+If a person walks 20m east  10m north  and 10m west  where is he from his starting point?,10m north and 10m east,The movements create a right-angled path.,Logical
+A man faces west  turns 90° clockwise  then 180° counterclockwise. What direction is he facing?,East,90° clockwise = North  180° counterclockwise = East.,Logical
+If CAT is coded as DBV  how is DOG coded?,EPH,Each letter moves one step forward in alphabetical order.,Logical
+A person walks 9m west  then 12m north. How far is he from the starting point?,15m,Using the Pythagorean theorem: sqrt(9² + 12²) = 15.,Logical
+Find the missing number: 1  4  9  16  ?,25,The pattern follows n²: 1²  2²  3²  4²  5².,Logical
+A clock shows 5:15. What is the angle between the hour and minute hands?,7.5 degrees,Each hour represents 30 degrees. The hour hand moves slightly  creating a small angle.,Logical
+A girl says  'The son of my father’s sister is my…',Cousin,The son of her father’s sister is her cousin.,Logical
+Find the odd one out: Grapes  Mango  Carrot  Banana,Carrot,All others are fruits  but a carrot is a vegetable.,Logical
+Find the missing number: 3  8  15  24  ?,35,The pattern follows n² - 1: 2²-1  3²-1  4²-1  5²-1  6²-1 = 35.,Logical
+Pointing to a photograph  a woman says  'His only daughter is my aunt.' How is the person in the photo related to the woman?,Grandfather,If his only daughter is the woman's aunt  then the person in the photo is the woman's grandfather.,Logical
+A train moving at 90 km/hr covers a distance in 4 hours. How much distance does it cover?,360 km,Using speed = distance/time: Distance = Speed × Time = 90 × 4 = 360 km.,Logical
+Find the missing number: 4  10  18  28  ?,40,Each term follows n² + n: 1²+1  2²+2  3²+3  4²+4  5²+5 = 40.,Logical
+Find the next letter: P  R  U  Y  ?,D,Increasing letter gaps.,Logical
+A man walks 12m east  then 16m north. How far is he from the starting point?,20m,Using Pythagorean theorem: sqrt(12² + 16²) = 20.,Logical
+A boy says  'My father’s brother is my…',Uncle,His father's brother is his uncle.,Logical
+If a clock is set right at 1:00 and gains 6 minutes every hour  what is the actual time when it shows 7:00 PM?,6:30 PM,It gains 6 minutes every hour  meaning in 6 hours  it has gained 36 minutes.,Logical
+Find the odd one out: Rectangle  Square  Cylinder  Triangle,Cylinder,All others are 2D shapes  but a cylinder is 3D.,Logical
+If A = 2  B = 4  C = 6  find the value of DOG?,26,D(8) + O(14) + G(4) = 26.,Logical
+Find the missing number: 2  6  12  20  ?,30,The pattern follows n² + n: 1²+1  2²+2  3²+3  4²+4  5²+5 = 30.,Logical
+Find the missing number: 3  7  13  21  ?,31,The pattern follows consecutive odd numbers added to the previous term.,Logical
+Find the missing number: 9  27  81  243  ?,729,The pattern follows n³.,Logical
+If 4 cats catch 4 mice in 4 minutes  how many cats are needed to catch 100 mice in 100 minutes?,4,Each cat catches one mouse in 4 minutes  so 4 cats will always catch 100 mice in 100 minutes.,Logical
+A person faces north  turns right  then left. What direction is he facing?,North,Understanding movement directions.,Logical
+Find the odd one: Pen  Pencil  Eraser  Chair,Chair,All others are stationery items.,Logical
+Find the missing number: 6  14  30  62  ?,126,Each term follows previous term × 2 + 2.,Logical
+Find the next letter: D  H  M  S  ?,Z,Increasing letter gaps.,Logical
+If RAT is coded as TCV  how is FOX coded?,HPZ,Each letter moves two steps forward in alphabetical order.,Logical
+A person walks 7m west  then 24m north. How far is he from the starting point?,25m,Using the Pythagorean theorem: sqrt(7² + 24²) = 25.,Logical
+Find the missing number: 5  11  19  29  ?,26,The pattern follows n² + 1: 1²+1  2²+1  3²+1  4²+1  5²+1 = 26.,Logical
+A clock shows 2:50. What is the angle between the hour and minute hands?,95 degrees,Each hour represents 30 degrees  and the hour hand moves slightly  creating an angle.,Logical
+A girl says  'The son of my uncle’s father is my…',Father,The son of her uncle’s father is her father.,Logical
+Find the odd one out: Orange  Pineapple  Onion  Mango,Onion,All others are fruits  but an onion is a vegetable.,Logical
+Find the missing number: 4  11  20  31  ?,44,The pattern follows n² + n + 2.,Logical
+Pointing to a photograph  a man says  'His only daughter is my mother.' How is the person in the photo related to the man?,Grandfather,If his only daughter is the man's mother  then the person in the photo is the man's grandfather.,Logical
+A train moving at 75 km/hr covers a distance in 5 hours. How much distance does it cover?,375 km,Using speed = distance/time: Distance = Speed × Time = 75 × 5 = 375 km.,Logical
+Find the missing number: 5  13  25  41  ?,61,Each term follows n² + n - 1.,Logical
+Find the next letter: F  J  O  U  ?,B,Increasing letter gaps.,Logical
+A man walks 9m east  then 40m north. How far is he from the starting point?,41m,Using Pythagorean theorem: sqrt(9² + 40²) = 41.,Logical
+A boy says  'My aunt’s son is my…',Cousin,His aunt’s son is his cousin.,Logical
+If a clock is set right at 3:00 and loses 4 minutes every hour  what is the actual time when it shows 9:00 PM?,10:24 PM,It loses 4 minutes every hour  meaning in 6 hours  it has lost 24 minutes.,Logical
+Find the odd one out: Cube  Sphere  Pyramid  Square,Square,All others are 3D shapes  but a square is 2D.,Logical
+If A = 3  B = 6  C = 9  find the value of DOG?,42,D(12) + O(15) + G(15) = 42.,Logical
+Find the missing number: 3  7  13  21  ?,35,The pattern follows n² - 1.,Logical
+Find the missing number: 2  7  14  23  ?,36,The pattern follows n².,Logical
+Find the missing number: 16  32  64  128  ?,256,The pattern follows powers of 2.,Logical
+If 6 cats catch 6 mice in 6 minutes  how many cats are needed to catch 90 mice in 90 minutes?,6,Each cat catches one mouse in 6 minutes  so 6 cats will always catch 90 mice in 90 minutes.,Logical
+A person faces west  turns left  then left again. What direction is he facing?,East,Understanding movement directions.,Logical
+Find the odd one: Laptop  Keyboard  Monitor  Spoon,Spoon,All others are computer-related items.,Logical
+Find the missing number: 7  15  31  63  ?,127,Each term follows previous term × 2 + 1.,Logical
+Find the next letter: G  K  P  V  ?,C,Increasing letter gaps.,Logical
+If PAN is coded as QBO  how is HAT coded?,IBU,Each letter moves one step forward in alphabetical order.,Logical
+A person walks 12m east  then 35m north. How far is he from the starting point?,37m,Using the Pythagorean theorem: sqrt(12² + 35²) = 37.,Logical
+Find the missing number: 1  5  11  19  ?,31,The pattern follows consecutive prime numbers added to the previous term.,Logical
+A clock shows 10:20. What is the angle between the hour and minute hands?,130 degrees,Each hour represents 30 degrees  and the hour hand moves slightly  creating an angle.,Logical
+A boy says  'The son of my grandmother’s only child is my…',Himself,The grandmother’s only child is the boy’s parent  so the son is himself.,Logical
+Find the odd one out: Apple  Banana  Potato  Mango,Potato,All others are fruits  but a potato is a vegetable.,Logical
+Find the missing number: 6  14  26  42  ?,62,The pattern follows n² + n + 2.,Logical
+Pointing to a photograph  a woman says  'His only son is my father.' How is the person in the photo related to the woman?,Grandfather,If his only son is the woman's father  then the person in the photo is her grandfather.,Logical
+A train moving at 85 km/hr covers a distance in 6 hours. How much distance does it cover?,510 km,Using speed = distance/time: Distance = Speed × Time = 85 × 6 = 510 km.,Logical
+Find the missing number: 9  19  39  79  ?,159,Each term follows previous term × 2 + 1.,Logical
+Find the next letter: R  U  Y  D  ?,J,Increasing letter gaps.,Logical
+A man walks 15m east  then 36m north. How far is he from the starting point?,39m,Using Pythagorean theorem: sqrt(15² + 36²) = 39.,Logical
+A girl says  'My aunt’s daughter is my…',Cousin,Her aunt’s daughter is her cousin.,Logical
+If a clock is set right at 4:00 and gains 3 minutes every hour  what is the actual time when it shows 10:00 PM?,9:18 PM,It gains 3 minutes every hour  meaning in 6 hours  it has gained 18 minutes.,Logical
+Find the odd one out: Cone  Cube  Sphere  Triangle,Triangle,All others are 3D shapes  but a triangle is 2D.,Logical
+If A = 5  B = 10  C = 15  find the value of DOG?,50,D(20) + O(15) + G(15) = 50.,Logical
+Find the missing number: 4  10  18  28  ?,30,The pattern follows n² + n: 1²+1  2²+2  3²+3  4²+4  5²+5 = 30.,Logical
+Find the missing number: 8  17  26  35  ?,44,The pattern follows adding 9 to each previous term.,Logical
+Find the missing number: 18  36  72  144  ?,288,The pattern follows doubling the previous term.,Logical
+If 7 cats catch 7 mice in 7 minutes  how many cats are needed to catch 49 mice in 49 minutes?,7,Each cat catches one mouse in 7 minutes  so 7 cats will always catch 49 mice in 49 minutes.,Logical
+A person faces south  turns right  then right again. What direction is he facing?,North,Understanding movement directions.,Logical
+Find the odd one: Mobile  Laptop  Tablet  Refrigerator,Refrigerator,All others are portable electronic devices.,Logical
+Find the missing number: 4  12  28  52  ?,84,Each term follows previous term × 2 + 4.,Logical
+Find the next letter: A  E  J  P  ?,W,Increasing letter gaps.,Logical
+If SUN is coded as VXP  how is MOON coded?,PRRQ,Each letter moves three steps forward in alphabetical order.,Logical
+A person walks 20m west  then 48m north. How far is he from the starting point?,52m,Using the Pythagorean theorem: sqrt(20² + 48²) = 52.,Logical
+Find the missing number: 5  11  19  29  ?,41,The pattern follows adding consecutive even numbers.,Logical
+A clock shows 7:40. What is the angle between the hour and minute hands?,130 degrees,Each hour represents 30 degrees  and the hour hand moves slightly  creating an angle.,Logical
+A boy says  'The son of my father’s father is my…',Father or Uncle,The son of his grandfather could be his father or uncle.,Logical
+Find the odd one out: Lion  Elephant  Giraffe  Lizard,Lizard,All others are mammals  but a lizard is a reptile.,Logical
+Find the missing number: 7  17  35  71  ?,127,Each term follows previous term × 2 + 1.,Logical
+Pointing to a photograph  a person says  'Her only daughter is my sister.' How is the person in the photo related to the person?,Mother,If her only daughter is the person’s sister  then the woman in the photo is the person's mother.,Logical
+A train moving at 95 km/hr covers a distance in 4.5 hours. How much distance does it cover?,427.5 km,Using speed = distance/time: Distance = Speed × Time = 95 × 4.5 = 427.5 km.,Logical
+Find the missing number: 10  20  35  55  ?,80,Each term follows previous term + increasing intervals (10  15  20  25).,Logical
+Find the next letter: C  H  N  U  ?,A,Increasing letter gaps.,Logical
+A man walks 30m east  then 40m north. How far is he from the starting point?,50m,Using Pythagorean theorem: sqrt(30² + 40²) = 50.,Logical
+A girl says  'My cousin’s father is my…',Uncle,Her cousin’s father is her uncle.,Logical
+If a clock is set right at 9:00 and loses 2 minutes every hour  what is the actual time when it shows 6:00 PM?,6:18 PM,It loses 2 minutes every hour  meaning in 9 hours  it has lost 18 minutes.,Logical
+Find the odd one out: Hexagon  Pentagon  Octagon  Circle,Circle,All others are polygons  but a circle is not.,Logical
+If A = 6  B = 12  C = 18  find the value of DOG?,54,D(24) + O(15) + G(15) = 54.,Logical
+Find the missing number: 8  18  38  78  ?,35,The pattern follows n² - 1.,Logical
+Find the missing number: 5  10  20  40  ?,80,Each term doubles the previous one.,Logical
+Find the missing number: 25  50  100  200  ?,400,The pattern follows multiplying by 2.,Logical
+If 9 cats catch 9 mice in 9 minutes  how many cats are needed to catch 81 mice in 81 minutes?,9,Each cat catches one mouse in 9 minutes  so 9 cats will always catch 81 mice in 81 minutes.,Logical
+A person faces east  turns right  then right again. What direction is he facing?,West,Understanding movement directions.,Logical
+Find the odd one: Table  Chair  Fan  Sofa,Fan,All others are furniture.,Logical
+Find the missing number: 10  22  46  94  ?,126,Each term follows previous term × 2 + 2.,Logical
+Find the next letter: J  O  U  B  ?,J,Increasing letter gaps.,Logical
+If BAT is coded as DCV  how is CAT coded?,EDV,Each letter moves two steps forward in alphabetical order.,Logical
+A person walks 16m west  then 30m north. How far is he from the starting point?,34m,Using the Pythagorean theorem: sqrt(16² + 30²) = 34.,Logical
+Find the missing number: 7  13  21  31  ?,43,The pattern follows adding consecutive even numbers.,Logical
+A clock shows 8:25. What is the angle between the hour and minute hands?,112.5 degrees,Each hour represents 30 degrees  and the hour hand moves slightly  creating an angle.,Logical
+A boy says  'The brother of my mother’s sister is my…',Uncle,The brother of his mother’s sister is his uncle.,Logical
+Find the odd one out: Rabbit  Deer  Elephant  Crocodile,Crocodile,All others are mammals  but a crocodile is a reptile.,Logical
+A person faces north  turns left  then left again. What direction is he facing?,159,Each term follows previous term × 2 + 1.,Logical
+Pointing to a photograph  a girl says  'Her only son is my father.' How is the person in the photo related to the girl?,Grandmother,If her only son is the girl's father  then the person in the photo is the girl's grandmother.,Logical
+A train moving at 100 km/hr covers a distance in 5 hours. How much distance does it cover?,500 km,Using speed = distance/time: Distance = Speed × Time = 100 × 5 = 500 km.,Logical
+Find the missing number: 11  23  47  95  ?,191,Each term follows previous term × 2 + 1.,Logical
+Find the next letter: K  O  T  Z  ?,G,Increasing letter gaps.,Logical
+A man walks 24m east  then 32m north. How far is he from the starting point?,40m,Using Pythagorean theorem: sqrt(24² + 32²) = 40.,Logical
+A boy says  'My cousin’s mother is my…',Aunt,His cousin’s mother is his aunt.,Logical
+If a clock is set right at 2:00 and gains 2 minutes every hour  what is the actual time when it shows 10:00 PM?,9:16 PM,It gains 2 minutes every hour  meaning in 8 hours  it has gained 16 minutes.,Logical
+Find the odd one out: Triangle  Square  Hexagon  Sphere,Sphere,All others are 2D shapes  but a sphere is 3D.,Logical
+If A = 7  B = 14  C = 21  find the value of DOG?,63,D(28) + O(15) + G(20) = 63.,Logical
+Find the next letter: D  I  O  V  ?,26,The pattern follows n² + 1.,Logical
+Find the missing number: 12  24  48  96  ?,192,Each term follows multiplying by 2.,Logical
+Find the missing number: 32  64  128  256  ?,512,The pattern follows powers of 2.,Logical
+If 8 cats catch 8 mice in 8 minutes  how many cats are needed to catch 64 mice in 64 minutes?,8,Each cat catches one mouse in 8 minutes  so 8 cats will always catch 64 mice in 64 minutes.,Logical
+A person faces north  turns left  then left again. What direction is he facing?,South,Understanding movement directions.,Logical
+Find the odd one: Door  Window  Roof  Television,Television,All others are parts of a house.,Logical
+Find the missing number: 4  10  22  46  ?,94,Each term follows previous term × 2 + 2.,Logical
+Find the next letter: B  F  K  Q  ?,X,Increasing letter gaps.,Logical
+If BAG is coded as DCJ  how is CAT coded?,EDV,Each letter moves two steps forward in alphabetical order.,Logical
+A person walks 18m west  then 24m north. How far is he from the starting point?,30m,Using the Pythagorean theorem: sqrt(18² + 24²) = 30.,Logical
+Find the missing number: 8  17  26  37  ?,50,The pattern follows adding consecutive odd numbers.,Logical
+A clock shows 6:10. What is the angle between the hour and minute hands?,115 degrees,Each hour represents 30 degrees  and the hour hand moves slightly  creating an angle.,Logical
+A girl says  'The sister of my father’s brother is my…',Aunt,The sister of her father’s brother is her aunt.,Logical
+Find the odd one out: Dog  Cat  Cow  Lizard,Lizard,All others are mammals  but a lizard is a reptile.,Logical
+Find the missing number: 12  26  42  60  ?,80,Each term follows previous term + increasing intervals (14  16  18  20).,Logical
+Pointing to a photograph  a woman says  'His only daughter is my mother.' How is the person in the photo related to the woman?,Grandfather,If his only daughter is the woman's mother  then the person in the photo is the woman's grandfather.,Logical
+A train moving at 110 km/hr covers a distance in 6 hours. How much distance does it cover?,660 km,Using speed = distance/time: Distance = Speed × Time = 110 × 6 = 660 km.,Logical
+Find the missing number: 13  27  55  111  ?,223,Each term follows previous term × 2 + 1.,Logical
+Find the next letter: M  R  X  E  ?,M,Increasing letter gaps.,Logical
+A man walks 25m east  then 60m north. How far is he from the starting point?,65m,Using Pythagorean theorem: sqrt(25² + 60²) = 65.,Logical
+A boy says  'My cousin’s father is my…',Uncle,His cousin’s father is his uncle.,Logical
+If a clock is set right at 11:00 and loses 1.5 minutes every hour  what is the actual time when it shows 8:00 PM?,08:13.5,It loses 1.5 minutes every hour  meaning in 9 hours  it has lost 13.5 minutes.,Logical
+Find the odd one out: Cube  Sphere  Pyramid  Rectangle,Rectangle,All others are 3D shapes  but a rectangle is 2D.,Logical
+If A = 8  B = 16  C = 24  find the value of DOG?,72,D(32) + O(20) + G(20) = 72.,Logical
+Find the missing number: 4  9  16  25  ?,36,The pattern follows n².,Logical
+Find the missing number: 20  40  80  160  ?,320,Each term follows multiplying by 2.,Logical
+Find the missing number: 64  128  256  512  ?,1024,The pattern follows powers of 2.,Logical
+If 5 cats catch 5 mice in 5 minutes  how many cats are needed to catch 25 mice in 25 minutes?,5,Each cat catches one mouse in 5 minutes  so 5 cats will always catch 25 mice in 25 minutes.,Logical
+A person faces south  turns right  then right again. What direction is he facing?,North,Understanding movement directions.,Logical
+Find the odd one: Television  Laptop  Smartphone  Table,Table,All others are electronic devices.,Logical
+Find the missing number: 5  15  35  75  ?,155,Each term follows previous term × 2 + 5.,Logical
+Find the next letter: C  H  N  U  ?,A,Increasing letter gaps.,Logical
+A  B  C  D  and E are standing in a circle. A is between B and C. D is to the right of C. Who is opposite to A?,E,Based on the given arrangement  E is opposite to A.,Logical
+If TREE is coded as USFF  how is PLANT coded?,QMBOU,Each letter is shifted forward by one place.,Logical
+Find the missing number: 1  4  9  16  ?,25,The sequence follows n^2: 1^2  2^2  3^2  4^2  5^2.,Logical
+Find the missing number: 3  6  11  18  ?,27,The difference increases by 2 each time: +3  +5  +7  +9.,Logical
+Find the missing number: 10  15  25  40  ?,60,The difference follows +5  +10  +15  +20.,Logical
+Find the missing number: 2  10  30  68  ?,130,The pattern follows n^2 + n.,Logical
+If 4+3=25 and 5+2=27  what is 6+1?,29,The pattern is a+b = a^2 - b.,Logical
+A is taller than B  but shorter than C. D is taller than C. Who is the tallest?,D,D is taller than C  making D the tallest.,Logical
+A clock shows 3:15. The minute hand is pointing at?,3,The minute hand points at 3 when it is 15 minutes past the hour.,Logical
+A person walks 10m north  turns right  walks 5m  turns right again  and walks 10m. How far is he from the starting point?,5m,The person is 5m away in the east direction.,Logical
+If APPLE is written as 52216  how is ORANGE written?,1521415,Each letter is converted to its position in the alphabet.,Logical
+Find the odd one out: Pen  Pencil  Eraser  Apple.,Apple,Apple is not a stationary item.,Logical
+If BOX is coded as YLC  how is CAT coded?,XZG,Each letter is replaced by its opposite letter in the alphabet.,Logical
+If 2+3=13 and 4+5=41  what is 6+7?,85,The pattern is a+b = a*b + a.,Logical
+Find the missing number: 2  6  12  20  ?,30,The difference follows +4  +6  +8  +10.,Logical
+Which word does not belong: Dog  Cat  Elephant  Rose?,Rose,Rose is not an animal.,Logical
+If A=1  B=2  ...  Z=26  what is the sum of the letters in 'CODE'?,27,C(3) + O(15) + D(4) + E(5) = 27.,Logical
+John is older than Mike but younger than Sam. Who is the youngest?,Mike,Mike is younger than John  making him the youngest.,Logical
+Find the next letter: A  C  F  J  ?,O,The sequence follows +2  +3  +4  +5.,Logical
+What comes next in the sequence: 1  1  2  3  5  ?,8,It follows the Fibonacci series: 1  1  2  3  5  8.,Logical
+What is 25 percent of 200,50,25 percent of 200 is calculated as 25 by 100 multiplied by 200 equals 50,Quantitative
+If the sum of two numbers is 40 and their difference is 10 what are the numbers,25 and 15,Let the numbers be x and y x plus y equals 40 and x minus y equals 10 Solving x equals 25 and y equals 15,Quantitative
+A train moving at 60 km per hr crosses a 120 meter platform in 10 seconds Find the length of the train,480 meters,Speed equals Distance divided by Time Total distance equals 60 multiplied by 5 divided by 18 multiplied by 10 equals 480 meters,Quantitative
+A man can complete a work in 10 days Another man can complete it in 20 days How long will it take if they work together,6 point 67 days,Work done per day equals 1 divided by 10 plus 1 divided by 20 equals 3 divided by 20 Total days equals 20 divided by 3 equals 6 point 67,Quantitative
+The average of 5 numbers is 20 If one number is removed and the new average is 18 find the removed number,28,Sum of 5 numbers equals 100 Sum of 4 numbers equals 72 Removed number equals 100 minus 72 equals 28,Quantitative
+The simple interest on Rs 1000 at 5 percent per annum for 2 years is,Rs 100,SI equals Principal multiplied by Rate multiplied by Time divided by 100 equals 1000 multiplied by 5 multiplied by 2 divided by 100 equals 100,Quantitative
+The area of a circle is 154 cm squared Find its radius,7 cm,Area equals pi r squared 154 equals 22 divided by 7 multiplied by r squared Solving r squared equals 49 so r equals 7 cm,Quantitative
+A sum of money doubles in 5 years at simple interest What is the rate of interest,20 percent,SI equals Principal multiplied by Rate multiplied by Time divided by 100 Since SI equals Principal  2P equals P plus P multiplied by Rate multiplied by Time divided by 100 Solving Rate equals 20 percent,Quantitative
+The LCM of 12 and 15 is,60,LCM is the least common multiple LCM of 12 and 15 equals 60,Quantitative
+If 8 men can complete a work in 12 days how many days will 6 men take,16 days,Total work equals 8 multiplied by 12 Days for 6 men equals 8 multiplied by 12 divided by 6 equals 16 days,Quantitative
+What is the probability of getting a head when tossing a fair coin,1 divided by 2,Probability equals Favorable outcomes divided by Total outcomes equals 1 divided by 2,Quantitative
+A man bought an article for Rs 500 and sold it for Rs 600 What is the profit percentage,20 percent,Profit percent equals Selling Price minus Cost Price divided by Cost Price multiplied by 100 equals 600 minus 500 divided by 500 multiplied by 100 equals 20 percent,Quantitative
+The ratio of ages of A and B is 3 is to 5 If A is 15 years old how old is B,25 years,Age of B equals 15 multiplied by 5 divided by 3 equals 25 years,Quantitative
+A car covers 240 km in 4 hours What is its speed,60 km per hr,Speed equals Distance divided by Time equals 240 divided by 4 equals 60 km per hr,Quantitative
+A number is increased by 20 percent and then decreased by 20 percent What is the final percentage change,4 percent decrease,Net effect equals 20 minus 20 minus 20 multiplied by 20 divided by 100 equals minus 4 percent,Quantitative
+The perimeter of a rectangle is 60 cm If its length is 20 cm what is its breadth,10 cm,Perimeter equals 2 multiplied by length plus breadth Solving breadth equals 10 cm,Quantitative
+The sum of the first 10 natural numbers is,55,Sum equals n multiplied by n plus 1 divided by 2 equals 10 multiplied by 11 divided by 2 equals 55,Quantitative
+The square root of 256 is,16,Square root of 256 equals 16,Quantitative
+If a is to b equals 2 is to 3 and b is to c equals 4 is to 5 find a is to c,8 is to 15,a is to c equals 2 multiplied by 4 divided by 3 multiplied by 5 equals 8 is to 15,Quantitative
+The cost price of an item is Rs 800 If the loss is 10 percent find the selling price,Rs 720,Selling Price equals Cost Price minus 10 percent of Cost Price equals 800 minus 80 equals 720,Quantitative
+A pipe fills a tank in 5 hours while another pipe empties it in 10 hours How long will it take to fill the tank,10 hours,Net rate equals 1 divided by 5 minus 1 divided by 10 equals 1 divided by 10 Time equals 10 hours,Quantitative
+What is 15 percent of 450,67 point 5,15 divided by 100 multiplied by 450 equals 67 point 5,Quantitative
+The compound interest on Rs 2000 at 10 percent per annum for 2 years is,Rs 420,CI equals Principal multiplied by 1 plus Rate divided by 100 to the power Time minus Principal equals 2000 multiplied by 1 point 1 squared minus 2000 equals 420,Quantitative
+A car is sold for Rs 18000 at a loss of 10 percent Find its cost price,Rs 20000,Cost Price equals Selling Price divided by 1 minus loss percent equals 18000 divided by 0 point 9 equals 20000,Quantitative
+If log 100 equals x find x,2,log of 100 equals log of 10 squared equals 2,Quantitative
+What is the sum of the first 20 natural numbers,210,Sum equals n multiplied by n plus 1 divided by 2 equals 20 multiplied by 21 divided by 2 equals 210,Quantitative
+A train 150 meters long crosses a pole in 15 seconds Find its speed,10 meters per second,Speed equals Distance divided by Time equals 150 divided by 15 equals 10 meters per second,Quantitative
+If the cost price of an item is Rs 500 and the profit is 15 percent find the selling price,Rs 575,Selling Price equals Cost Price plus Profit percent of Cost Price equals 500 plus 15 percent of 500 equals 575,Quantitative
+A and B can complete a work in 12 and 18 days respectively How many days will they take together,7 point 2 days,Work per day equals 1 divided by 12 plus 1 divided by 18 equals 5 divided by 36 Total days equals 36 divided by 5 equals 7 point 2,Quantitative
+Find the missing number in the sequence 2 6 12 20 ?,30,Pattern follows n squared plus n for n equals 1 2 3 etc so missing number is 5 squared plus 5 equals 30,Quantitative
+A man walks at 5 km per hr and reaches his destination in 2 hours If he walks at 10 km per hr how long will he take,1 hour,Time equals Distance divided by Speed Since distance is 10 km  time equals 10 divided by 10 equals 1 hour,Quantitative
+The perimeter of a square is 48 cm Find its area,144 square cm,Side equals Perimeter divided by 4 equals 48 divided by 4 equals 12 Area equals Side squared equals 12 squared equals 144,Quantitative
+If a number is decreased by 20 percent and then increased by 25 percent what is the final percentage change,0 percent,Net effect equals minus 20 plus 25 minus 20 multiplied by 25 divided by 100 equals 0 percent,Quantitative
+A shopkeeper gives two successive discounts of 10 percent and 20 percent Find the effective discount,28 percent,Effective discount equals 10 plus 20 minus 10 multiplied by 20 divided by 100 equals 28 percent,Quantitative
+A boat travels 30 km downstream in 2 hours and returns in 3 hours Find the speed of the boat in still water,11 km per hr,Speed downstream equals 15 km per hr Speed upstream equals 10 km per hr Still water speed equals 15 plus 10 divided by 2 equals 11,Quantitative
+A number when divided by 7 gives a remainder of 5 What is the remainder when the square of the number is divided by 7,4,Let the number be 7k plus 5 Square is 49k squared plus 70k plus 25 Remainder when divided by 7 is 4,Quantitative
+The present age of A is twice that of B Ten years ago A was three times B Find their present ages,A is 40 and B is 20,Solving 2B minus 10 equals 3 multiplied by B minus 10 gives B equals 20 and A equals 40,Quantitative
+A sum triples in 8 years at simple interest Find the rate of interest,25 percent,Since SI equals 2P  3P equals P plus P multiplied by Rate multiplied by 8 divided by 100 Solving Rate equals 25 percent,Quantitative
+If x squared minus 9x plus 20 equals 0 find x,4 or 5,Factoring x minus 4 multiplied by x minus 5 equals 0 gives x equals 4 or x equals 5,Quantitative
+A wire of length 88 cm is bent to form a circle Find the radius,14 cm,Circumference equals 2 multiplied by pi multiplied by r Solving r equals 14 cm,Quantitative
+The HCF of 36 and 48 is,12,HCF is the highest common factor HCF of 36 and 48 equals 12,Quantitative
+A bag contains 5 red balls and 7 blue balls What is the probability of picking a red ball,5 divided by 12,Probability equals Favorable outcomes divided by Total outcomes equals 5 divided by 12,Quantitative
+The difference between the squares of two consecutive numbers is 31 Find the numbers,15 and 16,Using formula a squared minus b squared equals a plus b multiplied by a minus b solving gives 15 and 16,Quantitative
+A cone has a base radius of 7 cm and height 24 cm Find its volume,1232 cubic cm,Volume equals 1 divided by 3 multiplied by pi multiplied by r squared multiplied by h equals 1 divided by 3 multiplied by 22 divided by 7 multiplied by 7 squared multiplied by 24 equals 1232,Quantitative
+The ratio of milk to water in a mixture is 4 is to 1 If 10 liters of water is added the new ratio becomes 2 is to 1 Find the initial quantity of milk,40 liters,Let initial milk be 4x and water be x Given 10 is added solving gives x equals 10 so initial milk equals 40,Quantitative
+If a person sells an item at Rs 360 with 20 percent loss find the cost price,Rs 450,Cost Price equals Selling Price divided by 1 minus Loss percent equals 360 divided by 0 point 8 equals 450,Quantitative
+The speed of a boat in still water is 8 km per hr and the speed of the current is 2 km per hr Find the speed downstream,10 km per hr,Speed downstream equals Boat speed plus Current speed equals 8 plus 2 equals 10 km per hr,Quantitative
+A number is divided by 13 gives a remainder of 7 Find the remainder when the square of the number is divided by 13,10,Let the number be 13k plus 7 Squaring and dividing gives remainder 10,Quantitative
+A shopkeeper marks an article at Rs 500 and allows a discount of 20 percent Find the selling price,Rs 400,Selling Price equals Marked Price minus Discount equals 500 minus 20 percent of 500 equals 400,Quantitative
+What is the value of 13 squared,169,13 squared equals 169,Quantitative
+A shopkeeper marks an item at Rs 800 and allows a discount of 10 percent Find the selling price,Rs 720,Selling Price equals Marked Price minus Discount equals 800 minus 10 percent of 800 equals 720,Quantitative
+The sum of interior angles of a hexagon is,720 degrees,Sum of interior angles of an n-sided polygon equals (n minus 2) multiplied by 180 Hexagon has 6 sides so 6 minus 2 multiplied by 180 equals 720 degrees,Quantitative
+What is the largest two-digit prime number,97,The largest two-digit prime number is 97,Quantitative
+A train moving at 90 km per hr crosses a pole in 10 seconds Find the length of the train,250 meters,Speed equals Distance divided by Time Distance equals 90 multiplied by 5 divided by 18 multiplied by 10 equals 250 meters,Quantitative
+A man walks 5 km towards the north then turns east and walks 12 km How far is he from the starting point,13 km,Using Pythagoras theorem sqrt of 5 squared plus 12 squared equals sqrt of 25 plus 144 equals sqrt of 169 equals 13 km,Quantitative
+The product of two consecutive even numbers is 168 Find the numbers,12 and 14,Let the numbers be x and x plus 2 x multiplied by x plus 2 equals 168 Solving x equals 12 so numbers are 12 and 14,Quantitative
+A shopkeeper gains 20 percent on selling an item for Rs 600 Find the cost price,Rs 500,Cost Price equals Selling Price divided by 1 plus Gain Percent equals 600 divided by 1 point 2 equals 500,Quantitative
+The speed of a boat in still water is 12 km per hr and the speed of the stream is 3 km per hr Find the speed downstream,15 km per hr,Speed downstream equals Boat Speed plus Stream Speed equals 12 plus 3 equals 15 km per hr,Quantitative
+A man saves Rs 50 in the first month and increases his savings by Rs 5 every month How much will he save in 10 months,950,Sum of arithmetic series S equals n divided by 2 multiplied by 2a plus (n minus 1) d Substituting values gives 950,Quantitative
+Find the smallest number which when divided by 7 leaves a remainder of 3,3,Smallest such number is the remainder itself so 3,Quantitative
+What is the remainder when 2345 is divided by 7,4,Dividing 2345 by 7 gives remainder 4,Quantitative
+The sum of three consecutive odd numbers is 57 Find the numbers,17 19 21,Let the numbers be x  x plus 2  x plus 4 x plus x plus 2 plus x plus 4 equals 57 Solving x equals 17 so numbers are 17 19 21,Quantitative
+A man travels half distance at 40 km per hr and the rest at 60 km per hr Find the average speed,48 km per hr,Average speed equals 2 multiplied by Speed1 multiplied by Speed2 divided by Speed1 plus Speed2 Substituting values gives 48 km per hr,Quantitative
+If 6 men can complete a work in 9 days how many men are required to complete it in 3 days,18 men,Men required equals 6 multiplied by 9 divided by 3 equals 18,Quantitative
+What is the compound interest on Rs 5000 at 8 percent per annum for 2 years,Rs 832,CI equals Principal multiplied by (1 plus Rate divided by 100) to the power Time minus Principal Substituting values gives Rs 832,Quantitative
+Find the greatest number that divides 105 and 150 leaving remainder 3,15,Required number equals HCF of 105 minus 3 and 150 minus 3 HCF of 102 and 147 equals 15,Quantitative
+A mixture contains milk and water in the ratio 3 is to 2 If 10 liters of water is added the ratio becomes 3 is to 4 Find the quantity of milk,30 liters,Let milk be 3x and water be 2x Adding 10 to water 3x divided by 2x plus 10 equals 3 divided by 4 Solving x equals 10 so milk equals 30 liters,Quantitative
+What is the sum of all two-digit prime numbers,1060,Sum of all two-digit prime numbers equals 1060,Quantitative
+The perimeter of an equilateral triangle is 36 cm Find its side,12 cm,Perimeter equals 3 multiplied by Side Solving Side equals 12 cm,Quantitative
+The sum of squares of first 5 natural numbers is,55,Sum equals n multiplied by n plus 1 multiplied by 2n plus 1 divided by 6 equals 5 multiplied by 6 multiplied by 11 divided by 6 equals 55,Quantitative
+What is the sum of the angles in a triangle,180 degrees,Sum of interior angles of a triangle is always 180 degrees,Quantitative
+If 3x + 5 = 20 what is the value of x,5,Solving for x 3x equals 15 so x equals 5,Quantitative
+A shopkeeper gives 10 percent discount on Rs 200 Find the selling price,Rs 180,Selling Price equals Cost Price minus Discount equals 200 minus 20 equals 180,Quantitative
+The perimeter of a square is 48 cm What is its side length,12 cm,Perimeter of square equals 4 multiplied by side Solving side equals 12 cm,Quantitative
+A train 150 meters long crosses a pole in 15 seconds What is its speed,10 meters per second,Speed equals Distance divided by Time equals 150 divided by 15 equals 10 meters per second,Quantitative
+The HCF of 24 and 36 is,12,HCF is the highest common factor HCF of 24 and 36 equals 12,Quantitative
+A person spends 30 percent of his income If he earns Rs 10000 what is his saving,Rs 7000,Saving equals Income minus Expenditure equals 10000 minus 3000 equals 7000,Quantitative
+What is the square of 15,225,15 squared equals 225,Quantitative
+A car covers 300 km in 5 hours What is its average speed,60 km per hr,Speed equals Distance divided by Time equals 300 divided by 5 equals 60 km per hr,Quantitative
+A batsman scores 80 runs in 50 balls What is his strike rate,160,Strike Rate equals Runs divided by Balls multiplied by 100 equals 80 divided by 50 multiplied by 100 equals 160,Quantitative
+If a box contains 8 red balls and 12 blue balls what is the probability of picking a red ball,2 divided by 5,Total balls equals 20 Probability equals Favorable divided by Total equals 8 divided by 20 equals 2 divided by 5,Quantitative
+A student scores 75 out of 100 in an exam What is his percentage,75 percent,Percentage equals Marks obtained divided by Total Marks multiplied by 100 equals 75 percent,Quantitative
+A sum of money triples itself in 8 years at simple interest Find the rate of interest,25 percent,Simple Interest equals Principal multiplied by Rate multiplied by Time divided by 100 Since final amount equals 3P solving Rate equals 25 percent,Quantitative
+If 5 men can complete a work in 15 days how many days will 10 men take,7 point 5 days,Total work equals 5 multiplied by 15 Days for 10 men equals 5 multiplied by 15 divided by 10 equals 7 point 5,Quantitative
+The product of two consecutive even numbers is 168 Find the numbers,12 and 14,Let numbers be x and x plus 2 x multiplied by x plus 2 equals 168 Solving x equals 12,Quantitative
+A person walks 5 km north then 3 km east How far is he from the starting point,5 point 83 km,Using Pythagoras Theorem Distance equals sqrt of 5 squared plus 3 squared equals 5 point 83 km,Quantitative
+What is 40 percent of 250,100,40 divided by 100 multiplied by 250 equals 100,Quantitative
+A wire is bent to form a circle with radius 7 cm What is its length,44 cm,Circumference equals 2 multiplied by pi multiplied by r equals 2 multiplied by 22 divided by 7 multiplied by 7 equals 44 cm,Quantitative
+The ratio of two numbers is 3 is to 4 and their sum is 28 Find the numbers,12 and 16,Let numbers be 3x and 4x 3x plus 4x equals 28 Solving x equals 4 Numbers are 12 and 16,Quantitative
+What is 30 percent of 250,75,30 percent of 250 is calculated as 30 by 100 multiplied by 250 equals 75,Quantitative
+If the sum of two numbers is 50 and their difference is 8 what are the numbers,29 and 21,Let the numbers be x and y x plus y equals 50 and x minus y equals 8 Solving x equals 29 and y equals 21,Quantitative
+A train moving at 72 km per hr crosses a 150 meter platform in 12 seconds Find the length of the train,540 meters,Speed equals Distance divided by Time Total distance equals 72 multiplied by 5 divided by 18 multiplied by 12 equals 540 meters,Quantitative
+A worker can complete a task in 15 days Another worker can complete it in 30 days How long will it take if they work together,10 days,Work done per day equals 1 divided by 15 plus 1 divided by 30 equals 3 divided by 30 Total days equals 30 divided by 3 equals 10,Quantitative
+The average of 6 numbers is 25 If one number is removed and the new average is 22 find the removed number,43,Sum of 6 numbers equals 150 Sum of 5 numbers equals 110 Removed number equals 150 minus 110 equals 43,Quantitative
+The simple interest on Rs 1500 at 6 percent per annum for 3 years is,Rs 270,SI equals Principal multiplied by Rate multiplied by Time divided by 100 equals 1500 multiplied by 6 multiplied by 3 divided by 100 equals 270,Quantitative
+The area of a circle is 314 square cm Find its radius,10 cm,Area equals pi r squared 314 equals 22 divided by 7 multiplied by r squared Solving r squared equals 100 so r equals 10 cm,Quantitative
+A sum of money doubles in 4 years at simple interest What is the rate of interest,25 percent,SI equals Principal multiplied by Rate multiplied by Time divided by 100 Since SI equals Principal  2P equals P plus P multiplied by Rate multiplied by Time divided by 100 Solving Rate equals 25 percent,Quantitative
+The LCM of 16 and 24 is,48,LCM is the least common multiple LCM of 16 and 24 equals 48,Quantitative
+If 10 men can complete a work in 15 days how many days will 8 men take,18.75 days,Total work equals 10 multiplied by 15 Days for 8 men equals 10 multiplied by 15 divided by 8 equals 18.75 days,Quantitative
+What is the probability of getting a 3 when rolling a fair six-sided die,1 divided by 6,Probability equals Favorable outcomes divided by Total outcomes equals 1 divided by 6,Quantitative
+A man bought an article for Rs 700 and sold it for Rs 840 What is the profit percentage,20 percent,Profit percent equals Selling Price minus Cost Price divided by Cost Price multiplied by 100 equals 840 minus 700 divided by 700 multiplied by 100 equals 20 percent,Quantitative
+The ratio of ages of A and B is 5 is to 7 If A is 25 years old how old is B,35 years,Age of B equals 25 multiplied by 7 divided by 5 equals 35 years,Quantitative
+A car covers 300 km in 5 hours What is its speed,60 km per hr,Speed equals Distance divided by Time equals 300 divided by 5 equals 60 km per hr,Quantitative
+A number is increased by 15 percent and then decreased by 10 percent What is the final percentage change,3.5 percent increase,Net effect equals 15 minus 10 minus 15 multiplied by 10 divided by 100 equals 3.5 percent increase,Quantitative
+The perimeter of a rectangle is 50 cm If its length is 18 cm what is its breadth,7 cm,Perimeter equals 2 multiplied by length plus breadth Solving breadth equals 7 cm,Quantitative
+The sum of the first 12 natural numbers is,78,Sum equals n multiplied by n plus 1 divided by 2 equals 12 multiplied by 13 divided by 2 equals 78,Quantitative
+The square root of 324 is,18,Square root of 324 equals 18,Quantitative
+If a is to b equals 3 is to 4 and b is to c equals 5 is to 6 find a is to c,15 is to 24,a is to c equals 3 multiplied by 5 divided by 4 multiplied by 6 equals 15 is to 24,Quantitative
+The cost price of an item is Rs 900 If the loss is 15 percent find the selling price,Rs 765,Selling Price equals Cost Price minus 15 percent of Cost Price equals 900 minus 135 equals 765,Quantitative
+A pipe fills a tank in 8 hours while another pipe empties it in 16 hours How long will it take to fill the tank,16 hours,Net rate equals 1 divided by 8 minus 1 divided by 16 equals 1 divided by 16 Time equals 16 hours,Quantitative
+What is the value of 25 × 4?,100,Multiply 25 by 4 to get 100.,Quantitative
+If a = 5 and b = 3  what is (a² + b²)?,34,Using formula a² + b²  we get 5² + 3² = 25 + 9 = 34.,Quantitative
+Solve for x: 2x + 5 = 15.,5,Subtract 5 from both sides and divide by 2 to get x = 5.,Quantitative
+What is the square root of 144?,12,The square root of 144 is 12.,Quantitative
+A shopkeeper buys an article for ₹500 and sells it for ₹650. What is the profit percentage?,30%,Profit = (Selling Price - Cost Price) / Cost Price × 100.,Quantitative
+A train travels 360 km in 6 hours. What is its speed?,60 km/h,Speed = Distance / Time = 360/6 = 60 km/h.,Quantitative
+If 20 workers can build a wall in 15 days  how many days will 30 workers take?,10,Work is inversely proportional to the number of workers.,Quantitative
+A man spends 40% of his salary and saves ₹9000. What is his salary?,₹15000,Let salary be x  then savings = 60% of x. Solve for x.,Quantitative
+If the perimeter of a square is 48 cm  what is the area?,144 cm²,Side = Perimeter/4  then Area = Side².,Quantitative
+What is the HCF of 18 and 24?,6,Find the highest common factor of 18 and 24.,Quantitative
+A sum of ₹12000 is invested at 10% per annum simple interest for 2 years. What is the interest earned?,₹2400,Simple Interest = (P × R × T) / 100.,Quantitative
+A number when doubled and increased by 10 gives 50. What is the number?,20,Solve 2x + 10 = 50 for x.,Quantitative
+If a car runs at 50 km/hr  how much distance will it cover in 2.5 hours?,125 km,Distance = Speed × Time.,Quantitative
+If a box contains 4 red  5 green  and 6 blue balls  what is the probability of drawing a green ball?,5/15 or 1/3,Probability = Favorable outcomes / Total outcomes.,Quantitative
+If the radius of a circle is 7 cm  what is its area?,154 cm²,Area = πr² = 3.14 × 7 × 7.,Quantitative
+If a man can type 300 words in 5 minutes  how many words can he type in 12 minutes?,720,Use unitary method.,Quantitative
+If 3x - 7 = 14  what is x?,7,Solve for x.,Quantitative
+The average of 5 numbers is 25. If one number is removed  the new average is 20. What was the removed number?,50,Use total sum formula.,Quantitative
+A bike covers a distance of 240 km in 4 hours. What is its speed?,60 km/h,Speed = Distance / Time.,Quantitative
+If the cost price of an article is ₹500 and the selling price is ₹750  what is the percentage profit?,50%,Profit % = (Profit / Cost Price) × 100.,Quantitative
+A man can row a boat 12 km downstream in 2 hours and return in 3 hours. What is the speed of the current?,2 km/h,Use speed of boat in still water and relative speed formula.,Quantitative
+If 2x + 3y = 12 and x = 2  find y.,2,Substitute x and solve for y.,Quantitative
+A mixture contains 30% alcohol. If there are 600 ml in total  how much alcohol is present?,180 ml,Use percentage formula.,Quantitative
+What is the compound interest on ₹5000 at 10% per annum for 2 years?,₹1050,Use Compound Interest formula.,Quantitative
+If the perimeter of a rectangle is 24 cm and its length is 8 cm  find its breadth.,4 cm,Perimeter = 2(l + b)  solve for b.,Quantitative
+A can complete a work in 12 days  and B in 8 days. How long will it take if they work together?,4.8 days,Work done per day = (1/A + 1/B).,Quantitative
+If 45% of a number is 81  what is the number?,180,Let number be x  solve 0.45x = 81.,Quantitative
+The sum of two numbers is 72  and their difference is 24. Find the numbers.,48  24,Solve equations x + y = 72 and x - y = 24.,Quantitative
+If the LCM of two numbers is 60 and their HCF is 5  what is the product of the numbers?,300,LCM × HCF = Product of numbers.,Quantitative
+What is the probability of rolling a sum of 7 on two dice?,6/36 or 1/6,Count favorable outcomes.,Quantitative
+If a train crosses a 300 m bridge in 40 sec at 60 km/h  what is the length of the train?,100 m,Use Distance = Speed × Time.,Quantitative
+If a cone has a radius of 3 cm and height 4 cm  what is its volume?,12π cm³,Volume = (1/3)πr²h.,Quantitative
+If a student scores 75  80  and 85 in three subjects  what is the average?,80,Average = (Sum of values) / Number of values.,Quantitative
+If 3/4 of a number is 21  what is the number?,28,Solve for x in (3/4)x = 21.,Quantitative
+If an article is sold at ₹640 with a 20% discount  what was the marked price?,₹800,Marked Price = Selling Price / (1 - Discount %).,Quantitative
+If a train of length 120m passes a pole in 6 seconds  what is its speed?,72 km/h,Speed = Distance / Time.,Quantitative
+If a circle has a circumference of 44 cm  find its radius.,7 cm,Circumference = 2πr  solve for r.,Quantitative
+If A is twice as fast as B and B takes 12 days to finish a task  how long will A take?,6 days,A’s speed is double  so time taken is half.,Quantitative
+If the sum of angles in a polygon is 900°  how many sides does it have?,7,Sum of angles = (n-2) × 180°  solve for n.,Quantitative
+What is 15% of 240?,36,Use percentage formula.,Quantitative
+A car covers 90 km in 1.5 hours. What is its speed?,60 km/h,Speed = Distance / Time.,Quantitative
+If log₂ 32 = x  what is x?,5,Use logarithm rules.,Quantitative
+If a wheel rotates 100 times in a minute and its radius is 35 cm  what is the distance covered in 1 minute?,22000 cm,Use Circumference = 2πr × rotations.,Quantitative
+What is the synonym of 'Ephemeral'?,Short-lived,Ephemeral means lasting for a very short time.,Verbal
+What is the antonym of 'Prudent'?,Reckless,Prudent means wise  while reckless means careless.,Verbal
+What is the synonym of 'Resilient'?,Strong,Resilient means able to recover quickly from difficulties.,Verbal
+Choose the correct synonym for 'Relinquish',Abandon,Relinquish means to give up or surrender.,Verbal
+What is the antonym of 'Opaque'?,Clear,Opaque means not transparent  while clear is the opposite.,Verbal
+Identify the grammatical error: 'Neither of the students were present in class.','Neither of the students was present in class.','Neither' takes a singular verb  so 'was' is correct.,Verbal
+Spot the incorrect sentence: 'He went to home early.','He went home early.','Home' does not require 'to' before it.,Verbal
+Choose the grammatically correct sentence: 'She doesn’t like coffee.',She doesn’t like coffee.,Doesn't is used with 'like' correctly.,Verbal
+Find the error in the sentence: 'He has went to the market.','He has gone to the market.','Has' should be followed by 'gone'  not 'went'.,Verbal
+Choose the sentence with the correct usage: 'The manager is going to discuss the issue.',The manager is going to discuss the issue.,'Discuss' does not need 'about' after it.,Verbal
+What does 'Hit the sack' mean?,To go to sleep,Hit the sack means to go to bed.,Verbal
+What does 'A penny for your thoughts' mean?,Tell me what you are thinking,It is used to ask someone what they are thinking.,Verbal
+If someone 'Bites the bullet'  they:,Face a tough situation bravely,Bite the bullet means to endure pain bravely.,Verbal
+The phrase 'Under the weather' means:,Feeling sick,It means feeling unwell.,Verbal
+'Break the ice' means:,Make people feel comfortable,It means to start a conversation and reduce tension.,Verbal
+Improve the sentence: 'The furniture in the room are new.',The furniture in the room is new.,Furniture is an uncountable noun and takes 'is'.,Verbal
+Select the correct sentence: 'I prefer coffee to tea.',I prefer coffee to tea.,'Prefer' is followed by 'to' and not 'than'.,Verbal
+Identify the correct sentence: 'He is senior to me.',He is senior to me.,'Senior' is always followed by 'to'  not 'than'.,Verbal
+Fill in the blank: 'One of the students in my class __ from Canada.',is,'One of' takes a singular verb.,Verbal
+Choose the correct sentence: 'She is smarter than me.',She is smarter than me.,Comparative adjectives take 'than'.,Verbal
+The principal will meet you __ 10 AM.,at,'At' is used for specific times.,Verbal
+She is fond __ chocolates.,of,'Fond' is always followed by 'of'.,Verbal
+I __ a great movie last night.,saw,'Saw' is the correct past tense of 'see'.,Verbal
+The cake is made __ flour and eggs.,of,'Made of' is used for things that retain their original form.,Verbal
+He __ his keys somewhere.,left,'Left' is the past tense of 'leave'.,Verbal
+What is the synonym of 'placid'?,Calm,'Placid' means peaceful or calm.,Verbal
+Identify the error: 'She do not know the answer.','do' should be 'does',With singular subjects  use 'does' instead of 'do'.,Verbal
+What is the antonym of 'vivid'?,Dull,'Vivid' means bright  while 'dull' is the opposite.,Verbal
+Choose the correct word: 'The team ___ ready for the match.',is,'Team' is considered singular  so it takes 'is'.,Verbal
+What is the synonym of 'adverse'?,Unfavorable,'Adverse' means harmful or unfavorable.,Verbal
+Identify the error: 'Each of the players are fit.','are' should be 'is','Each' is singular  so it takes 'is'.,Verbal
+What is the antonym of 'coherent'?,Incoherent,'Coherent' means clear and logical  its opposite is 'incoherent'.,Verbal
+Choose the correct form: 'She is ___ at solving puzzles.',adept,'Adept' means skilled or proficient.,Verbal
+What is the synonym of 'venerate'?,Respect,'Venerate' means to regard with respect.,Verbal
+Identify the error: 'The furniture are expensive.','are' should be 'is','Furniture' is uncountable and takes a singular verb.,Verbal
+What is the antonym of 'amiable'?,Hostile,'Amiable' means friendly  while 'hostile' is the opposite.,Verbal
+Choose the correct word: 'The ___ of the argument was lost.',gist,'Gist' means the main point or essence.,Verbal
+What is the synonym of 'succinct'?,Concise,'Succinct' means expressed briefly and clearly.,Verbal
+Identify the error: 'She enjoys to swim.','to swim' should be 'swimming',Use the gerund form 'swimming' after 'enjoys'.,Verbal
+What is the antonym of 'benevolent'?,Malevolent,'Benevolent' means kind  while 'malevolent' means evil.,Verbal
+Choose the correct form: 'The news ___ surprising.',is,'News' is uncountable and takes singular verbs.,Verbal
+What is the synonym of 'elated'?,Joyful,'Elated' means extremely happy or joyful.,Verbal
+Identify the error: 'Neither of the answers are correct.','are' should be 'is','Neither' takes a singular verb.,Verbal
+What is the antonym of 'obscure'?,Clear,'Obscure' means unclear  while 'clear' is its opposite.,Verbal
+Choose the correct word: 'She has a ___ of patience.',lot,'Lot' is used to indicate a large amount.,Verbal
+What is the synonym of 'prudent'?,Cautious,'Prudent' means acting with caution.,Verbal
+Identify the error: 'One of the books are missing.','are' should be 'is','One' takes a singular verb.,Verbal
+What is the antonym of 'extravagant'?,Frugal,'Extravagant' means wasteful  while 'frugal' means economical.,Verbal
+Choose the correct word: 'The dog ___ barking all night.',was,Past continuous tense requires 'was' with singular subjects.,Verbal
+What is the synonym of 'emulate'?,Imitate,'Emulate' means to copy or imitate.,Verbal
+Identify the error: 'She don't like coffee.','don't' should be 'doesn't',Use 'doesn't' with singular subjects.,Verbal
+What is the antonym of 'sparse'?,Dense,'Sparse' means thinly scattered  while 'dense' means thick.,Verbal
+Choose the correct form: 'The class ___ planning a trip.',is,'Class' is considered singular  so it takes 'is'.,Verbal
+What is the synonym of 'arduous'?,Difficult,'Arduous' means requiring great effort.,Verbal
+Identify the error: 'The people is waiting.','is' should be 'are','People' is plural and takes 'are'.,Verbal
+What is the antonym of 'lofty'?,Lowly,'Lofty' means high  while 'lowly' means humble.,Verbal
+Choose the correct word: 'The storm caused ___ damage.',severe,'Severe' means intense or great.,Verbal
+What is the synonym of 'futile'?,Useless,'Futile' means pointless or ineffective.,Verbal
+Identify the error: 'She goes to office everyday.','everyday' should be 'every day','Every day' refers to each day.,Verbal
+What is the antonym of 'affluent'?,Poor,'Affluent' means wealthy  while 'poor' is the opposite.,Verbal
+Choose the correct word: 'She was ___ by the news.',shocked,'Shocked' means surprised or startled.,Verbal
+What is the synonym of 'pensive'?,Thoughtful,'Pensive' means deeply thoughtful.,Verbal
+Identify the error: 'The children plays in the park.','plays' should be 'play',Plural subjects take plural verbs.,Verbal
+What is the antonym of 'serene'?,Agitated,'Serene' means calm  while 'agitated' means disturbed.,Verbal
+Choose the correct word: 'She has a ___ of kindness.',touch,'Touch' means a small amount.,Verbal
+What is the synonym of 'gregarious'?,Sociable,'Gregarious' means sociable or fond of company.,Verbal
+Identify the error: 'She go to the market daily.','go' should be 'goes',Use 'goes' with singular subjects in the present tense.,Verbal
+What is the antonym of 'lucid'?,Confusing,'Lucid' means clear  while 'confusing' is the opposite.,Verbal
+Choose the correct form: 'The jury ___ divided on the verdict.',is,'Jury' is singular and takes 'is'.,Verbal
+What is the synonym of 'prodigious'?,Enormous,'Prodigious' means remarkably large.,Verbal
+Identify the error: 'He do not understand the problem.','do' should be 'does',Use 'does' with singular subjects.,Verbal
+What is the antonym of 'affable'?,Unfriendly,'Affable' means friendly and pleasant.,Verbal
+Choose the correct word: 'The ___ of the story was missing.',essence,'Essence' means the core or main part.,Verbal
+What is the synonym of 'vindicate'?,Justify,'Vindicate' means to clear from blame.,Verbal
+Identify the error: 'None of them are coming.','are' should be 'is','None' is singular and takes 'is'.,Verbal
+What is the antonym of 'diligent'?,Lazy,'Diligent' means hardworking  while 'lazy' is the opposite.,Verbal
+Choose the correct word: 'She has a ___ of experience.',wealth,'Wealth' refers to a large amount.,Verbal
+What is the synonym of 'quaint'?,Unusual,'Quaint' means attractively unusual.,Verbal
+Identify the error: 'He is more smarter than her.','more smarter' should be 'smarter',Do not use double comparatives.,Verbal
+Choose the correct form: 'The audience ___ clapping loudly.',is,'Audience' is singular and takes 'is'.,Verbal
+What is the synonym of 'succumb'?,Yield,'Succumb' means to give in or yield.,Verbal
+Identify the error: 'He doesn't knows the answer.','knows' should be 'know',Use base form after 'doesn't'.,Verbal
+What is the antonym of 'ardent'?,Indifferent,'Ardent' means passionate  while 'indifferent' means apathetic.,Verbal
+Choose the correct word: 'He is an ___ reader.',avid,'Avid' means enthusiastic or eager.,Verbal
+What is the synonym of 'morose'?,Gloomy,'Morose' means sullen or gloomy.,Verbal
+Identify the error: 'The news are surprising.','are' should be 'is','News' is singular and takes 'is'.,Verbal
+What is the antonym of 'frugal'?,Extravagant,'Frugal' means economical  while 'extravagant' means wasteful.,Verbal
+Choose the correct form: 'The data ___ accurate.',is,'Data' is singular in formal usage.,Verbal
+What is the synonym of 'zealous'?,Passionate,'Zealous' means fervently enthusiastic.,Verbal
+Identify the error: 'The scissors is on the table.','is' should be 'are','Scissors' is plural and takes 'are'.,Verbal
+What is the antonym of 'lenient'?,Strict,'Lenient' means permissive  while 'strict' is its opposite.,Verbal
+Choose the correct word: 'She has a ___ of wisdom.',bit,'Bit' means a small amount.,Verbal
+Identify the error: 'The sheep is grazing in the field.',No error,'Sheep' can be singular or plural.,Verbal
+What is the antonym of 'mirth'?,Sorrow,'Mirth' means joy  while 'sorrow' means sadness.,Verbal
+Choose the correct word: 'The ___ of the problem is complex.',root,'Root' means the basic cause or origin.,Verbal
+What is the synonym of 'resilient'?,Flexible,'Resilient' means able to recover quickly.,Verbal
+Identify the error: 'The people is waiting for the bus.','is' should be 'are','People' is plural and takes 'are'.,Verbal
+What is the antonym of 'tangible'?,Intangible,'Tangible' means touchable  while 'intangible' means not touchable.,Verbal
+Choose the correct form: 'The team ___ practicing hard.',is,'Team' is singular and takes 'is'.,Verbal
+What is the synonym of 'covet'?,Desire,'Covet' means to yearn for or desire.,Verbal
+Identify the error: 'She did not wrote the letter.','wrote' should be 'write',Use base form after 'did'.,Verbal
+What is the antonym of 'conspicuous'?,Hidden,'Conspicuous' means easily noticeable  while 'hidden' is the opposite.,Verbal
+What is the synonym of 'diligent'?,Hardworking,'Diligent' means showing persistent effort.,Verbal
+Identify the error: 'The boy plays well yesterday.','plays' should be 'played',Use past tense with 'yesterday'.,Verbal
+Choose the correct word: 'The manager made a ___ decision.',prudent,'Prudent' means sensible or wise.,Verbal
+What is the synonym of 'ephemeral'?,Short-lived,'Ephemeral' means lasting for a short time.,Verbal
+Identify the error: 'The children was playing.','was' should be 'were',Use 'were' with plural subjects.,Verbal
+What is the synonym of 'placate'?,Calm,'Placate' means to calm or pacify.,Verbal
+Identify the error: 'The cat sleep on the mat.','sleep' should be 'sleeps',Use 'sleeps' with singular subjects.,Verbal
+Choose the correct word: 'The ___ of the meeting was decided.',agenda,'Agenda' refers to the list of topics.,Verbal
+What is the synonym of 'candid'?,Honest,'Candid' means truthful or straightforward.,Verbal
+Identify the error: 'She didn't knew the answer.','knew' should be 'know',Use base form after 'didn't'.,Verbal
+What is the synonym of 'verbose'?,Wordy,'Verbose' means using more words than necessary.,Verbal
+Identify the error: 'Each of the students are present.','are' should be 'is','Each' takes a singular verb.,Verbal
+Choose the correct form: 'The team ___ celebrating the win.',is,'Team' is singular and takes 'is'.,Verbal
+Identify the error: 'The information are correct.','are' should be 'is','Information' is uncountable and takes 'is'.,Verbal
+What is the antonym of 'prudent'?,Reckless,'Prudent' means cautious  while 'reckless' is the opposite.,Verbal
+Choose the correct word: 'The dog ___ barking loudly.',was,'Was' is used with singular subjects in past continuous tense.,Verbal
+What is the synonym of 'lucid'?,Clear,'Lucid' means easy to understand.,Verbal
+Identify the error: 'The scissors is missing.','is' should be 'are','Scissors' is plural and takes 'are'.,Verbal
+Choose the correct form: 'The group ___ planning a trip.',is,'Group' is singular and takes 'is'.,Verbal
+Identify the error: 'The child enjoy playing.','enjoy' should be 'enjoys',Use 'enjoys' with singular subjects.,Verbal
+Choose the correct word: 'The manager was ___ by the results.',pleased,'Pleased' means satisfied or content.,Verbal
+What is the synonym of 'meticulous'?,Thorough,'Meticulous' means showing great attention to detail.,Verbal
+Identify the error: 'The boy play in the park.','play' should be 'plays',Use 'plays' with singular subjects.,Verbal
+Choose the correct word: 'She was ___ with joy.',overwhelmed,'Overwhelmed' means deeply affected by emotions.,Verbal
+Choose the correct form: 'The committee ___ divided on the issue.',is,'Committee' is singular and takes 'is'.,Verbal
+Choose the correct word: 'The speech was ___ moving.',truly,'Truly' is used to emphasize the sincerity.,Verbal
+What is the synonym of 'impeccable'?,Flawless,'Impeccable' means perfect or without fault.,Verbal
+Identify the error: 'She did not went to the party.','went' should be 'go',Use base form after 'did'.,Verbal
+What is the antonym of 'mundane'?,Extraordinary,'Mundane' means ordinary  while 'extraordinary' is the opposite.,Verbal
+Choose the correct word: 'The performance was ___ impressive.',truly,'Truly' emphasizes the quality of the performance.,Verbal
+What is the synonym of 'tenacious'?,Persistent,'Tenacious' means holding firmly or persistent.,Verbal
+What is the synonym of 'sagacious'?,Wise,'Sagacious' means having keen perception and good judgment.,Verbal
+Identify the error: 'She drive very fast.','drive' should be 'drives',Use 'drives' with singular subjects.,Verbal
+Choose the correct form: 'The children ___ playing in the park.',are,'Children' is plural and takes 'are'.,Verbal
+What is the synonym of 'erudite'?,Knowledgeable,'Erudite' means having or showing great knowledge.,Verbal
+Identify the error: 'The boy go to school every day.','go' should be 'goes',Use 'goes' with singular subjects.,Verbal
+What is the antonym of 'placid'?,Agitated,'Placid' means calm  while 'agitated' is the opposite.,Verbal
+Choose the correct word: 'The painting was ___ beautiful.',truly,'Truly' is used to emphasize the beauty.,Verbal
+What is the synonym of 'fallacy'?,Misconception,'Fallacy' means a mistaken belief.,Verbal
+What is the antonym of 'gregarious'?,Unsociable,'Gregarious' means sociable  while 'unsociable' is the opposite.,Verbal
+Choose the correct form: 'The audience ___ enjoying the show.',is,'Audience' is singular and takes 'is'.,Verbal
+What is the synonym of 'nimble'?,Agile,'Nimble' means quick and light in movement.,Verbal
+Identify the error: 'She sings good.','good' should be 'well',Use 'well' to describe how she sings.,Verbal
+What is the antonym of 'liberal'?,Conservative,'Liberal' means open-minded  while 'conservative' is the opposite.,Verbal
+Choose the correct word: 'She is ___ of making mistakes.',afraid,'Afraid' means fearful of something.,Verbal
+What is the synonym of 'audacious'?,Bold,'Audacious' means daring or bold.,Verbal
+Identify the error: 'The data are accurate.','are' should be 'is','Data' is singular in formal usage.,Verbal
+What is the antonym of 'dormant'?,Active,'Dormant' means inactive  while 'active' is the opposite.,Verbal
+Choose the correct form: 'The book ___ on the table.',is,'Book' is singular and takes 'is'.,Verbal
+What is the synonym of 'congenial'?,Friendly,'Congenial' means pleasant and friendly.,Verbal
+Identify the error: 'He drive very well.','drive' should be 'drives',Use 'drives' with singular subjects.,Verbal
+What is the antonym of 'futile'?,Effective,'Futile' means pointless  while 'effective' is the opposite.,Verbal
+Choose the correct word: 'She was ___ by the surprise gift.',delighted,'Delighted' means very pleased.,Verbal
+Identify the error: 'The jury were divided.','were' should be 'was','Jury' is singular and takes 'was'.,Verbal
+Choose the correct word: 'The player was ___ to win.',determined,'Determined' means firmly resolved.,Verbal
+Identify the error: 'The dog chase the cat.','chase' should be 'chases',Use 'chases' with singular subjects.,Verbal
+What is the antonym of 'optimistic'?,Pessimistic,'Optimistic' means hopeful  while 'pessimistic' is the opposite.,Verbal
+Choose the correct word: 'The teacher gave a ___ explanation.',clear,'Clear' means easy to understand.,Verbal
+Identify the error: 'The children was playing outside.','was' should be 'were',Use 'were' with plural subjects.,Verbal
+Choose the correct word: 'The weather was ___ hot yesterday.',extremely,'Extremely' means very or highly.,Verbal
+Identify the error: 'The student read the book quickly.',No error,The sentence is correct.,Verbal
+Identify the error: 'The baby cry loudly.','cry' should be 'cries',Use 'cries' with singular subjects.,Verbal
+Choose the correct word: 'The story was ___ interesting.',truly,'Truly' emphasizes the level of interest.,Verbal
+Identify the error: 'The players was tired.','was' should be 'were',Use 'were' with plural subjects.,Verbal
+What is the synonym of 'concur'?,Agree,'Concur' means to be of the same opinion or to agree.,Verbal
+Identify the error: 'She go to work early.','go' should be 'goes',Use 'goes' with singular subjects.,Verbal
+What is the antonym of 'augment'?,Reduce,'Augment' means to increase  while 'reduce' means to decrease.,Verbal
+Choose the correct form: 'The dogs ___ barking loudly.',are,'Dogs' is plural and takes 'are'.,Verbal
+Identify the error: 'The boy go home early.','go' should be 'goes',Use 'goes' with singular subjects.,Verbal
+What is the antonym of 'profound'?,Superficial,'Profound' means deep  while 'superficial' means shallow.,Verbal
+Choose the correct word: 'The movie was ___ boring.',extremely,'Extremely' emphasizes the level of boredom.,Verbal
+What is the synonym of 'impartial'?,Unbiased,'Impartial' means treating all sides equally.,Verbal
+Identify the error: 'The news are good.','are' should be 'is','News' is singular and takes 'is'.,Verbal
+Choose the correct form: 'The children ___ playing outside.',are,'Children' is plural and takes 'are'.,Verbal
+What is the synonym of 'affluent'?,Wealthy,'Affluent' means having a lot of money or wealth.,Verbal
+Identify the error: 'The car need fuel.','need' should be 'needs',Use 'needs' with singular subjects.,Verbal
+What is the antonym of 'concise'?,Verbose,'Concise' means brief  while 'verbose' means wordy.,Verbal
+Choose the correct word: 'The weather was ___ cold today.',very,'Very' intensifies the degree of coldness.,Verbal
+What is the synonym of 'obsolete'?,Outdated,'Obsolete' means no longer in use or outdated.,Verbal
+Identify the error: 'The girl dance gracefully.','dance' should be 'dances',Use 'dances' with singular subjects.,Verbal
+What is the antonym of 'reluctant'?,Willing,'Reluctant' means unwilling  while 'willing' is the opposite.,Verbal
+Choose the correct word: 'The speech was ___ inspiring.',truly,'Truly' emphasizes the inspiring nature.,Verbal
+Identify the error: 'The students was late.','was' should be 'were',Use 'were' with plural subjects.,Verbal
+Choose the correct word: 'The storm was ___ violent.',extremely,'Extremely' emphasizes the intensity.,Verbal
+What is the synonym of 'surmise'?,Guess,'Surmise' means to suppose or guess.,Verbal
+Identify the error: 'She have a car.','have' should be 'has',Use 'has' with singular subjects.,Verbal
+Identify the error: 'The teacher give homework daily.','give' should be 'gives',Use 'gives' with singular subjects.,Verbal
+Choose the correct word: 'The manager was ___ with the results.',pleased,'Pleased' means satisfied or content.,Verbal
+Choose the correct word: 'The performance was ___ remarkable.',truly,'Truly' emphasizes the level of remarkability.,Verbal
+What is the synonym of 'abate'?,Lessen,'Abate' means to reduce in amount or intensity.,Verbal
+Identify the error: 'He play football every day.','play' should be 'plays',Use 'plays' with singular subjects.,Verbal
+What is the antonym of 'revere'?,Despise,'Revere' means to respect deeply  while 'despise' means to hate.,Verbal
+Choose the correct form: 'The boy ___ studying in his room.',is,'Boy' is singular and takes 'is'.,Verbal
+What is the synonym of 'coherent'?,Logical,'Coherent' means clear and logical.,Verbal
+Identify the error: 'The flowers is blooming.','is' should be 'are','Flowers' is plural and takes 'are'.,Verbal
+What is the antonym of 'relinquish'?,Retain,'Relinquish' means to give up  while 'retain' means to keep.,Verbal
+Choose the correct word: 'The presentation was ___ impressive.',truly,'Truly' emphasizes the level of impressiveness.,Verbal
+What is the synonym of 'transient'?,Temporary,'Transient' means lasting for a short time.,Verbal
+Identify the error: 'The girl sing well.','sing' should be 'sings',Use 'sings' with singular subjects.,Verbal
+What is the antonym of 'docile'?,Unruly,'Docile' means obedient  while 'unruly' is the opposite.,Verbal
+What is the synonym of 'venerable'?,Respected,'Venerable' means worthy of respect.,Verbal
+Identify the error: 'The dog bark loudly.','bark' should be 'barks',Use 'barks' with singular subjects.,Verbal
+Choose the correct word: 'The lecture was ___ interesting.',very,'Very' intensifies the degree of interest.,Verbal
+What is the synonym of 'pragmatic'?,Practical,'Pragmatic' means dealing with things practically.,Verbal
+Identify the error: 'The birds was flying high.','was' should be 'were',Use 'were' with plural subjects.,Verbal
+What is the antonym of 'meek'?,Bold,'Meek' means submissive  while 'bold' is the opposite.,Verbal
+Choose the correct form: 'The students ___ preparing for the test.',are,'Students' is plural and takes 'are'.,Verbal

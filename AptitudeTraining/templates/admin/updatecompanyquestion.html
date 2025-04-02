@@ -1,0 +1,49 @@
+{% include 'admin/adminheader.html' %}
+
+<div class="container" style="min-height: 80vh;">
+    <h2 style="text-align: center;">Update Company Question</h2><br>
+    
+    <form method="post" action="">
+        {% csrf_token %}
+        <table class="table">
+            <tr>
+                <th>Question</th>
+                <td><textarea name="question" class="form-control" rows="4" required>{{ data.question }}</textarea></td>
+            </tr>
+            <tr>
+                <th>Answer</th>
+                <td><input type="text" name="answer" class="form-control" value="{{ data.answer }}" required></td>
+            </tr>
+            <tr>
+                <th>Answer Description</th>
+                <td><textarea name="description" class="form-control" rows="4" required>{{ data.answer_description }}</textarea></td>
+            </tr>
+            <tr>
+                <th>Company Name</th>
+                <td>
+                    <select name="company_name" id="company_name" class="form-control">
+                        <option value="TCS" {% if data.company_name == "TCS" %}selected{% endif %}>TCS</option>
+                        <option value="Infosys" {% if data.company_name == "Infosys" %}selected{% endif %}>Infosys</option>
+                        <option value="Wipro" {% if data.company_name == "Wipro" %}selected{% endif %}>Wipro</option>
+                        <option value="Accenture" {% if data.company_name == "Accenture" %}selected{% endif %}>Accenture</option>
+                        <option value="Capgemini" {% if data.company_name == "Capgemini" %}selected{% endif %}>Capgemini</option>
+                        <option value="Cognizant" {% if data.company_name == "Cognizant" %}selected{% endif %}>Cognizant</option>
+                        <option value="HCL Technologies" {% if data.company_name == "HCL Technologies" %}selected{% endif %}>HCL Technologies</option>
+                        <option value="Tech Mahindra" {% if data.company_name == "Tech Mahindra" %}selected{% endif %}>Tech Mahindra</option>
+                        <option value="IBM" {% if data.company_name == "IBM" %}selected{% endif %}>IBM</option>
+                        <option value="Google" {% if data.company_name == "Google" %}selected{% endif %}>Google</option>
+                    </select>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" name="submit" class="btn btn-success">Update</button>
+                    <a href="/viewquestions" class="btn btn-secondary">Cancel</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+{% include "public/footer.html" %}

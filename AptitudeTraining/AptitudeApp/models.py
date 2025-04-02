@@ -14,6 +14,8 @@ class User(models.Model):
     dob=models.CharField(max_length=50)
     place=models.CharField(max_length=50)
     photo=models.CharField(max_length=50)
+    progress=models.CharField(max_length=50,default='0')
+    user_level=models.CharField(max_length=50,default='Beginner')
 
 class Education_Content(models.Model):
     title=models.CharField(max_length=50)
@@ -62,6 +64,7 @@ class Test(models.Model):
     test_topics=models.CharField(max_length=50)
     test_passmark=models.CharField(max_length=50)
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
+    cp=models.CharField(max_length=50,default='0')
 
 class Test_Question(models.Model):
     TEST=models.ForeignKey(Test,on_delete=models.CASCADE)
@@ -75,6 +78,7 @@ class Result(models.Model):
     verbal_score = models.CharField(max_length=50)
     quant_score = models.CharField(max_length=50)
     pass_fail=models.CharField(max_length=50)
+
 
 class Complaint(models.Model):
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
@@ -94,3 +98,32 @@ class Prediction_Result(models.Model):
     verbal_aptitude_score=models.CharField(max_length=50)
     USER=models.ForeignKey(User,on_delete=models.CASCADE)
     prediction_result=models.CharField(max_length=500)
+
+
+class TempQuestions(models.Model):
+    question=models.CharField(max_length=5000)
+    optiona=models.CharField(max_length=500)
+    optionb=models.CharField(max_length=500)
+    optionc=models.CharField(max_length=500)
+    optiond=models.CharField(max_length=500)
+    answer=models.CharField(max_length=500)
+    question_type=models.CharField(max_length=50)
+    difficulty=models.CharField(max_length=50)
+    answer_description=models.CharField(max_length=5000)
+    
+class performance(models.Model):
+    USER=models.ForeignKey(User,on_delete=models.CASCADE)
+    accuracy=models.CharField(max_length=500)
+    improvment_rate=models.CharField(max_length=500)
+    difficulty_score=models.CharField(max_length=500)
+    date=models.CharField(max_length=50)
+
+class CareerPrediction(models.Model):
+    job_role=models.CharField(max_length=500)
+    job_description=models.CharField(max_length=5000)
+
+class CompanyQuestions(models.Model):
+    question=models.CharField(max_length=500)
+    answer=models.CharField(max_length=500)
+    answer_description=models.CharField(max_length=500)
+    company_name=models.CharField(max_length=500)
